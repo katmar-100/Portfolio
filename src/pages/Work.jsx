@@ -70,7 +70,7 @@ export default function Work() {
       {/* Header Section */}
       <header className={styles.header}>
         <FadeIn delay={0}>
-          <h1>Selected Work</h1>
+          <h1>Project Case Studies</h1>
         </FadeIn>
         <FadeIn delay={0.05}>
           <div className={styles.subtitleCard}>

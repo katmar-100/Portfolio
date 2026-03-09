@@ -201,20 +201,6 @@ export default function Home() {
 
       </section>
 
-      {/* INTRO SECTION - Dark Teal with flowing gradient */}
-      <section className={styles.intro}>
-        <FadeIn>
-          <div className={styles.introContent}>
-            <p className={styles.introLead}>
-              For over a decade, I've led creative strategy for healthcare systems, cybersecurity startups, global entertainment brands, growing consumer companies and agency clientele.
-            </p>
-            <p>
-              My work sits at the intersection of brand clarity, visual systems, and strategic storytelling. I'm not interested in making things simply look good - I'm interested in making them work: clearly, beautifully, and at scale.
-            </p>
-          </div>
-        </FadeIn>
-      </section>
-
       {/* TRUSTED BY BRANDS - Black with logo carousel */}
       <section className={styles.brands}>
         <h3 className={styles.brandsLabel}>Trusted by</h3>
@@ -269,7 +255,7 @@ export default function Home() {
           <FadeIn delay={0}>
             <div className={styles.pillar}>
               <div className={styles.pillarIcon}><SystemsIcon /></div>
-              <span className={`${styles.pillarTitle} gradient-text`}>Systems Over Artifacts</span>
+              <span className={styles.pillarTitle}>Systems Over Artifacts</span>
               <p className={styles.pillarDesc}>
                 I design infrastructure, not just deliverables. Brand guidelines, templates, and standards that scale with the organization and hold up over time.
               </p>
@@ -279,7 +265,7 @@ export default function Home() {
           <FadeIn delay={0.1}>
             <div className={styles.pillar}>
               <div className={styles.pillarIcon}><StrategyIcon /></div>
-              <span className={`${styles.pillarTitle} gradient-text`}>Strategy Through Craft</span>
+              <span className={styles.pillarTitle}>Strategy Through Craft</span>
               <p className={styles.pillarDesc}>
                 Every visual decision is a strategic one. I bring clarity to complexity and make sure creative work is always tied to measurable business intent.
               </p>
@@ -289,7 +275,7 @@ export default function Home() {
           <FadeIn delay={0.2}>
             <div className={styles.pillar}>
               <div className={styles.pillarIcon}><LeadershipIcon /></div>
-              <span className={`${styles.pillarTitle} gradient-text`}>Leadership & Culture</span>
+              <span className={styles.pillarTitle}>Leadership & Culture</span>
               <p className={styles.pillarDesc}>
                 I build teams, mentor talent, and create the conditions where great creative work becomes repeatable across the entire organization.
               </p>

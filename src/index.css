@@ -509,15 +509,6 @@ select {
 /* 12. UTILITY CLASSES
    ========================================================================== */
 
-/* Gradient Text */
-.gradient-text {
-  background: var(--gradient-main);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-}
-
 /* Accent Line - Decorative divider */
 .accent-line {
   display: inline-block;

@@ -78,18 +78,29 @@
 }
 
 .caseStudy {
-  padding: 3rem 0;
-  border-bottom: 1px solid var(--border);
+  padding: 3.5rem 0;
+  border-bottom: none;
   text-align: left;
   transition: all 0.3s ease;
+  position: relative;
+}
+
+.caseStudy::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(110, 198, 198, 0.25) 30%, rgba(110, 198, 198, 0.25) 70%, transparent);
 }
 
 .caseStudy:first-child {
   padding-top: 1rem;
 }
 
-.caseStudy:last-child {
-  border-bottom: none;
+.caseStudy:last-child::after {
+  display: none;
 }
 
 /* Hero image for projects with thumbnails */

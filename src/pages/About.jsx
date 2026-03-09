@@ -225,7 +225,7 @@ export default function About() {
                 <div className={styles.bringIcon}>
                   <item.Icon />
                 </div>
-                <h3 className={`${styles.bringItemTitle} gradient-text`}>
+                <h3 className={styles.bringItemTitle}>
                   {item.title}
                 </h3>
                 <p className={styles.bringItemDesc}>{item.desc}</p>
