@@ -1,0 +1,41 @@
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 1.5rem;
+}
+
+.line {
+  height: 1px;
+  width: 60px;
+  background: linear-gradient(135deg, #3A5F5F 0%, #5B8A8A 40%, #6EC6C6 100%);
+  opacity: 0.4;
+}
+
+.diamond {
+  width: 6px;
+  height: 6px;
+  background: linear-gradient(135deg, #5B8A8A, #6EC6C6);
+  transform: rotate(45deg);
+  flex-shrink: 0;
+  opacity: 0.5;
+}
+
+.flipped {
+  transform: scaleX(-1);
+}
+
+/* Variant: wide */
+.wide .line {
+  width: 120px;
+}
+
+/* Variant: subtle */
+.subtle .line {
+  opacity: 0.2;
+}
+
+.subtle .diamond {
+  opacity: 0.3;
+}

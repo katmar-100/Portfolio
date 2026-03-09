@@ -1,0 +1,251 @@
+/* Header Section */
+.header {
+  padding-top: 10rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+.header h1 {
+  font-family: var(--font-sans);
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+.subtitleCard {
+  max-width: 620px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, rgba(91,138,138,0.06), rgba(110,198,198,0.03));
+  border: 1px solid rgba(91,138,138,0.1);
+  border-radius: 12px;
+  padding: 1.25rem 2rem;
+  transition: border-color 0.4s ease;
+}
+
+.subtitleCard:hover {
+  border-color: rgba(91,138,138,0.2);
+}
+
+.subtitle {
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* Narrative Section */
+.narrative {
+  max-width: 100%;
+  padding: 4rem 1.5rem;
+  text-align: center;
+  background: linear-gradient(135deg, #1E2A2A 0%, #2D4444 50%, #1E2A2A 100%);
+}
+
+.narrative p,
+.narrative p:last-child,
+.narrative > div:last-child p {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.narrative p,
+.narrative p:last-child {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 2.75rem;
+  padding-bottom: 2.75rem;
+  border-bottom: 1px solid rgba(110, 198, 198, 0.12);
+  font-family: var(--font-sans);
+}
+
+/* Target the last FadeIn wrapper's paragraph */
+.narrative > div:last-child p {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+/* Headshot photo */
+.headshotWrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.headshot {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 2px solid rgba(110, 198, 198, 0.3);
+}
+
+/* What I Bring Section */
+.bringSection {
+  padding: 5rem 1.5rem;
+  background: var(--bg-alt);
+  text-align: center;
+}
+
+.bringHeading {
+  font-family: var(--font-sans);
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.01em;
+}
+
+.bringAccentLine {
+  width: 60px;
+  height: 2px;
+  background: var(--gradient-main);
+  margin: 0 auto 2.5rem;
+}
+
+.bringGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  max-width: 1000px;
+  margin: 2.5rem auto 0;
+}
+
+.bringItem {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  border-radius: 12px;
+  transition: all 0.4s cubic-bezier(0.25, 0.4, 0.25, 1);
+}
+
+.bringItem:hover {
+  background: rgba(91, 138, 138, 0.04);
+  transform: translateY(-4px);
+}
+
+.bringIcon {
+  color: var(--accent);
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.4s cubic-bezier(0.25, 0.4, 0.25, 1);
+}
+
+.bringItem:hover .bringIcon {
+  transform: scale(1.1);
+}
+
+.bringItemTitle {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.01em;
+}
+
+.bringItemDesc {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+}
+
+/* Personal Section */
+.personalBar {
+  padding: 4rem 1.5rem;
+  text-align: center;
+  background: #000000;
+}
+
+.personalText {
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  max-width: 620px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* Contact Form Section */
+.contactSection {
+  padding: 5rem 1.5rem;
+  text-align: center;
+}
+
+.contactHeading {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 400;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+
+.contactAccentLine {
+  width: 40px;
+  height: 2px;
+  background: var(--gradient-main);
+  margin: 0.75rem auto 1.5rem;
+}
+
+.contactSubtext {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 3.5rem;
+}
+
+/* Testimonials Section */
+.testimonialsSection {
+  padding: 3rem 0;
+  background-color: var(--bg-alt);
+  text-align: center;
+}
+
+.testimonialsHeading {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 400;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+  padding-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .bringGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .narrative p {
+    font-size: 0.95rem;
+  }
+
+  .contactSection {
+    padding: 3rem 1.5rem;
+  }
+
+  .testimonialsSection {
+    padding: 2rem 0 3rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .bringGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
