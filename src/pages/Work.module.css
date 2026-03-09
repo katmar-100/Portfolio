@@ -16,8 +16,8 @@
 .subtitleCard {
   max-width: 640px;
   margin: 0 auto;
-  background: linear-gradient(135deg, rgba(91,138,138,0.06), rgba(110,198,198,0.03));
-  border: 1px solid rgba(91,138,138,0.1);
+  background: linear-gradient(135deg, rgba(90,130,184,0.06), rgba(110,180,224,0.03));
+  border: 1px solid rgba(90,130,184,0.1);
   border-radius: 12px;
   padding: 1.25rem 2rem;
 }
@@ -108,14 +108,14 @@
   justify-content: center;
   width: 52px;
   height: 52px;
-  background: linear-gradient(135deg, rgba(91,138,138,0.06), rgba(110,198,198,0.04));
-  border: 1px solid rgba(91,138,138,0.1);
+  background: linear-gradient(135deg, rgba(90,130,184,0.06), rgba(110,180,224,0.04));
+  border: 1px solid rgba(90,130,184,0.1);
   border-radius: 12px;
   transition: all 0.35s cubic-bezier(0.25, 0.4, 0.25, 1);
 }
 
 .caseStudy:hover .studyIcon {
-  background: linear-gradient(135deg, rgba(91,138,138,0.1), rgba(110,198,198,0.08));
+  background: linear-gradient(135deg, rgba(90,130,184,0.1), rgba(110,180,224,0.08));
   transform: scale(1.05);
 }
 
@@ -219,19 +219,19 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #FFFFFF;
-  border: 1.5px solid rgba(110, 198, 198, 0.5);
+  border: 1.5px solid rgba(110, 180, 224, 0.5);
   border-radius: 4px;
   background: transparent;
   transition: all 0.35s cubic-bezier(0.25, 0.4, 0.25, 1);
 }
 
 .requestButton:hover {
-  background: rgba(110, 198, 198, 0.1);
-  border-color: #6EC6C6;
+  background: rgba(110, 180, 224, 0.1);
+  border-color: #6EB4E0;
   color: #FFFFFF;
   text-decoration: none;
   transform: translateY(-2px);
-  box-shadow: 0 4px 20px rgba(110, 198, 198, 0.15);
+  box-shadow: 0 4px 20px rgba(110, 180, 224, 0.15);
 }
 
 /* CTA Section */
@@ -277,7 +277,7 @@
 
 .ctaLink:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 30px rgba(91, 138, 138, 0.3);
+  box-shadow: 0 12px 30px rgba(90, 130, 184, 0.3);
   color: #FFFFFF;
   text-decoration: none;
 }

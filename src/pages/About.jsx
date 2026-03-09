@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import FadeIn from '../components/FadeIn';
@@ -60,36 +60,96 @@ const FutureIcon = () => (
   </svg>
 );
 
+// Brand logo from local file
+const BrandLogo = ({ name, logo }) => {
+  const [imgError, setImgError] = useState(false);
+
+  if (!logo || imgError) return null;
+
+  return (
+    <img
+      src={logo}
+      alt={`${name} logo`}
+      className={styles.brandImg}
+      onError={() => setImgError(true)}
+      loading="lazy"
+    />
+  );
+};
+
+// Brand carousel with CSS animation for smooth scrolling
+const BrandCarousel = ({ brands }) => {
+  const doubled = [...brands, ...brands];
+
+  return (
+    <div className={styles.carouselWrap}>
+      <div className={styles.carouselTrack}>
+        {doubled.map((brand, idx) => (
+          <div key={idx} className={styles.carouselItem}>
+            <BrandLogo name={brand.name} logo={brand.logo} />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
 export default function About() {
+  const brands = [
+    { name: "L'Oreal", logo: "/images/logos/loreal.png" },
+    { name: "Electronic Arts", logo: "/images/logos/electronic-arts.png" },
+    { name: "Lululemon", logo: "/images/logos/lululemon.png" },
+    { name: "Lamborghini", logo: "/images/logos/lamborghini.png" },
+    { name: "Nike", logo: "/images/logos/nike.png" },
+    { name: "Revlon", logo: "/images/logos/revlon.png" },
+    { name: "Smithsonian", logo: "/images/logos/smithsonian.png" },
+    { name: "P&G", logo: "/images/logos/pg.png" },
+    { name: "Target", logo: "/images/logos/target.png" },
+    { name: "Ford", logo: "/images/logos/ford.png" },
+    { name: "ESPN", logo: "/images/logos/espn.png" },
+    { name: "Dove", logo: "/images/logos/dove.png" },
+    { name: "Pfizer", logo: "/images/logos/pfizer.png" },
+    { name: "Hitachi", logo: "/images/logos/hitache.png" },
+    { name: "Deloitte", logo: "/images/logos/deloitte.png" },
+    { name: "Nestle", logo: "/images/logos/nestle.png" },
+    { name: "GEICO", logo: "/images/logos/geico.png" },
+    { name: "General Mills", logo: "/images/logos/general-mills.png" },
+    { name: "Mazda", logo: "/images/logos/mazda.png" },
+    { name: "Harvard Medical", logo: "/images/logos/harvard-medical.png" },
+    { name: "Allstate", logo: "/images/logos/allstate.png" },
+    { name: "TRESemme", logo: "/images/logos/tresemme.png" },
+    { name: "Chick-fil-A", logo: "/images/logos/chick-fil-a.png" },
+    { name: "ANA", logo: "/images/logos/ana.png" },
+  ];
   const bringItems = [
     {
       title: 'Strategic Vision',
-      desc: 'Connecting creative decisions to business outcomes and organizational narrative.',
+      desc: 'Connecting creative decisions to business outcomes, brand clarity, and the long-term narrative of an organization.',
       Icon: VisionIcon,
     },
     {
       title: 'Systems Thinking',
-      desc: 'Brand guidelines, design systems, templates, and standards that scale without losing quality.',
+      desc: 'Designing brand systems, guidelines, and standards that allow creative work to scale without losing quality.',
       Icon: SystemsIcon,
     },
     {
       title: 'Team Leadership',
-      desc: 'Building, mentoring, and elevating creative teams that produce consistently excellent work.',
+      desc: 'Building and mentoring creative teams where strong standards, curiosity, and collaboration produce consistently exceptional work.',
       Icon: TeamIcon,
     },
     {
       title: 'Executive Communication',
-      desc: 'Translating complex ideas into clear, compelling presentations and strategic narratives.',
+      desc: 'Translating complex ideas into clear, compelling narratives for leadership, partners, and stakeholders.',
       Icon: CommIcon,
     },
     {
       title: 'Cross-Functional Fluency',
-      desc: 'Deep collaboration with marketing, product, engineering, and executive leadership.',
+      desc: 'Working seamlessly across marketing, product, engineering, and executive teams to move ideas from concept to execution.',
       Icon: CrossFuncIcon,
     },
     {
       title: 'Future-Facing Mindset',
-      desc: 'AI-forward thinking, emerging tools, and genuine curiosity about what comes next.',
+      desc: 'Staying curious about emerging tools, AI-driven creativity, and the evolving role of design in shaping what comes next.',
       Icon: FutureIcon,
     },
   ];
@@ -171,35 +231,83 @@ export default function About() {
               Creative leadership isn't about having all the answers. It's about asking better questions - and building the systems that allow great work to happen again and again.
             </p>
             <p className={styles.subtitleSub}>
-              I'm a Creative Director based in Miami, drawn to work where strategy, design, and storytelling intersect.
+              I'm a Creative Director based in Miami, drawn to the space where strategy, design, and storytelling intersect.
             </p>
+          </div>
+          <div className={styles.seeWorkWrap}>
+            <Link to="/work" className={styles.seeWorkButton}>
+              See My Work
+              <span className={styles.seeWorkArrow}>→</span>
+            </Link>
           </div>
         </FadeIn>
       </header>
+
+      {/* TRUSTED BY BRANDS - Logo carousel */}
+      <section className={styles.brands}>
+        <h3 className={styles.brandsLabel}>Trusted by</h3>
+        <BrandCarousel brands={brands} />
+      </section>
 
       {/* Narrative Section */}
       <section className={styles.narrative}>
         <FadeIn delay={0} direction="up" distance={20}>
           <p>
-            My career has been built in the space between strategy and aesthetics - leading creative teams, developing brand systems, and shaping the visual language of organizations at moments of growth and change. From healthcare to cybersecurity, entertainment to consumer wellness, my work has always been driven by the same question: how do you make complexity feel clear?
+            My career has taken shape at the intersection of strategy and aesthetics - leading creative teams, building brand systems, and shaping the visual language of organizations at moments of growth and change.
           </p>
         </FadeIn>
 
         <FadeIn delay={0.05} direction="up" distance={20}>
           <p>
-            Today, as Creative Director at ChenMed, I lead the in-house creative organization for a national healthcare brand. My work focuses on building scalable systems, raising creative standards, and translating organizational ambition into a cohesive brand expression across more than 100 locations. Before that, as VP and Chief Marketing Officer at CyberCatch, I built the brand, marketing, and creative function from the ground up during a period of rapid growth and IPO preparation.
+            From healthcare to cybersecurity, entertainment to consumer wellness, the industries have varied, but the underlying challenge has stayed the same: translating complexity into clarity through brand, systems, and storytelling.
           </p>
         </FadeIn>
 
         <FadeIn delay={0.1} direction="up" distance={20}>
-          <p>
-            Earlier in my career, I helped develop global visual systems at Electronic Arts and crafted campaign storytelling at H+K Strategies that contributed to over $10M in major account wins. Along the way, I've also spent several years working independently as a creative director, partnering with founders and leadership teams to build brands that perform.
-          </p>
+          <div className={styles.pullQuote}>
+            <span>That challenge continues to shape how I lead today.</span>
+          </div>
         </FadeIn>
 
         <FadeIn delay={0.15} direction="up" distance={20}>
           <p>
-            What connects all of this is a belief that design is infrastructure, not decoration. The best creative work isn't defined by taste alone - it's built on systems that scale, narratives that endure, and standards that make excellence repeatable.
+            As Creative Director at ChenMed, I lead the in-house creative organization for a national healthcare brand. My work focuses on building scalable creative systems, raising quality standards, and translating organizational ambition into a cohesive brand expression across more than 100 locations.
+          </p>
+        </FadeIn>
+
+        <FadeIn delay={0.2} direction="up" distance={20}>
+          <p>
+            Before that, as VP and Chief Marketing Officer at CyberCatch, I built the company's brand, marketing, and creative function from the ground up during a period of rapid growth and IPO preparation.
+          </p>
+        </FadeIn>
+
+        <FadeIn delay={0.25} direction="up" distance={20}>
+          <p>
+            Earlier in my career, I helped develop global visual systems at Electronic Arts and crafted campaign storytelling at H+K Strategies that contributed to more than $10M in major account wins.
+          </p>
+        </FadeIn>
+
+        <FadeIn delay={0.3} direction="up" distance={20}>
+          <p>
+            Along the way, I also spent several years working independently as a creative director, partnering directly with founders and leadership teams to build brands that perform.
+          </p>
+        </FadeIn>
+
+        <FadeIn delay={0.35} direction="up" distance={20}>
+          <div className={styles.pullQuote}>
+            <span>What connects all of this is a belief that design is infrastructure, not decoration.</span>
+          </div>
+        </FadeIn>
+
+        <FadeIn delay={0.4} direction="up" distance={20}>
+          <p>
+            The best creative work isn't defined by taste alone. It's built on systems that scale, narratives that endure, and standards that make excellence repeatable.
+          </p>
+        </FadeIn>
+
+        <FadeIn delay={0.45} direction="up" distance={20}>
+          <p>
+            That philosophy shapes how I approach creative leadership every day.
           </p>
         </FadeIn>
       </section>

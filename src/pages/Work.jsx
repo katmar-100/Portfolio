@@ -13,7 +13,7 @@ const BrandIcon = () => (
     <path d="M10 28c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="url(#brandGrad)" strokeWidth="1.5" strokeLinecap="round" />
     <defs>
       <linearGradient id="brandGrad" x1="4" y1="4" x2="32" y2="32" gradientUnits="userSpaceOnUse">
-        <stop stopColor="#3A5F5F" /><stop offset="0.5" stopColor="#5B8A8A" /><stop offset="1" stopColor="#6EC6C6" />
+        <stop stopColor="#3A5F8F" /><stop offset="0.5" stopColor="#5B8AB8" /><stop offset="1" stopColor="#6EB4E0" />
       </linearGradient>
     </defs>
   </svg>
@@ -26,7 +26,7 @@ const CampaignIcon = () => (
     <path d="M8 10l10 4 10-4" stroke="url(#campGrad)" strokeWidth="1.5" />
     <defs>
       <linearGradient id="campGrad" x1="8" y1="6" x2="28" y2="30" gradientUnits="userSpaceOnUse">
-        <stop stopColor="#3A5F5F" /><stop offset="0.5" stopColor="#5B8A8A" /><stop offset="1" stopColor="#6EC6C6" />
+        <stop stopColor="#3A5F8F" /><stop offset="0.5" stopColor="#5B8AB8" /><stop offset="1" stopColor="#6EB4E0" />
       </linearGradient>
     </defs>
   </svg>
@@ -40,7 +40,7 @@ const PresentationIcon = () => (
     <path d="M12 13l4 4 8-8" stroke="url(#presGrad)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
     <defs>
       <linearGradient id="presGrad" x1="4" y1="6" x2="32" y2="32" gradientUnits="userSpaceOnUse">
-        <stop stopColor="#3A5F5F" /><stop offset="0.5" stopColor="#5B8A8A" /><stop offset="1" stopColor="#6EC6C6" />
+        <stop stopColor="#3A5F8F" /><stop offset="0.5" stopColor="#5B8AB8" /><stop offset="1" stopColor="#6EB4E0" />
       </linearGradient>
     </defs>
   </svg>

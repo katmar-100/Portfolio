@@ -4,6 +4,40 @@ import { Link } from 'react-router-dom';
 import FadeIn from '../components/FadeIn';
 import styles from './Resume.module.css';
 
+// Brand logo from local file
+const BrandLogo = ({ name, logo }) => {
+  const [imgError, setImgError] = useState(false);
+
+  if (!logo || imgError) return null;
+
+  return (
+    <img
+      src={logo}
+      alt={`${name} logo`}
+      className={styles.brandImg}
+      onError={() => setImgError(true)}
+      loading="lazy"
+    />
+  );
+};
+
+// Brand carousel with CSS animation for smooth scrolling
+const BrandCarousel = ({ brands }) => {
+  const doubled = [...brands, ...brands];
+
+  return (
+    <div className={styles.carouselWrap}>
+      <div className={styles.carouselTrack}>
+        {doubled.map((brand, idx) => (
+          <div key={idx} className={styles.carouselItem}>
+            <BrandLogo name={brand.name} logo={brand.logo} />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
 const Resume = () => {
   const experiences = [
     {
@@ -65,6 +99,33 @@ const Resume = () => {
     }
   ];
 
+  const brands = [
+    { name: "L'Oreal", logo: "/images/logos/loreal.png" },
+    { name: "Electronic Arts", logo: "/images/logos/electronic-arts.png" },
+    { name: "Lululemon", logo: "/images/logos/lululemon.png" },
+    { name: "Lamborghini", logo: "/images/logos/lamborghini.png" },
+    { name: "Nike", logo: "/images/logos/nike.png" },
+    { name: "Revlon", logo: "/images/logos/revlon.png" },
+    { name: "Smithsonian", logo: "/images/logos/smithsonian.png" },
+    { name: "P&G", logo: "/images/logos/pg.png" },
+    { name: "Target", logo: "/images/logos/target.png" },
+    { name: "Ford", logo: "/images/logos/ford.png" },
+    { name: "ESPN", logo: "/images/logos/espn.png" },
+    { name: "Dove", logo: "/images/logos/dove.png" },
+    { name: "Pfizer", logo: "/images/logos/pfizer.png" },
+    { name: "Hitachi", logo: "/images/logos/hitache.png" },
+    { name: "Deloitte", logo: "/images/logos/deloitte.png" },
+    { name: "Nestle", logo: "/images/logos/nestle.png" },
+    { name: "GEICO", logo: "/images/logos/geico.png" },
+    { name: "General Mills", logo: "/images/logos/general-mills.png" },
+    { name: "Mazda", logo: "/images/logos/mazda.png" },
+    { name: "Harvard Medical", logo: "/images/logos/harvard-medical.png" },
+    { name: "Allstate", logo: "/images/logos/allstate.png" },
+    { name: "TRESemme", logo: "/images/logos/tresemme.png" },
+    { name: "Chick-fil-A", logo: "/images/logos/chick-fil-a.png" },
+    { name: "ANA", logo: "/images/logos/ana.png" },
+  ];
+
   const [hoveredCap, setHoveredCap] = useState(null);
 
   const capabilities = [
@@ -90,14 +151,32 @@ const Resume = () => {
       transition={{ duration: 0.4 }}
     >
       {/* Header Section */}
-      <div className={styles.header}>
-        <h1 className={styles.title}>Resume</h1>
-        <div className={styles.subtitleCard}>
-          <p className={styles.subtitle}>
-            Over a decade of building brands, leading teams, and turning complexity into clear, scalable creative systems - these are the roles, teams, and organizations that shaped how I lead creative work today.
-          </p>
+      <section className={styles.hero}>
+        <div className={styles.heroContent}>
+          <motion.h1
+            className={styles.heroHeadline}
+            initial={{ opacity: 0, y: 50, filter: 'blur(8px)' }}
+            animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+            transition={{ duration: 0.9, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
+          >
+            I'm able to turn complexity into clear, scalable creative solutions.
+          </motion.h1>
+          <motion.p
+            className={styles.heroSub}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.7 }}
+          >
+            These are the roles, teams, and organizations that shaped how I lead creative work today.
+          </motion.p>
         </div>
-      </div>
+      </section>
+
+      {/* TRUSTED BY BRANDS - Logo carousel */}
+      <section className={styles.brands}>
+        <h3 className={styles.brandsLabel}>Trusted by</h3>
+        <BrandCarousel brands={brands} />
+      </section>
 
       {/* Experience Section */}
       <div className={styles.experienceWrap}>

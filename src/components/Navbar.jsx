@@ -19,8 +19,7 @@ const Navbar = () => {
   const isActive = (path) => location.pathname === path;
 
   const navLinks = [
-    { label: 'Work', path: '/' },
-    { label: 'About', path: '/about' },
+    { label: 'Work', path: '/work' },
     { label: 'Resume', path: '/resume' },
     { label: 'Contact', path: '/contact' },
   ];
@@ -29,8 +28,9 @@ const Navbar = () => {
     <>
       <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
         <div className={styles.container}>
-          <Link to="/contact" className={`${styles.wordmark} ${scrolled ? styles.wordmarkScrolled : ''}`}>
-            Katherine Atmar
+          <Link to="/" className={`${styles.wordmarkWrap} ${scrolled ? styles.wordmarkScrolled : ''}`}>
+            <span className={styles.wordmark}>Katherine Atmar</span>
+            <span className={styles.wordmarkRole}>Creative Director & Brand Leader</span>
           </Link>
 
           <div className={styles.desktopNav}>

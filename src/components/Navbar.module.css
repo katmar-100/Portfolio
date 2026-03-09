@@ -25,6 +25,17 @@
   align-items: center;
 }
 
+.wordmarkWrap {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  transition: all 0.35s cubic-bezier(0.25, 0.4, 0.25, 1);
+}
+
+.wordmarkWrap:hover {
+  text-decoration: none;
+}
+
 .wordmark {
   font-family: var(--font-sans);
   font-weight: 600;
@@ -32,7 +43,17 @@
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #FFFFFF;
-  text-decoration: none;
+  transition: all 0.35s cubic-bezier(0.25, 0.4, 0.25, 1);
+}
+
+.wordmarkRole {
+  font-family: var(--font-sans);
+  font-size: 0.55rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 500;
+  margin-top: 0.2rem;
   transition: all 0.35s cubic-bezier(0.25, 0.4, 0.25, 1);
 }
 
@@ -40,10 +61,13 @@
   color: #FFFFFF !important;
 }
 
-.wordmark:hover {
+.wordmarkWrap:hover .wordmark {
   color: var(--accent-electric);
-  text-decoration: none;
   letter-spacing: 0.24em;
+}
+
+.wordmarkWrap:hover .wordmarkRole {
+  color: var(--accent-electric);
 }
 
 .desktopNav {
@@ -73,7 +97,7 @@
   left: 0;
   width: 100%;
   height: 2px;
-  background: linear-gradient(135deg, #5B8A8A 0%, #6EC6C6 100%);
+  background: linear-gradient(135deg, #5B8AB8 0%, #6EB4E0 100%);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.35s cubic-bezier(0.25, 0.4, 0.25, 1);
@@ -173,7 +197,7 @@
   left: 0;
   width: 100%;
   height: 2px;
-  background: linear-gradient(135deg, #5B8A8A 0%, #6EC6C6 100%);
+  background: linear-gradient(135deg, #5B8AB8 0%, #6EB4E0 100%);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.35s cubic-bezier(0.25, 0.4, 0.25, 1);

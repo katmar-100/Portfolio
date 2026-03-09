@@ -9,14 +9,14 @@
 .line {
   height: 1px;
   width: 60px;
-  background: linear-gradient(135deg, #3A5F5F 0%, #5B8A8A 40%, #6EC6C6 100%);
+  background: linear-gradient(135deg, #3A5F8F 0%, #5B8AB8 40%, #6EB4E0 100%);
   opacity: 0.4;
 }
 
 .diamond {
   width: 6px;
   height: 6px;
-  background: linear-gradient(135deg, #5B8A8A, #6EC6C6);
+  background: linear-gradient(135deg, #5B8AB8, #6EB4E0);
   transform: rotate(45deg);
   flex-shrink: 0;
   opacity: 0.5;

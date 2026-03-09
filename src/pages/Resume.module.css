@@ -1,32 +1,51 @@
-.header {
-  padding-top: 10rem;
-  padding-bottom: 3rem;
+/* Hero Section — matches Work page */
+.hero {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding: 10rem 2rem 5rem;
+  background: linear-gradient(160deg, #1a2a3a 0%, #1f3a4a 30%, #182e3e 55%, #141919 100%);
 }
 
-.title {
+.heroContent {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  width: 100%;
+}
+
+.heroLabel {
   font-family: var(--font-sans);
-  font-size: 3.5rem;
-  color: var(--text-primary);
-  margin: 0 0 1.5rem;
-  font-weight: 600;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  color: var(--accent);
 }
 
-.subtitleCard {
-  max-width: 620px;
-  margin: 0 auto 2rem;
-  background: linear-gradient(135deg, rgba(91,138,138,0.06), rgba(110,198,198,0.03));
-  border: 1px solid rgba(91,138,138,0.1);
-  border-radius: 12px;
-  padding: 1.25rem 2rem;
-}
-
-.subtitle {
-  font-size: 1rem;
-  color: var(--text-secondary);
-  line-height: 1.65;
-  margin: 0;
+.heroHeadline {
   font-family: var(--font-sans);
+  font-size: clamp(1.8rem, 4.5vw, 3.2rem);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  margin: 0 0 2rem;
+  color: #FFFFFF;
+}
+
+.heroSub {
+  font-family: var(--font-sans);
+  font-size: clamp(0.9rem, 1.6vw, 1.05rem);
+  color: rgba(255, 255, 255, 0.55);
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.7;
+  font-weight: 400;
 }
 
 .downloadLink {
@@ -189,7 +208,7 @@
 }
 
 .educationWrap {
-  background: linear-gradient(135deg, #1E2A2A 0%, #2D4444 50%, #1E2A2A 100%);
+  background: linear-gradient(135deg, #1E2A36 0%, #2D3C52 50%, #1E2A36 100%);
 }
 
 .educationEntry {
@@ -272,7 +291,7 @@
 
 .ctaLink:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 30px rgba(91, 138, 138, 0.3);
+  box-shadow: 0 12px 30px rgba(90, 130, 184, 0.3);
   color: #FFFFFF;
   text-decoration: none;
 }
@@ -281,19 +300,107 @@
   left: 100%;
 }
 
+/* ============================================================================
+   TRUSTED BY BRANDS — Logo carousel
+   ============================================================================ */
+
+.brands {
+  padding: 4rem 1.5rem 3.5rem;
+  text-align: center;
+  background: #000000;
+  overflow: hidden;
+}
+
+.brandsLabel {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+  display: block;
+  color: var(--accent);
+}
+
+/* Brand Carousel */
+.carouselWrap {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+
+.carouselTrack {
+  display: flex;
+  gap: 3.5rem;
+  white-space: nowrap;
+  animation: scrollCarousel 60s linear infinite;
+  width: max-content;
+  will-change: transform;
+}
+
+@keyframes scrollCarousel {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.carouselTrack:hover {
+  animation-play-state: paused;
+}
+
+.carouselItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  flex-shrink: 0;
+  padding: 0.5rem 0;
+  min-width: 110px;
+  transition: opacity 0.3s ease;
+}
+
+.carouselItem:hover {
+  opacity: 1;
+}
+
+.brandImg {
+  height: 44px;
+  width: auto;
+  max-width: 160px;
+  object-fit: contain;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.carouselItem:hover .brandImg {
+  opacity: 0.85;
+}
+
+.carouselName {
+  font-family: var(--font-sans);
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: rgba(255, 255, 255, 0.35);
+  font-weight: 600;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+
+.carouselItem:hover .carouselName {
+  color: rgba(110, 180, 224, 0.8);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
-  .title {
-    font-size: 2.5rem;
+  .hero {
+    padding: 8rem 1.5rem 3rem;
+    min-height: auto;
   }
 
   .sectionHeading {
     font-size: 2rem;
     margin-bottom: 2rem;
-  }
-
-  .subtitle {
-    font-size: 0.95rem;
   }
 
   .experience {
@@ -318,21 +425,26 @@
   .cta {
     padding: 2.5rem 1.5rem;
   }
+
+  .carouselTrack {
+    gap: 2.5rem;
+    animation-duration: 55s;
+  }
+
+  .carouselName {
+    font-size: 0.5rem;
+    letter-spacing: 0.1em;
+  }
+
+  .brandImg {
+    height: 38px;
+    max-width: 130px;
+  }
 }
 
 @media (max-width: 480px) {
-  .header {
-    padding-top: 6rem;
-  }
-
-  .title {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-
-  .subtitle {
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
+  .hero {
+    padding: 6rem 1rem 2.5rem;
   }
 
   .experience {

@@ -157,16 +157,6 @@ export default function Home() {
         {/* Main hero content */}
         <div className={styles.heroContent}>
 
-          {/* Role label */}
-          <motion.p
-            className={styles.heroLabel}
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-          >
-            Creative Director & Brand Leader
-          </motion.p>
-
           {/* Hero headline — value proposition at editorial scale */}
           <motion.h1
             className={styles.heroHeadline}
@@ -174,7 +164,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
             transition={{ duration: 0.9, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
           >
-            I build brands, systems, and stories that make organizations unmistakable.
+            Over a decade of building brands, systems, and stories that make organizations impossible to ignore.
           </motion.h1>
 
           {/* Supporting detail */}
@@ -187,24 +177,8 @@ export default function Home() {
             Creative leadership across healthcare, technology, entertainment, and global consumer brands.
           </motion.p>
 
-          {/* Scroll prompt */}
-          <motion.div
-            className={styles.scrollPrompt}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 1.2 }}
-          >
-            <span className={styles.scrollText}>SELECTED WORK BELOW</span>
-            <span className={styles.scrollArrow}>&#8964;</span>
-          </motion.div>
         </div>
 
-      </section>
-
-      {/* TRUSTED BY BRANDS - Black with logo carousel */}
-      <section className={styles.brands}>
-        <h3 className={styles.brandsLabel}>Trusted by</h3>
-        <BrandCarousel brands={brands} />
       </section>
 
       {/* SELECTED WORK SECTION */}
@@ -229,7 +203,7 @@ export default function Home() {
 
         <FadeIn delay={0.1}>
           <div className={styles.viewAll}>
-            <Link to="/work" className={styles.viewAllLink}>
+            <Link to="/case-studies" className={styles.viewAllLink}>
               See more work
               <span className={styles.viewAllArrow}>→</span>
             </Link>
@@ -285,7 +259,7 @@ export default function Home() {
 
         <FadeIn delay={0.1}>
           <div className={styles.viewAll}>
-            <Link to="/about" className={styles.viewAllLink}>
+            <Link to="/" className={styles.viewAllLink}>
               Learn more about me
               <span className={styles.viewAllArrow}>→</span>
             </Link>

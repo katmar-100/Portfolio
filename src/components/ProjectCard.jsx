@@ -51,7 +51,7 @@ const ProjectCard = ({ project, index = 0 }) => {
         )}
 
         <Link
-          to={`/work?category=${categorySlug(category)}`}
+          to={`/case-studies?category=${categorySlug(category)}`}
           className={styles.seeAllLink}
         >
           See all {categoryShortLabel[category] || category} →

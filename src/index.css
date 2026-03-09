@@ -1,6 +1,6 @@
 /* ============================================================================
    KATHERINE ATMAR PORTFOLIO - Global Styles
-   Energetic, Airy, Modern Aesthetic with Monochromatic Teal Palette
+   Energetic, Airy, Modern Aesthetic with Sky Blue Palette
    ============================================================================ */
 
 /* 1. CSS VARIABLES & DESIGN SYSTEM
@@ -9,20 +9,20 @@
 :root {
   /* Color Palette — Dark Mode (always on) */
   --bg: #0f1211;
-  --bg-alt: #191f1d;
-  --bg-card: #1a2020;
+  --bg-alt: #191d22;
+  --bg-card: #1a2028;
   --text-primary: #f5f5f5;
-  --text-secondary: #c9d4d4;
-  --accent: #6EC6C6;
-  --accent-light: #D6E4E0;
-  --accent-hover: #5B8A8A;
-  --accent-dark: #5B8A8A;
-  --accent-electric: #8AD4D4;
-  --accent-electric-light: #E0F3F3;
-  --border: #2a3535;
+  --text-secondary: #c9d0d8;
+  --accent: #6EB4E0;
+  --accent-light: #D6E0EC;
+  --accent-hover: #5B8AB8;
+  --accent-dark: #5B8AB8;
+  --accent-electric: #8AC8F0;
+  --accent-electric-light: #E0EEF8;
+  --border: #2a3040;
 
   /* Gradients */
-  --gradient-main: linear-gradient(135deg, #3A5F5F 0%, #5B8A8A 40%, #6EC6C6 100%);
+  --gradient-main: linear-gradient(135deg, #3A5F8F 0%, #5B8AB8 40%, #6EB4E0 100%);
 
   /* Typography */
   --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -51,11 +51,11 @@
   --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
 
   /* Shadows */
-  --shadow-sm: 0 1px 2px rgba(30, 42, 42, 0.05);
-  --shadow-md: 0 4px 6px rgba(30, 42, 42, 0.1);
-  --shadow-lg: 0 10px 15px rgba(30, 42, 42, 0.1);
-  --shadow-xl: 0 20px 25px rgba(30, 42, 42, 0.15);
-  --shadow-lift: 0 20px 40px rgba(91, 138, 138, 0.12);
+  --shadow-sm: 0 1px 2px rgba(30, 36, 50, 0.05);
+  --shadow-md: 0 4px 6px rgba(30, 36, 50, 0.1);
+  --shadow-lg: 0 10px 15px rgba(30, 36, 50, 0.1);
+  --shadow-xl: 0 20px 25px rgba(30, 36, 50, 0.15);
+  --shadow-lift: 0 20px 40px rgba(90, 130, 184, 0.12);
 
   /* Border Radius */
   --radius-sm: 0.375rem;
@@ -471,7 +471,7 @@ textarea {
 }
 
 select {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%235C6B6B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%235C6B8B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right var(--space-md) center;
   background-size: 1.25rem;

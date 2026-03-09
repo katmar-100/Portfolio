@@ -48,7 +48,7 @@ const Contact = () => {
             </a>
 
             <p className={styles.infoParagraph}>
-              Based in the United States. Also open to roles in Tokyo and London. Onsite, remote and hybrid welcome.
+              Based in the United States. Also open to roles in Tokyo and London. Onsite, remote, and hybrid welcome.
             </p>
 
             <p className={styles.infoParagraph}>
