@@ -181,7 +181,7 @@ export default function About() {
       <section className={styles.narrative}>
         <FadeIn delay={0} direction="up" distance={20}>
           <p>
-            Over the past decade, I've built my career in the space between strategy and aesthetics - leading creative teams, developing brand systems, and shaping the visual language of organizations at moments of growth and change. From healthcare to cybersecurity, entertainment to consumer wellness, my work has always been driven by the same question: how do you make complexity feel clear?
+            My career has been built in the space between strategy and aesthetics - leading creative teams, developing brand systems, and shaping the visual language of organizations at moments of growth and change. From healthcare to cybersecurity, entertainment to consumer wellness, my work has always been driven by the same question: how do you make complexity feel clear?
           </p>
         </FadeIn>
 
