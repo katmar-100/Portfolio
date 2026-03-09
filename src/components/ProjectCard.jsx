@@ -1,6 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import styles from './ProjectCard.module.css';
+
+const categorySlug = (cat) => cat.toLowerCase().replace(/\s+&\s+/g, '-').replace(/\s+/g, '-');
+
+const categoryShortLabel = {
+  'Brand & Identity Systems': 'Brand & Identity',
+  'Campaign & Storytelling': 'Campaigns',
+  'Executive Presentations': 'Presentations',
+};
 
 const ProjectCard = ({ project, index = 0 }) => {
   const { title, category, summary, capabilities, image, thumbnail } = project;
@@ -40,6 +49,13 @@ const ProjectCard = ({ project, index = 0 }) => {
             ))}
           </div>
         )}
+
+        <Link
+          to={`/work?category=${categorySlug(category)}`}
+          className={styles.seeAllLink}
+        >
+          See all {categoryShortLabel[category] || category} →
+        </Link>
       </div>
     </motion.div>
   );

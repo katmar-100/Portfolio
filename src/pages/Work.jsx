@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import FadeIn from '../components/FadeIn';
 import { projects } from '../data/projects';
 import styles from './Work.module.css';
@@ -54,7 +54,16 @@ const categoryIcons = {
 
 export default function Work() {
   const categories = ['All', 'Brand & Identity Systems', 'Campaign & Storytelling', 'Executive Presentations'];
+  const [searchParams] = useSearchParams();
+  const categoryFromUrl = searchParams.get('category');
   const [activeCategory, setActiveCategory] = useState('All');
+
+  useEffect(() => {
+    if (categoryFromUrl) {
+      const match = categories.find(c => c.toLowerCase().replace(/\s+&\s+/g, '-').replace(/\s+/g, '-') === categoryFromUrl);
+      if (match) setActiveCategory(match);
+    }
+  }, [categoryFromUrl]);
 
   const filteredProjects = activeCategory === 'All'
     ? projects

@@ -120,7 +120,7 @@
 }
 
 .studyHeader {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .studyCategory {
@@ -156,7 +156,7 @@
   line-height: 1.75;
   color: var(--text-secondary);
   font-family: var(--font-sans);
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   border-left: 3px solid var(--accent-light);
   padding-left: 1.25rem;
 }
@@ -165,6 +165,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  padding-top: 1rem;
 }
 
 .studyBlock {

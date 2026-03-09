@@ -148,3 +148,21 @@
   background: rgba(110, 198, 198, 0.1);
   border-color: rgba(110, 198, 198, 0.35);
 }
+
+.seeAllLink {
+  display: inline-block;
+  margin-top: 1.25rem;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  transition: all 0.35s cubic-bezier(0.25, 0.4, 0.25, 1);
+}
+
+.seeAllLink:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
