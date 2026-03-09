@@ -222,7 +222,7 @@
 /* Testimonials Section */
 .testimonialsSection {
   padding: 3rem 0;
-  background-color: var(--bg-alt);
+  background: linear-gradient(135deg, #1a3a3a 0%, #1f4a4a 50%, #1a3a3a 100%);
   text-align: center;
 }
 

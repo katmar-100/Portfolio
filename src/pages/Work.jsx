@@ -104,23 +104,49 @@ export default function Work() {
       {/* Case Studies Section */}
       <section className={styles.caseStudiesContainer}>
         {filteredProjects.map((project, idx) => (
-          <FadeIn key={`case-${project.id}`} delay={0.1 + idx * 0.03}>
-            <div className={styles.caseStudy}>
-              {/* Hero image or category icon */}
-              {project.image ? (
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className={styles.studyImage}
-                />
-              ) : (
-                <div className={styles.studyIconRow}>
-                  {categoryIcons[project.category] && (
-                    <span className={styles.studyIcon}>{categoryIcons[project.category]}</span>
-                  )}
-                </div>
-              )}
+          <motion.div
+            key={`case-${project.id}`}
+            className={styles.caseStudy}
+            initial={{ opacity: 0, y: 60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-50px' }}
+            transition={{
+              duration: 0.7,
+              ease: [0.25, 0.4, 0.25, 1],
+            }}
+          >
+            {/* Hero image or category icon */}
+            {project.image ? (
+              <motion.img
+                src={project.image}
+                alt={project.title}
+                className={styles.studyImage}
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true, margin: '-30px' }}
+                transition={{
+                  duration: 0.8,
+                  ease: [0.25, 0.4, 0.25, 1],
+                }}
+              />
+            ) : (
+              <div className={styles.studyIconRow}>
+                {categoryIcons[project.category] && (
+                  <span className={styles.studyIcon}>{categoryIcons[project.category]}</span>
+                )}
+              </div>
+            )}
 
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-30px' }}
+              transition={{
+                duration: 0.6,
+                ease: [0.25, 0.4, 0.25, 1],
+                delay: 0.15,
+              }}
+            >
               <div className={styles.studyHeader}>
                 <span className={styles.studyCategory}>{project.category}</span>
                 <h2 className={styles.studyTitle}>{project.title}</h2>
@@ -130,7 +156,18 @@ export default function Work() {
               </div>
 
               <p className={styles.studySummary}>{project.summary}</p>
+            </motion.div>
 
+            <motion.div
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-20px' }}
+              transition={{
+                duration: 0.6,
+                ease: [0.25, 0.4, 0.25, 1],
+                delay: 0.3,
+              }}
+            >
               <div className={styles.studyContent}>
                 <div className={styles.studyBlock}>
                   <p className={styles.label}>Challenge</p>
@@ -162,8 +199,8 @@ export default function Work() {
               >
                 REQUEST DELIVERABLES
               </Link>
-            </div>
-          </FadeIn>
+            </motion.div>
+          </motion.div>
         ))}
       </section>
 

@@ -94,7 +94,7 @@ const Resume = () => {
         <h1 className={styles.title}>Resume</h1>
         <div className={styles.subtitleCard}>
           <p className={styles.subtitle}>
-            A career built at the intersection of creative leadership, brand strategy, and design systems.
+            Over a decade of building brands, leading teams, and turning complexity into clear, scalable creative systems - these are the roles, teams, and organizations that shaped how I lead creative work today.
           </p>
         </div>
       </div>

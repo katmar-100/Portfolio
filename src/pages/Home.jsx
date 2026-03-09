@@ -282,6 +282,15 @@ export default function Home() {
             </div>
           </FadeIn>
         </div>
+
+        <FadeIn delay={0.1}>
+          <div className={styles.viewAll}>
+            <Link to="/about" className={styles.viewAllLink}>
+              Learn more about me
+              <span className={styles.viewAllArrow}>→</span>
+            </Link>
+          </div>
+        </FadeIn>
       </section>
 
       {/* CTA SECTION */}

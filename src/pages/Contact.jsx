@@ -48,7 +48,7 @@ const Contact = () => {
             </a>
 
             <p className={styles.infoParagraph}>
-              Based in the United States. Also open to roles in Tokyo and London. Remote and hybrid welcome.
+              Based in the United States. Also open to roles in Tokyo and London. Onsite, remote and hybrid welcome.
             </p>
 
             <p className={styles.infoParagraph}>
@@ -62,7 +62,7 @@ const Contact = () => {
       <FadeIn delay={0.1} direction="up" distance={20}>
         <section className={styles.availability}>
           <p className={styles.availabilityText}>
-            Currently exploring senior creative leadership opportunities: Creative Director, Design Director, VP Brand & Creative, and similar roles.
+            I'm always interested in learning about senior creative leadership opportunities: Creative Director, Design Director, ECD, VP Brand & Creative, and similar roles. Don't hesitate to reach out!
           </p>
         </section>
       </FadeIn>
