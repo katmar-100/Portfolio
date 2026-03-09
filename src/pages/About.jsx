@@ -168,7 +168,10 @@ export default function About() {
         <FadeIn delay={0.05}>
           <div className={styles.subtitleCard}>
             <p className={styles.subtitle}>
-              Creative leadership isn't about having all the answers. It's about asking better questions - and building the systems that allow great work to happen consistently.
+              Creative leadership isn't about having all the answers. It's about asking better questions - and building the systems that allow great work to happen again and again.
+            </p>
+            <p className={styles.subtitle}>
+              I'm a Creative Director based in Miami, drawn to work where strategy, design, and storytelling intersect.
             </p>
           </div>
         </FadeIn>
