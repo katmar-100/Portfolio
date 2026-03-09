@@ -52,7 +52,7 @@ const Contact = () => {
             </p>
 
             <p className={styles.infoParagraph}>
-              I'll get back to you within two business days.
+              I'll get back to you within two business days. Talk soon!
             </p>
           </div>
         </div>

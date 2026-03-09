@@ -48,6 +48,46 @@
   font-weight: 400;
 }
 
+.seeWorkWrap {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.seeWorkButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 2.5rem;
+  border: 1px solid rgba(110, 180, 224, 0.3);
+  border-radius: 6px;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.78rem;
+  font-weight: 600;
+  font-family: var(--font-sans);
+  background: transparent;
+  transition: all 0.35s cubic-bezier(0.25, 0.4, 0.25, 1);
+}
+
+.seeWorkButton:hover {
+  border-color: rgba(110, 180, 224, 0.6);
+  background: rgba(110, 180, 224, 0.08);
+  transform: translateY(-2px);
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.seeWorkArrow {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.25, 0.4, 0.25, 1);
+}
+
+.seeWorkButton:hover .seeWorkArrow {
+  transform: translateX(4px);
+}
+
 .downloadLink {
   font-size: 0.8rem;
   font-weight: 500;

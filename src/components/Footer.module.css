@@ -6,6 +6,7 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding-top: 2.5rem;
   border-top: 1px solid var(--border);
   display: flex;
   justify-content: space-between;
@@ -27,26 +28,16 @@
 }
 
 .link {
-  font-size: 0.8rem;
   color: var(--text-secondary);
   text-decoration: none;
-  transition: color 0.3s ease;
-  background-image: linear-gradient(var(--accent), var(--accent));
-  background-size: 0% 1px;
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-  transition: background-size 0.35s cubic-bezier(0.25, 0.4, 0.25, 1), color 0.3s ease;
-  padding-bottom: 1px;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .link:hover {
   color: var(--accent);
-  background-size: 100% 1px;
-}
-
-.separator {
-  color: var(--text-secondary);
-  font-size: 0.8rem;
+  transform: translateY(-2px);
 }
 
 /* Responsive */

@@ -310,6 +310,15 @@ export default function About() {
             That philosophy shapes how I approach creative leadership every day.
           </p>
         </FadeIn>
+
+        <FadeIn delay={0.5} direction="up" distance={20}>
+          <div className={styles.seeWorkWrap}>
+            <Link to="/work" className={styles.seeWorkButton}>
+              See My Work
+              <span className={styles.seeWorkArrow}>→</span>
+            </Link>
+          </div>
+        </FadeIn>
       </section>
 
       {/* What I Bring Section */}
@@ -341,6 +350,15 @@ export default function About() {
             </FadeIn>
           ))}
         </div>
+
+        <FadeIn delay={0.3} direction="up" distance={20}>
+          <div className={styles.seeWorkWrap}>
+            <Link to="/resume" className={styles.seeWorkButton}>
+              See My Resume
+              <span className={styles.seeWorkArrow}>→</span>
+            </Link>
+          </div>
+        </FadeIn>
       </section>
 
       {/* Personal Section */}

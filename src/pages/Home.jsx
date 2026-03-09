@@ -177,12 +177,23 @@ export default function Home() {
             Creative leadership across healthcare, technology, entertainment, and global consumer brands.
           </motion.p>
 
+          <motion.div
+            className={styles.heroButtonWrap}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.9 }}
+          >
+            <a href="#selected-work" className={styles.heroButton}>
+              See My Work →
+            </a>
+          </motion.div>
+
         </div>
 
       </section>
 
       {/* SELECTED WORK SECTION */}
-      <section className={styles.work}>
+      <section id="selected-work" className={styles.work}>
         <FadeIn>
           <h2 className={styles.workHeading}>
             Selected Work

@@ -5,16 +5,9 @@ import styles from './ProjectCard.module.css';
 
 const categorySlug = (cat) => cat.toLowerCase().replace(/\s+&\s+/g, '-').replace(/\s+/g, '-');
 
-const categoryShortLabel = {
-  'Brand & Identity Systems': 'Brand & Identity',
-  'Campaign & Storytelling': 'Campaigns',
-  'Executive Presentations': 'Presentations',
-};
-
 const ProjectCard = ({ project, index = 0 }) => {
   const { title, category, summary, capabilities, image, thumbnail } = project;
   const displayImage = thumbnail || image;
-  const displayIndex = String(index + 1).padStart(2, '0');
 
   return (
     <motion.div
@@ -31,10 +24,7 @@ const ProjectCard = ({ project, index = 0 }) => {
       )}
       <div className={styles.accentLine} />
       <div className={styles.content}>
-        <div className={styles.cardHeader}>
-          <div className={styles.category}>{category}</div>
-          <span className={styles.cardIndex}>{displayIndex}</span>
-        </div>
+        <div className={styles.category}>{category}</div>
         <h3 className={styles.title}>
           {title}
         </h3>
@@ -54,7 +44,7 @@ const ProjectCard = ({ project, index = 0 }) => {
           to={`/case-studies?category=${categorySlug(category)}`}
           className={styles.seeAllLink}
         >
-          See all {categoryShortLabel[category] || category} →
+          SEE MORE {category.toUpperCase()} →
         </Link>
       </div>
     </motion.div>
