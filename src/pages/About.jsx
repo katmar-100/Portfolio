@@ -181,25 +181,25 @@ export default function About() {
       <section className={styles.narrative}>
         <FadeIn delay={0} direction="up" distance={20}>
           <p>
-            I've spent my career working at the intersection of strategy and aesthetics: leading creative teams, building brand systems, and shaping the visual language of organizations at moments of growth and change. From healthcare to cybersecurity, entertainment to consumer wellness, my work has always been driven by the same question: how do you make complexity feel clear?
+            Over the past decade, I've built my career in the space between strategy and aesthetics - leading creative teams, developing brand systems, and shaping the visual language of organizations at moments of growth and change. From healthcare to cybersecurity, entertainment to consumer wellness, my work has always been driven by the same question: how do you make complexity feel clear?
           </p>
         </FadeIn>
 
         <FadeIn delay={0.05} direction="up" distance={20}>
           <p>
-            Today, as Creative Director at ChenMed, I lead the in-house creative organization for a national healthcare brand, building scalable systems, raising quality standards, and translating organizational ambition into a cohesive brand expression across more than 100 locations. Previously, as VP and Chief Marketing Officer at CyberCatch, I built the brand, marketing, and creative function from the ground up during a period of rapid growth and IPO preparation.
+            Today, as Creative Director at ChenMed, I lead the in-house creative organization for a national healthcare brand. My work focuses on building scalable systems, raising creative standards, and translating organizational ambition into a cohesive brand expression across more than 100 locations. Before that, as VP and Chief Marketing Officer at CyberCatch, I built the brand, marketing, and creative function from the ground up during a period of rapid growth and IPO preparation.
           </p>
         </FadeIn>
 
         <FadeIn delay={0.1} direction="up" distance={20}>
           <p>
-            Earlier in my career, I helped develop global visual systems at Electronic Arts and crafted campaign storytelling at Hill+Knowlton Strategies that contributed to major account wins. Along the way, I've also spent years working independently as a creative director, partnering directly with founders and leadership teams to build brands that perform.
+            Earlier in my career, I helped develop global visual systems at Electronic Arts and crafted campaign storytelling at H+K Strategies that contributed to over $10M in major account wins. Along the way, I've also spent several years working independently as a creative director, partnering with founders and leadership teams to build brands that perform.
           </p>
         </FadeIn>
 
         <FadeIn delay={0.15} direction="up" distance={20}>
           <p>
-            What connects all of it is a belief that design is infrastructure, not decoration. The best creative work isn't defined by taste alone - it's built on systems that scale, narratives that endure, and standards that make excellence repeatable.
+            What connects all of this is a belief that design is infrastructure, not decoration. The best creative work isn't defined by taste alone - it's built on systems that scale, narratives that endure, and standards that make excellence repeatable.
           </p>
         </FadeIn>
       </section>
