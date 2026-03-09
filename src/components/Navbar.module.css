@@ -10,9 +10,9 @@
 }
 
 .navbar.scrolled {
-  background: rgba(250, 251, 249, 0.92);
+  background: rgba(15, 18, 17, 0.92);
   backdrop-filter: blur(16px);
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04), 0 4px 20px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 .container {
@@ -37,7 +37,7 @@
 }
 
 .wordmarkScrolled {
-  color: var(--accent-dark) !important;
+  color: #FFFFFF !important;
 }
 
 .wordmark:hover {
@@ -100,15 +100,15 @@
 
 /* Scrolled state nav links */
 .scrolled .navLink {
-  color: #3A4A4A;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .scrolled .navLink:hover {
-  color: var(--accent-dark);
+  color: #FFFFFF;
 }
 
 .scrolled .navLink.active {
-  color: var(--accent-dark);
+  color: #FFFFFF;
 }
 
 /* Hamburger Menu */
@@ -146,7 +146,7 @@
 .mobileOverlay {
   position: fixed;
   inset: 0;
-  background: rgba(250, 251, 249, 0.98);
+  background: rgba(15, 18, 17, 0.98);
   z-index: 999;
   display: flex;
   flex-direction: column;
