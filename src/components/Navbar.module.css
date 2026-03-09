@@ -135,11 +135,11 @@
 }
 
 .hamburger.open span:first-child {
-  transform: rotate(45deg) translateY(10px);
+  transform: none;
 }
 
 .hamburger.open span:last-child {
-  transform: rotate(-45deg) translateY(-10px);
+  transform: none;
 }
 
 /* Mobile Overlay */

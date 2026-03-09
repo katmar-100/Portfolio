@@ -210,26 +210,30 @@
 }
 
 .requestButton {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   margin-top: 1.75rem;
-  padding: 0.6rem 1.4rem;
+  padding: 0.75rem 2rem;
   font-family: var(--font-sans);
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 600;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
-  color: #5B8A8A;
-  border: 1px solid rgba(91, 138, 138, 0.3);
+  color: #FFFFFF;
+  border: 1.5px solid rgba(110, 198, 198, 0.5);
   border-radius: 4px;
-  transition: all 0.3s ease;
+  background: transparent;
+  transition: all 0.35s cubic-bezier(0.25, 0.4, 0.25, 1);
 }
 
 .requestButton:hover {
-  background: rgba(91, 138, 138, 0.08);
+  background: rgba(110, 198, 198, 0.1);
   border-color: #6EC6C6;
-  color: #6EC6C6;
+  color: #FFFFFF;
   text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(110, 198, 198, 0.15);
 }
 
 /* CTA Section */
@@ -247,22 +251,41 @@
 
 .ctaLink {
   display: inline-block;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+  padding: 1rem 3rem;
+  background: var(--gradient-main);
+  color: #FFFFFF;
   text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.82rem;
+  font-weight: 600;
   font-family: var(--font-sans);
-  background: linear-gradient(135deg, #3A5F5F 0%, #5B8A8A 50%, #6EC6C6 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-  transition: all 0.35s cubic-bezier(0.25, 0.4, 0.25, 1);
+  border-radius: 6px;
+  transition: all 0.4s cubic-bezier(0.25, 0.4, 0.25, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.ctaLink::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+  transition: left 0.6s ease;
 }
 
 .ctaLink:hover {
-  transform: translateX(4px);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(91, 138, 138, 0.3);
+  color: #FFFFFF;
   text-decoration: none;
+}
+
+.ctaLink:hover::after {
+  left: 100%;
 }
 
 /* Responsive */
