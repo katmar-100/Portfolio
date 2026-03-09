@@ -61,7 +61,7 @@
   max-width: 100%;
   padding: 4rem 1.5rem;
   text-align: center;
-  background: linear-gradient(135deg, #1E2A36 0%, #2D3C52 50%, #1E2A36 100%);
+  background: #000000;
 }
 
 .narrative p,
@@ -79,7 +79,7 @@
   color: var(--text-secondary);
   margin-bottom: 2.75rem;
   padding-bottom: 2.75rem;
-  border-bottom: 1px solid rgba(110, 180, 224, 0.12);
+  border-bottom: 1px solid rgba(110, 180, 224, 0.22);
   font-family: var(--font-sans);
 }
 
@@ -92,7 +92,8 @@
 
 /* Remove border from paragraphs directly before a pull quote or divider */
 .narrative > div:has(+ div > .pullQuote) p,
-.narrative > div:has(+ div > .narrativeDivider) p {
+.narrative > div:has(+ div > .narrativeDivider) p,
+.narrative > div:has(+ div > .seeWorkWrap) p {
   border-bottom: none;
   padding-bottom: 0;
 }
@@ -102,15 +103,15 @@
   max-width: 700px;
   margin: 1rem auto 2.75rem;
   padding: 1.5rem 2.5rem;
-  background: linear-gradient(135deg, rgba(90, 130, 184, 0.06), rgba(110, 180, 224, 0.03));
-  border: 1px solid rgba(90, 130, 184, 0.15);
+  background: linear-gradient(135deg, rgba(90, 130, 184, 0.12), rgba(110, 180, 224, 0.06));
+  border: 1px solid rgba(90, 130, 184, 0.28);
   border-radius: 12px;
   text-align: center;
   transition: border-color 0.4s ease;
 }
 
 .pullQuote:hover {
-  border-color: rgba(90, 130, 184, 0.25);
+  border-color: rgba(90, 130, 184, 0.4);
 }
 
 .pullQuote span {
@@ -318,7 +319,7 @@
 /* Testimonials Section */
 .testimonialsSection {
   padding: 3rem 0;
-  background: linear-gradient(135deg, #1a2a3a 0%, #1f3a4a 50%, #1a2a3a 100%);
+  background: linear-gradient(135deg, #1E2A36 0%, #2D3C52 50%, #1E2A36 100%);
   text-align: center;
 }
 

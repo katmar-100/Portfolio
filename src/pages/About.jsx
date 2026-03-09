@@ -372,12 +372,6 @@ export default function About() {
 
       {/* Testimonials Section */}
       <section className={styles.testimonialsSection}>
-        <FadeIn delay={0.2}>
-          <h2 className={styles.testimonialsHeading} style={{ fontFamily: 'var(--font-serif)' }}>
-            What People Say
-          </h2>
-          <div className={styles.contactAccentLine}></div>
-        </FadeIn>
         <Testimonials testimonials={aboutTestimonials} />
       </section>
 

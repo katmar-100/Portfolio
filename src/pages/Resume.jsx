@@ -199,17 +199,14 @@ const Resume = () => {
               </div>
             ))}
           </section>
+          <div className={styles.seeWorkWrap}>
+            <Link to="/work" className={styles.seeWorkButton}>
+              SEE MY WORK
+              <span className={styles.seeWorkArrow}>→</span>
+            </Link>
+          </div>
         </FadeIn>
       </div>
-
-      <FadeIn delay={0.15} direction="up" distance={20}>
-        <div className={styles.seeWorkWrap}>
-          <Link to="/work" className={styles.seeWorkButton}>
-            SEE MY WORK
-            <span className={styles.seeWorkArrow}>→</span>
-          </Link>
-        </div>
-      </FadeIn>
 
       {/* Capabilities Section */}
       <FadeIn delay={0.2} direction="up" distance={20}>
