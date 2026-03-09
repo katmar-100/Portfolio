@@ -22,27 +22,6 @@ export const projects = [
       "featured": true
   },
   {
-      "id": 6,
-      "slug": "fresh-lvmh-campaign",
-      "title": "fresh - LVMH Brand Campaign",
-      "client": "fresh (LVMH)",
-      "category": "Campaign & Storytelling",
-      "year": 2023,
-      "role": "Art Director / Designer",
-      "summary": "Developed campaign materials and influencer marketing assets for fresh, the luxury skincare brand under LVMH, creating premium narratives across digital platforms.",
-      "challenge": "Maintain luxury brand standards across diverse influencer collaborations and digital formats while driving authentic engagement.",
-      "approach": "Designed a cohesive visual campaign system featuring lifestyle photography, typography, and digital templates optimized for influencer storytelling and brand integrity.",
-      "outcome": "Delivered a campaign toolkit that scaled across influencer partnerships and established fresh as a premium digital-native brand presence.",
-      "capabilities": [
-          "Campaign Design",
-          "Luxury Branding",
-          "Influencer Marketing",
-          "Art Direction"
-      ],
-      "image": "/images/projects/fresh.png",
-      "featured": true
-  },
-  {
       "id": 3,
       "slug": "lululemon-this-is-yoga",
       "title": "Lululemon - This Is Yoga",
@@ -61,6 +40,27 @@ export const projects = [
           "Brand Storytelling"
       ],
       "image": "/images/projects/lululemon.jpg",
+      "featured": true
+  },
+  {
+      "id": 6,
+      "slug": "fresh-lvmh-campaign",
+      "title": "fresh - LVMH Brand Campaign",
+      "client": "fresh (LVMH)",
+      "category": "Campaign & Storytelling",
+      "year": 2023,
+      "role": "Art Director / Designer",
+      "summary": "Developed campaign materials and influencer marketing assets for fresh, the luxury skincare brand under LVMH, creating premium narratives across digital platforms.",
+      "challenge": "Maintain luxury brand standards across diverse influencer collaborations and digital formats while driving authentic engagement.",
+      "approach": "Designed a cohesive visual campaign system featuring lifestyle photography, typography, and digital templates optimized for influencer storytelling and brand integrity.",
+      "outcome": "Delivered a campaign toolkit that scaled across influencer partnerships and established fresh as a premium digital-native brand presence.",
+      "capabilities": [
+          "Campaign Design",
+          "Luxury Branding",
+          "Influencer Marketing",
+          "Art Direction"
+      ],
+      "image": "/images/projects/fresh.png",
       "featured": true
   },
   {
@@ -85,27 +85,6 @@ export const projects = [
       "featured": false
   },
   {
-      "id": 1,
-      "slug": "loreal-founder-series",
-      "title": "L'Oreal Founder Series",
-      "client": "L'Oreal",
-      "category": "Campaign & Storytelling",
-      "year": 2023,
-      "role": "Art Director / Designer",
-      "summary": "Designed the RFP presentation, experiential booth concept, and digital platform for L'Oreal's Founder Series campaign, a multi-touchpoint storytelling initiative elevating emerging female entrepreneurs.",
-      "challenge": "Create a cohesive, premium brand experience across presentation decks, physical experiential spaces, and digital touchpoints while maintaining L'Oreal's luxury brand standards.",
-      "approach": "Developed a comprehensive visual language balancing luxury aesthetics with approachable storytelling. Designed the RFP presentation, conceptualized an immersive confessional booth experience, and created digital platform designs for seamless brand integration.",
-      "outcome": "Delivered a unified campaign identity that communicated L'Oreal's commitment to entrepreneurship, establishing the foundation for a scalable, multi-market rollout.",
-      "capabilities": [
-          "Campaign Design",
-          "Experiential",
-          "Presentation Design",
-          "Digital Strategy"
-      ],
-      "image": "/images/projects/loreal.jpg",
-      "featured": true
-  },
-  {
       "id": 9,
       "slug": "tedx-keynote",
       "title": "TEDx Keynote Presentation",
@@ -124,6 +103,27 @@ export const projects = [
           "Event Branding"
       ],
       "image": "/images/projects/tedx-keynote.png",
+      "featured": true
+  },
+  {
+      "id": 1,
+      "slug": "loreal-founder-series",
+      "title": "L'Oreal Founder Series",
+      "client": "L'Oreal",
+      "category": "Campaign & Storytelling",
+      "year": 2023,
+      "role": "Art Director / Designer",
+      "summary": "Designed the RFP presentation, experiential booth concept, and digital platform for L'Oreal's Founder Series campaign, a multi-touchpoint storytelling initiative elevating emerging female entrepreneurs.",
+      "challenge": "Create a cohesive, premium brand experience across presentation decks, physical experiential spaces, and digital touchpoints while maintaining L'Oreal's luxury brand standards.",
+      "approach": "Developed a comprehensive visual language balancing luxury aesthetics with approachable storytelling. Designed the RFP presentation, conceptualized an immersive confessional booth experience, and created digital platform designs for seamless brand integration.",
+      "outcome": "Delivered a unified campaign identity that communicated L'Oreal's commitment to entrepreneurship, establishing the foundation for a scalable, multi-market rollout.",
+      "capabilities": [
+          "Campaign Design",
+          "Experiential",
+          "Presentation Design",
+          "Digital Strategy"
+      ],
+      "image": "/images/projects/loreal.jpg",
       "featured": true
   },
   {
@@ -149,27 +149,6 @@ export const projects = [
       "featured": true
   },
   {
-      "id": 8,
-      "slug": "smithsonian-campaign",
-      "title": "Smithsonian Campaign Design",
-      "client": "Smithsonian Institution",
-      "category": "Campaign & Storytelling",
-      "year": 2022,
-      "role": "Art Director / Designer",
-      "summary": "Created campaign visuals and exhibit design for the Smithsonian, translating cultural narratives into compelling, accessible visual experiences.",
-      "challenge": "Honor institutional credibility while making complex cultural narratives engaging and accessible to broad public audiences.",
-      "approach": "Developed sophisticated visual narratives through typography, imagery, and spatial design. Created materials across print and digital that established emotional connections with diverse audiences.",
-      "outcome": "Delivered campaign and exhibit designs that engaged visitors and reinforced the Smithsonian's position as a premier cultural institution.",
-      "capabilities": [
-          "Campaign Design",
-          "Institutional Branding",
-          "Visual Storytelling",
-          "Print & Digital"
-      ],
-      "image": "/images/projects/smithsonian.png",
-      "featured": false
-  },
-  {
       "id": 10,
       "slug": "avon-aspira-campaign",
       "title": "Avon - Aspira Campaign Proposal",
@@ -188,6 +167,27 @@ export const projects = [
           "Beauty & Lifestyle"
       ],
       "image": "/images/projects/avon.jpg",
+      "featured": false
+  },
+  {
+      "id": 8,
+      "slug": "smithsonian-campaign",
+      "title": "Smithsonian Campaign Design",
+      "client": "Smithsonian Institution",
+      "category": "Campaign & Storytelling",
+      "year": 2022,
+      "role": "Art Director / Designer",
+      "summary": "Created campaign visuals and exhibit design for the Smithsonian, translating cultural narratives into compelling, accessible visual experiences.",
+      "challenge": "Honor institutional credibility while making complex cultural narratives engaging and accessible to broad public audiences.",
+      "approach": "Developed sophisticated visual narratives through typography, imagery, and spatial design. Created materials across print and digital that established emotional connections with diverse audiences.",
+      "outcome": "Delivered campaign and exhibit designs that engaged visitors and reinforced the Smithsonian's position as a premier cultural institution.",
+      "capabilities": [
+          "Campaign Design",
+          "Institutional Branding",
+          "Visual Storytelling",
+          "Print & Digital"
+      ],
+      "image": "/images/projects/smithsonian.png",
       "featured": false
   },
   {
