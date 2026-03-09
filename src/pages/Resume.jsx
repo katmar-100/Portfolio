@@ -10,7 +10,7 @@ const Resume = () => {
       id: 1,
       title: 'Creative Director',
       company: 'ChenMed',
-      dates: '2023 - Present',
+      dates: '2024 - Present',
       bullets: [
         'Lead the in-house creative organization for a national healthcare brand serving 100+ locations across the United States.',
         'Built scalable brand systems, design standards, and creative workflows that elevated quality and consistency at scale.',
@@ -22,7 +22,7 @@ const Resume = () => {
       id: 2,
       title: 'VP, Chief Marketing Officer',
       company: 'CyberCatch',
-      dates: '2021 - 2023',
+      dates: '2021 - 2024',
       bullets: [
         'Built the brand, marketing, and creative function from zero through high-growth and IPO-readiness stages.',
         'Developed go-to-market strategy, investor materials, and executive communications for institutional credibility.',
@@ -34,7 +34,7 @@ const Resume = () => {
       id: 3,
       title: 'Creative Director & Visual Designer',
       company: 'Self-Employed',
-      dates: '2016 - 2021',
+      dates: '2020 - 2021',
       bullets: [
         'Provided end-to-end creative direction and brand strategy for startups, consumer brands, and B2B technology companies.',
         'Developed brand identities, visual systems, campaign concepts, and digital experiences across wellness, real estate, and lifestyle.',
@@ -45,7 +45,7 @@ const Resume = () => {
       id: 4,
       title: 'Branding & Design Specialist',
       company: 'Electronic Arts',
-      dates: '2014 - 2016',
+      dates: '2017 - 2020',
       bullets: [
         'Developed global visual communication standards and internal brand infrastructure.',
         'Created design systems and templates enabling consistent brand expression across autonomous global studios.',
@@ -56,7 +56,7 @@ const Resume = () => {
       id: 5,
       title: 'Art Director',
       company: 'Hill+Knowlton Strategies',
-      dates: '2012 - 2014',
+      dates: '2014 - 2017',
       bullets: [
         'Led visual direction for campaign concepts, client presentations, and new business pitch materials.',
         'Developed motion-supported storytelling and integrated campaign visuals contributing to major account wins.',
