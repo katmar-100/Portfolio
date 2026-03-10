@@ -68,6 +68,28 @@ export const projects = [
       "featured": true
   },
   {
+      "id": 4,
+      "slug": "lamborghini-investor-pitch",
+      "title": "Lamborghini Investor Pitch",
+      "client": "Lamborghini",
+      "category": "Executive Presentations",
+      "year": 2023,
+      "role": "Art Director / Designer",
+      "summary": "Created the investor pitch deck template for Lamborghini, translating luxury brand values and market positioning into a sophisticated strategic presentation framework.",
+      "challenge": "Communicate brand prestige, financial performance, and growth strategy while maintaining consistency with luxury brand expectations across markets.",
+      "approach": "Designed a premium presentation system with refined typography, sophisticated color applications, and high-impact imagery. Created flexible template components for finance and marketing teams.",
+      "outcome": "Delivered a presentation framework that elevated investor communications and established standards for luxury brand executive presentations.",
+      "capabilities": [
+          "Investor Communications",
+          "Presentation Design",
+          "Luxury Branding",
+          "Visual Strategy"
+      ],
+      "image": "/images/projects/lamborghini.png",
+      "thumbnail": "/images/projects/lamborghini-thumb.png",
+      "featured": true
+  },
+  {
       "id": 2,
       "slug": "electronic-arts-brand-system",
       "title": "Electronic Arts Global Brand System",
@@ -91,28 +113,6 @@ export const projects = [
           "author": "Matt Tomlinson",
           "company": "Electronic Arts"
       },
-      "featured": true
-  },
-  {
-      "id": 4,
-      "slug": "lamborghini-investor-pitch",
-      "title": "Lamborghini Investor Pitch",
-      "client": "Lamborghini",
-      "category": "Executive Presentations",
-      "year": 2023,
-      "role": "Art Director / Designer",
-      "summary": "Created the investor pitch deck template for Lamborghini, translating luxury brand values and market positioning into a sophisticated strategic presentation framework.",
-      "challenge": "Communicate brand prestige, financial performance, and growth strategy while maintaining consistency with luxury brand expectations across markets.",
-      "approach": "Designed a premium presentation system with refined typography, sophisticated color applications, and high-impact imagery. Created flexible template components for finance and marketing teams.",
-      "outcome": "Delivered a presentation framework that elevated investor communications and established standards for luxury brand executive presentations.",
-      "capabilities": [
-          "Investor Communications",
-          "Presentation Design",
-          "Luxury Branding",
-          "Visual Strategy"
-      ],
-      "image": "/images/projects/lamborghini.png",
-      "thumbnail": "/images/projects/lamborghini-thumb.png",
       "featured": true
   },
   {
@@ -244,26 +244,25 @@ export const projects = [
       "featured": false
   },
   {
-      "id": 5,
-      "slug": "marmot-labs-brand",
-      "title": "Marmot Labs Brand & Pitch",
-      "client": "Marmot Labs",
-      "category": "Brand & Identity Systems",
-      "year": 2023,
-      "role": "Creative Director",
-      "summary": "Built the complete brand identity and investor pitch deck for Marmot Labs, an AI/technology startup entering competitive markets.",
-      "challenge": "Differentiate a nascent AI startup in a crowded market while communicating complex technology through accessible, compelling brand identity.",
-      "approach": "Developed a distinctive visual identity conveying technological sophistication with approachability. Created a comprehensive pitch deck articulating market opportunity, technology differentiation, and business strategy.",
-      "outcome": "Delivered a cohesive brand and pitch framework that positioned Marmot Labs for fundraising conversations and enterprise partnerships.",
+      "id": 10,
+      "slug": "avon-espira-campaign",
+      "title": "Avon - Espira Campaign Proposal",
+      "client": "Avon",
+      "category": "Campaign & Storytelling",
+      "year": 2022,
+      "role": "Art Director / Designer",
+      "summary": "Designed the campaign proposal for Avon's new Espira product line, creating a premium visual direction that repositioned the brand for a younger, modern audience.",
+      "challenge": "Reposition a legacy beauty brand for a new demographic while maintaining brand recognition and trust built over decades.",
+      "approach": "Developed a fresh visual direction with contemporary typography, vibrant color palette, and lifestyle-driven imagery that bridged Avon's heritage with modern beauty culture.",
+      "outcome": "Delivered a campaign concept that demonstrated a viable path to brand modernization while preserving the warmth and accessibility that defines Avon.",
       "capabilities": [
-          "Brand Identity",
-          "Pitch Development",
-          "Startup Branding",
-          "Visual Identity"
+          "Campaign Proposal",
+          "Brand Repositioning",
+          "Art Direction",
+          "Beauty & Lifestyle"
       ],
-      "image": "/images/projects/marmot-labs.jpg",
-      "thumbnail": "/images/projects/marmot-labs-thumb.jpg",
-      "featured": true
+      "image": "/images/projects/avon.jpg",
+      "featured": false
   },
   {
       "id": 13,
