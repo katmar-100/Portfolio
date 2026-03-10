@@ -219,10 +219,8 @@ export default function Work() {
               {project.testimonial && (
                 <div className={styles.inlineTestimonial}>
                   <p className={styles.testimonialLabel}>
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                      <path d="M2 1.5h10a1.5 1.5 0 0 1 1.5 1.5v6a1.5 1.5 0 0 1-1.5 1.5H5l-3 2.5V3A1.5 1.5 0 0 1 2 1.5z" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
                     Client Testimonial
+                    <span className={styles.stars}>★★★★★</span>
                   </p>
                   <blockquote className={styles.testimonialQuote}>
                     "{project.testimonial.quote}"

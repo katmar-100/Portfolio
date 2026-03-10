@@ -68,28 +68,6 @@ export const projects = [
       "featured": true
   },
   {
-      "id": 4,
-      "slug": "lamborghini-investor-pitch",
-      "title": "Lamborghini Investor Pitch",
-      "client": "Lamborghini",
-      "category": "Executive Presentations",
-      "year": 2023,
-      "role": "Art Director / Designer",
-      "summary": "Created the investor pitch deck template for Lamborghini, translating luxury brand values and market positioning into a sophisticated strategic presentation framework.",
-      "challenge": "Communicate brand prestige, financial performance, and growth strategy while maintaining consistency with luxury brand expectations across markets.",
-      "approach": "Designed a premium presentation system with refined typography, sophisticated color applications, and high-impact imagery. Created flexible template components for finance and marketing teams.",
-      "outcome": "Delivered a presentation framework that elevated investor communications and established standards for luxury brand executive presentations.",
-      "capabilities": [
-          "Investor Communications",
-          "Presentation Design",
-          "Luxury Branding",
-          "Visual Strategy"
-      ],
-      "image": "/images/projects/lamborghini.png",
-      "thumbnail": "/images/projects/lamborghini-thumb.png",
-      "featured": true
-  },
-  {
       "id": 2,
       "slug": "electronic-arts-brand-system",
       "title": "Electronic Arts Global Brand System",
@@ -113,6 +91,28 @@ export const projects = [
           "author": "Matt Tomlinson",
           "company": "Electronic Arts"
       },
+      "featured": true
+  },
+  {
+      "id": 4,
+      "slug": "lamborghini-investor-pitch",
+      "title": "Lamborghini Investor Pitch",
+      "client": "Lamborghini",
+      "category": "Executive Presentations",
+      "year": 2023,
+      "role": "Art Director / Designer",
+      "summary": "Created the investor pitch deck template for Lamborghini, translating luxury brand values and market positioning into a sophisticated strategic presentation framework.",
+      "challenge": "Communicate brand prestige, financial performance, and growth strategy while maintaining consistency with luxury brand expectations across markets.",
+      "approach": "Designed a premium presentation system with refined typography, sophisticated color applications, and high-impact imagery. Created flexible template components for finance and marketing teams.",
+      "outcome": "Delivered a presentation framework that elevated investor communications and established standards for luxury brand executive presentations.",
+      "capabilities": [
+          "Investor Communications",
+          "Presentation Design",
+          "Luxury Branding",
+          "Visual Strategy"
+      ],
+      "image": "/images/projects/lamborghini.png",
+      "thumbnail": "/images/projects/lamborghini-thumb.png",
       "featured": true
   },
   {
@@ -178,6 +178,11 @@ export const projects = [
       ],
       "image": "/images/projects/marmot-labs.jpg",
       "thumbnail": "/images/projects/marmot-labs-thumb.jpg",
+      "testimonial": {
+          "quote": "It was absolutely amazing to work with Katherine. She delivered very high-quality designs for my presentation. Katherine is really communicative and built on my feedback. All her milestones were delivered on time and at very high standard. I would like to work with Katherine again.",
+          "author": "Claudia",
+          "company": "Marmont Labs"
+      },
       "featured": true
   },
   {
@@ -223,27 +228,6 @@ export const projects = [
       "featured": false
   },
   {
-      "id": 11,
-      "slug": "ea-internal-comms",
-      "title": "EA Internal Communications",
-      "client": "Electronic Arts",
-      "category": "Brand & Identity Systems",
-      "year": 2018,
-      "role": "Branding & Design Specialist",
-      "summary": "Designed layout for EA's Great Meetings training booklet, creating an internal communications standard that improved meeting culture across global studios.",
-      "challenge": "Transform internal training content into a visually engaging resource that employees would actually use, while maintaining EA's brand standards.",
-      "approach": "Created a clean, modern booklet layout with infographics, illustrated examples, and structured content hierarchy that made meeting best practices accessible and actionable.",
-      "outcome": "Delivered a polished internal resource adopted across EA studios, setting the standard for how internal training materials are designed and distributed.",
-      "capabilities": [
-          "Layout Design",
-          "Internal Communications",
-          "Training Materials",
-          "Print Design"
-      ],
-      "image": "/images/projects/ea-internal-comms.jpg",
-      "featured": false
-  },
-  {
       "id": 10,
       "slug": "avon-espira-campaign",
       "title": "Avon - Espira Campaign Proposal",
@@ -265,24 +249,50 @@ export const projects = [
       "featured": false
   },
   {
-      "id": 13,
-      "slug": "deoleo-olive-oil",
-      "title": "DeoLeo Olive Oil Pitch",
-      "client": "DeoLeo",
-      "category": "Executive Presentations",
-      "year": 2022,
-      "role": "Art Director / Designer",
-      "summary": "Created the PowerPoint template and pitch presentation for DeoLeo, designing a premium visual framework for the olive oil brand's business development efforts.",
-      "challenge": "Elevate a food and beverage brand's pitch materials to match the premium quality of their product in competitive business contexts.",
-      "approach": "Designed a sophisticated template system with warm, Mediterranean-inspired aesthetics, product photography integration, and flexible slide layouts for various pitch scenarios.",
-      "outcome": "Delivered a professional presentation system that communicated DeoLeo's premium positioning and supported business development conversations.",
+      "id": 11,
+      "slug": "ea-internal-comms",
+      "title": "EA Internal Communications",
+      "client": "Electronic Arts",
+      "category": "Brand & Identity Systems",
+      "year": 2018,
+      "role": "Branding & Design Specialist",
+      "summary": "Designed layout for EA's Great Meetings training booklet, creating an internal communications standard that improved meeting culture across global studios.",
+      "challenge": "Transform internal training content into a visually engaging resource that employees would actually use, while maintaining EA's brand standards.",
+      "approach": "Created a clean, modern booklet layout with infographics, illustrated examples, and structured content hierarchy that made meeting best practices accessible and actionable.",
+      "outcome": "Delivered a polished internal resource adopted across EA studios, setting the standard for how internal training materials are designed and distributed.",
       "capabilities": [
-          "Presentation Design",
-          "Template Systems",
-          "Food & Beverage",
-          "Brand Positioning"
+          "Layout Design",
+          "Internal Communications",
+          "Training Materials",
+          "Print Design"
       ],
-      "image": "/images/projects/deoleo-olive-oil.png",
+      "image": "/images/projects/ea-internal-comms.jpg",
+      "featured": false
+  },
+  {
+      "id": 31,
+      "slug": "ai-risk-guide",
+      "title": "CyberCatch AI Risk Guide",
+      "client": "CyberCatch",
+      "category": "Campaign & Storytelling",
+      "year": 2023,
+      "role": "VP, Chief Marketing Officer",
+      "summary": "Designed the layout for CyberCatch's AI Risk Guide, a publication authored by CEO Sai Huda, translating complex AI governance content into an authoritative, readable format.",
+      "challenge": "Transform dense technical and policy content about AI risk into a visually engaging publication that would be taken seriously by enterprise decision-makers.",
+      "approach": "Created a professional publication layout with structured content hierarchy, data callouts, and a visual system that communicated authority in the emerging AI governance space.",
+      "outcome": "Delivered a thought leadership publication that positioned CyberCatch as a voice of authority in AI risk management and supported business development efforts.",
+      "capabilities": [
+          "Publication Design",
+          "Thought Leadership",
+          "AI & Technology",
+          "Layout Design"
+      ],
+      "image": "/images/projects/ai-risk-guide.png",
+      "testimonial": {
+          "quote": "Katherine is outstanding! Brilliant talent, superb work products delivered consistently! Will hire again and again on other projects!",
+          "author": "Sai Huda",
+          "company": "Author & CEO"
+      },
       "featured": false
   },
   {
@@ -496,29 +506,24 @@ export const projects = [
       "featured": false
   },
   {
-      "id": 31,
-      "slug": "ai-risk-guide",
-      "title": "CyberCatch AI Risk Guide",
-      "client": "CyberCatch",
-      "category": "Campaign & Storytelling",
-      "year": 2023,
-      "role": "VP, Chief Marketing Officer",
-      "summary": "Designed the layout for CyberCatch's AI Risk Guide, a publication authored by CEO Sai Huda, translating complex AI governance content into an authoritative, readable format.",
-      "challenge": "Transform dense technical and policy content about AI risk into a visually engaging publication that would be taken seriously by enterprise decision-makers.",
-      "approach": "Created a professional publication layout with structured content hierarchy, data callouts, and a visual system that communicated authority in the emerging AI governance space.",
-      "outcome": "Delivered a thought leadership publication that positioned CyberCatch as a voice of authority in AI risk management and supported business development efforts.",
+      "id": 13,
+      "slug": "deoleo-olive-oil",
+      "title": "DeoLeo Olive Oil Pitch",
+      "client": "DeoLeo",
+      "category": "Executive Presentations",
+      "year": 2022,
+      "role": "Art Director / Designer",
+      "summary": "Created the PowerPoint template and pitch presentation for DeoLeo, designing a premium visual framework for the olive oil brand's business development efforts.",
+      "challenge": "Elevate a food and beverage brand's pitch materials to match the premium quality of their product in competitive business contexts.",
+      "approach": "Designed a sophisticated template system with warm, Mediterranean-inspired aesthetics, product photography integration, and flexible slide layouts for various pitch scenarios.",
+      "outcome": "Delivered a professional presentation system that communicated DeoLeo's premium positioning and supported business development conversations.",
       "capabilities": [
-          "Publication Design",
-          "Thought Leadership",
-          "AI & Technology",
-          "Layout Design"
+          "Presentation Design",
+          "Template Systems",
+          "Food & Beverage",
+          "Brand Positioning"
       ],
-      "image": "/images/projects/ai-risk-guide.png",
-      "testimonial": {
-          "quote": "Katherine is outstanding! Brilliant talent, superb work products delivered consistently! Will hire again and again on other projects!",
-          "author": "Sai Huda",
-          "company": "Author & CEO"
-      },
+      "image": "/images/projects/deoleo-olive-oil.png",
       "featured": false
   },
   {
