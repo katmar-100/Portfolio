@@ -268,58 +268,34 @@
 /* Inline Testimonial */
 .inlineTestimonial {
   margin-top: 2.5rem;
-  padding: 2rem 2.25rem;
-  background: linear-gradient(135deg, rgba(90, 130, 184, 0.06), rgba(110, 180, 224, 0.03));
-  border-left: 3px solid;
-  border-image: linear-gradient(to bottom, #5B8AB8, #6EB4E0) 1;
-  border-radius: 0 10px 10px 0;
-  position: relative;
+  border-left: 3px solid var(--accent-light);
+  padding-left: 1.25rem;
 }
 
-.testimonialQuoteMark {
-  font-family: Georgia, serif;
-  font-size: 3.5rem;
-  line-height: 1;
-  color: rgba(110, 180, 224, 0.25);
-  position: absolute;
-  top: 0.75rem;
-  left: 1.25rem;
+.testimonialLabel {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  color: var(--accent-dark);
+  margin-bottom: 0.5rem;
 }
 
 .testimonialQuote {
   font-family: var(--font-sans);
   font-size: 0.95rem;
   line-height: 1.75;
-  color: var(--text-secondary);
+  color: var(--accent-electric);
   font-style: italic;
-  margin: 0 0 1rem 0;
-  padding-left: 1.25rem;
+  margin: 0 0 0.75rem 0;
 }
 
 .testimonialAttribution {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding-left: 1.25rem;
-}
-
-.testimonialAuthor {
   font-family: var(--font-sans);
   font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--text-primary);
-}
-
-.testimonialCompany {
-  font-family: var(--font-sans);
-  font-size: 0.75rem;
   color: var(--text-secondary);
-  letter-spacing: 0.02em;
-}
-
-.testimonialCompany::before {
-  content: '·';
-  margin-right: 0.5rem;
+  margin: 0;
 }
 
 /* CTA Section */

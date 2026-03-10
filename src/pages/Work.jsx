@@ -218,14 +218,13 @@ export default function Work() {
 
               {project.testimonial && (
                 <div className={styles.inlineTestimonial}>
-                  <div className={styles.testimonialQuoteMark}>"</div>
+                  <p className={styles.testimonialLabel}>Client Testimonial</p>
                   <blockquote className={styles.testimonialQuote}>
-                    {project.testimonial.quote}
+                    "{project.testimonial.quote}"
                   </blockquote>
-                  <div className={styles.testimonialAttribution}>
-                    <span className={styles.testimonialAuthor}>{project.testimonial.author}</span>
-                    <span className={styles.testimonialCompany}>{project.testimonial.company}</span>
-                  </div>
+                  <p className={styles.testimonialAttribution}>
+                    — {project.testimonial.author}, {project.testimonial.company}
+                  </p>
                 </div>
               )}
 

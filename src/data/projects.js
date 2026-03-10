@@ -1,24 +1,28 @@
 export const projects = [
   {
-      "id": 4,
-      "slug": "lamborghini-investor-pitch",
-      "title": "Lamborghini Investor Pitch",
-      "client": "Lamborghini",
+      "id": 9,
+      "slug": "tedx-keynote",
+      "title": "TEDx Keynote Presentation",
+      "client": "TEDx",
       "category": "Executive Presentations",
-      "year": 2023,
+      "year": 2022,
       "role": "Art Director / Designer",
-      "summary": "Created the investor pitch deck template for Lamborghini, translating luxury brand values and market positioning into a sophisticated strategic presentation framework.",
-      "challenge": "Communicate brand prestige, financial performance, and growth strategy while maintaining consistency with luxury brand expectations across markets.",
-      "approach": "Designed a premium presentation system with refined typography, sophisticated color applications, and high-impact imagery. Created flexible template components for finance and marketing teams.",
-      "outcome": "Delivered a presentation framework that elevated investor communications and established standards for luxury brand executive presentations.",
+      "summary": "Designed the keynote presentation for a TEDx talk on Biohacking vs. Lifespanning, translating complex scientific concepts into visually engaging, audience-ready slides.",
+      "challenge": "Communicate dense scientific and wellness content in a way that holds audience attention and supports the speaker's narrative arc on a high-profile stage.",
+      "approach": "Created a cinematic presentation design with bold imagery, data visualization, and typographic hierarchy that reinforced key takeaways while maintaining the energy of a live event.",
+      "outcome": "Delivered a polished keynote experience that elevated the speaker's message and set a new standard for presentation design in the health and wellness space.",
       "capabilities": [
-          "Investor Communications",
+          "Keynote Design",
+          "Data Visualization",
           "Presentation Design",
-          "Luxury Branding",
-          "Visual Strategy"
+          "Event Branding"
       ],
-      "image": "/images/projects/lamborghini.png",
-      "thumbnail": "/images/projects/lamborghini-thumb.png",
+      "image": "/images/projects/tedx-keynote.png",
+      "testimonial": {
+          "quote": "She's exceptional\u2014a true gem in her rapid grasp of ideas, concepts, and vision. Katherine is a rare find, invaluable in every sense. I'm looking forward to collaborating with her on many more ventures.",
+          "author": "Jean Fallacara",
+          "company": "Author & CEO"
+      },
       "featured": true
   },
   {
@@ -64,50 +68,51 @@ export const projects = [
       "featured": true
   },
   {
-      "id": 11,
-      "slug": "ea-internal-comms",
-      "title": "EA Internal Communications",
+      "id": 2,
+      "slug": "electronic-arts-brand-system",
+      "title": "Electronic Arts Global Brand System",
       "client": "Electronic Arts",
       "category": "Brand & Identity Systems",
-      "year": 2018,
+      "year": 2022,
       "role": "Branding & Design Specialist",
-      "summary": "Designed layout for EA's Great Meetings training booklet, creating an internal communications standard that improved meeting culture across global studios.",
-      "challenge": "Transform internal training content into a visually engaging resource that employees would actually use, while maintaining EA's brand standards.",
-      "approach": "Created a clean, modern booklet layout with infographics, illustrated examples, and structured content hierarchy that made meeting best practices accessible and actionable.",
-      "outcome": "Delivered a polished internal resource adopted across EA studios, setting the standard for how internal training materials are designed and distributed.",
+      "summary": "Created the corporate style guide and internal brand communication standards for EA, establishing visual consistency across global studios and internal communications.",
+      "challenge": "Unify brand expression across dozens of autonomous studios and regional offices without stifling creative expression or slowing production.",
+      "approach": "Built a comprehensive brand system documenting visual identity, typography, color, imagery standards, and communication guidelines. Created flexible templates ensuring consistency while allowing regional customization.",
+      "outcome": "Delivered a scalable brand infrastructure that reduced design inconsistencies and accelerated time-to-market for corporate communications across all EA divisions.",
       "capabilities": [
-          "Layout Design",
+          "Brand Systems",
+          "Style Guides",
           "Internal Communications",
-          "Training Materials",
-          "Print Design"
+          "Enterprise Design"
       ],
-      "image": "/images/projects/ea-internal-comms.jpg",
-      "featured": false
+      "image": "/images/projects/ea-brand-system.png",
+      "testimonial": {
+          "quote": "Kat is an excellent source of energy and inspiration. I've worked with plenty of artists and graphic designers, and Kat's abilities are second to none. She brings a determination and focus on how good design can be used to improve both communication and how the business works. We need more Kats in this world!",
+          "author": "Matt Tomlinson",
+          "company": "Electronic Arts"
+      },
+      "featured": true
   },
   {
-      "id": 9,
-      "slug": "tedx-keynote",
-      "title": "TEDx Keynote Presentation",
-      "client": "TEDx",
+      "id": 4,
+      "slug": "lamborghini-investor-pitch",
+      "title": "Lamborghini Investor Pitch",
+      "client": "Lamborghini",
       "category": "Executive Presentations",
-      "year": 2022,
+      "year": 2023,
       "role": "Art Director / Designer",
-      "summary": "Designed the keynote presentation for a TEDx talk on Biohacking vs. Lifespanning, translating complex scientific concepts into visually engaging, audience-ready slides.",
-      "challenge": "Communicate dense scientific and wellness content in a way that holds audience attention and supports the speaker's narrative arc on a high-profile stage.",
-      "approach": "Created a cinematic presentation design with bold imagery, data visualization, and typographic hierarchy that reinforced key takeaways while maintaining the energy of a live event.",
-      "outcome": "Delivered a polished keynote experience that elevated the speaker's message and set a new standard for presentation design in the health and wellness space.",
+      "summary": "Created the investor pitch deck template for Lamborghini, translating luxury brand values and market positioning into a sophisticated strategic presentation framework.",
+      "challenge": "Communicate brand prestige, financial performance, and growth strategy while maintaining consistency with luxury brand expectations across markets.",
+      "approach": "Designed a premium presentation system with refined typography, sophisticated color applications, and high-impact imagery. Created flexible template components for finance and marketing teams.",
+      "outcome": "Delivered a presentation framework that elevated investor communications and established standards for luxury brand executive presentations.",
       "capabilities": [
-          "Keynote Design",
-          "Data Visualization",
+          "Investor Communications",
           "Presentation Design",
-          "Event Branding"
+          "Luxury Branding",
+          "Visual Strategy"
       ],
-      "image": "/images/projects/tedx-keynote.png",
-      "testimonial": {
-          "quote": "She's exceptional\u2014a true gem in her rapid grasp of ideas, concepts, and vision. Katherine is a rare find, invaluable in every sense. I'm looking forward to collaborating with her on many more ventures.",
-          "author": "Jean Fallacara",
-          "company": "Author & CEO"
-      },
+      "image": "/images/projects/lamborghini.png",
+      "thumbnail": "/images/projects/lamborghini-thumb.png",
       "featured": true
   },
   {
@@ -154,25 +159,26 @@ export const projects = [
       "featured": true
   },
   {
-      "id": 10,
-      "slug": "avon-espira-campaign",
-      "title": "Avon - Espira Campaign Proposal",
-      "client": "Avon",
-      "category": "Campaign & Storytelling",
-      "year": 2022,
-      "role": "Art Director / Designer",
-      "summary": "Designed the campaign proposal for Avon's new Espira product line, creating a premium visual direction that repositioned the brand for a younger, modern audience.",
-      "challenge": "Reposition a legacy beauty brand for a new demographic while maintaining brand recognition and trust built over decades.",
-      "approach": "Developed a fresh visual direction with contemporary typography, vibrant color palette, and lifestyle-driven imagery that bridged Avon's heritage with modern beauty culture.",
-      "outcome": "Delivered a campaign concept that demonstrated a viable path to brand modernization while preserving the warmth and accessibility that defines Avon.",
+      "id": 5,
+      "slug": "marmot-labs-brand",
+      "title": "Marmot Labs Brand & Pitch",
+      "client": "Marmot Labs",
+      "category": "Brand & Identity Systems",
+      "year": 2023,
+      "role": "Creative Director",
+      "summary": "Built the complete brand identity and investor pitch deck for Marmot Labs, an AI/technology startup entering competitive markets.",
+      "challenge": "Differentiate a nascent AI startup in a crowded market while communicating complex technology through accessible, compelling brand identity.",
+      "approach": "Developed a distinctive visual identity conveying technological sophistication with approachability. Created a comprehensive pitch deck articulating market opportunity, technology differentiation, and business strategy.",
+      "outcome": "Delivered a cohesive brand and pitch framework that positioned Marmot Labs for fundraising conversations and enterprise partnerships.",
       "capabilities": [
-          "Campaign Proposal",
-          "Brand Repositioning",
-          "Art Direction",
-          "Beauty & Lifestyle"
+          "Brand Identity",
+          "Pitch Development",
+          "Startup Branding",
+          "Visual Identity"
       ],
-      "image": "/images/projects/avon.jpg",
-      "featured": false
+      "image": "/images/projects/marmot-labs.jpg",
+      "thumbnail": "/images/projects/marmot-labs-thumb.jpg",
+      "featured": true
   },
   {
       "id": 8,
@@ -217,30 +223,25 @@ export const projects = [
       "featured": false
   },
   {
-      "id": 2,
-      "slug": "electronic-arts-brand-system",
-      "title": "Electronic Arts Global Brand System",
+      "id": 11,
+      "slug": "ea-internal-comms",
+      "title": "EA Internal Communications",
       "client": "Electronic Arts",
       "category": "Brand & Identity Systems",
-      "year": 2022,
+      "year": 2018,
       "role": "Branding & Design Specialist",
-      "summary": "Created the corporate style guide and internal brand communication standards for EA, establishing visual consistency across global studios and internal communications.",
-      "challenge": "Unify brand expression across dozens of autonomous studios and regional offices without stifling creative expression or slowing production.",
-      "approach": "Built a comprehensive brand system documenting visual identity, typography, color, imagery standards, and communication guidelines. Created flexible templates ensuring consistency while allowing regional customization.",
-      "outcome": "Delivered a scalable brand infrastructure that reduced design inconsistencies and accelerated time-to-market for corporate communications across all EA divisions.",
+      "summary": "Designed layout for EA's Great Meetings training booklet, creating an internal communications standard that improved meeting culture across global studios.",
+      "challenge": "Transform internal training content into a visually engaging resource that employees would actually use, while maintaining EA's brand standards.",
+      "approach": "Created a clean, modern booklet layout with infographics, illustrated examples, and structured content hierarchy that made meeting best practices accessible and actionable.",
+      "outcome": "Delivered a polished internal resource adopted across EA studios, setting the standard for how internal training materials are designed and distributed.",
       "capabilities": [
-          "Brand Systems",
-          "Style Guides",
+          "Layout Design",
           "Internal Communications",
-          "Enterprise Design"
+          "Training Materials",
+          "Print Design"
       ],
-      "image": "/images/projects/ea-brand-system.png",
-      "testimonial": {
-          "quote": "Kat is an excellent source of energy and inspiration. I've worked with plenty of artists and graphic designers, and Kat's abilities are second to none. She brings a determination and focus on how good design can be used to improve both communication and how the business works. We need more Kats in this world!",
-          "author": "Matt Tomlinson",
-          "company": "Electronic Arts"
-      },
-      "featured": true
+      "image": "/images/projects/ea-internal-comms.jpg",
+      "featured": false
   },
   {
       "id": 5,
