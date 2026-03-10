@@ -317,24 +317,24 @@ export const projects = [
       "featured": false
   },
   {
-      "id": 15,
-      "slug": "wendi-pitch",
-      "title": "Wendi - Pitch Deck & Ads",
-      "client": "Wendi",
+      "id": 19,
+      "slug": "bison-capital-group",
+      "title": "Bison Capital Group",
+      "client": "Bison Capital Group",
       "category": "Executive Presentations",
       "year": 2022,
       "role": "Art Director / Designer",
-      "summary": "Created the pitch deck and advertisement design for Wendi, a mobile wellness platform, developing investor-ready materials and consumer-facing ad creative.",
-      "challenge": "Position a new wellness app in a saturated market through compelling pitch materials and ad creative that would resonate with both investors and consumers.",
-      "approach": "Designed a cohesive visual system spanning investor presentations and consumer advertisements, using lifestyle imagery and clean UI mockups to tell the product story.",
-      "outcome": "Delivered a unified pitch and marketing toolkit that supported fundraising conversations and established the brand's visual direction for market launch.",
+      "summary": "Created the investment proposal design for Bison Capital Group, developing a premium visual framework for institutional investor communications.",
+      "challenge": "Design investor materials that convey financial sophistication and institutional credibility while differentiating from typical private equity communications.",
+      "approach": "Developed a refined visual language with dark, authoritative color palettes, clean data presentation, and premium typography that communicated stability and strategic vision.",
+      "outcome": "Delivered an investment proposal that elevated the firm's communications and provided a scalable template for ongoing investor relations.",
       "capabilities": [
-          "Pitch Deck",
-          "Ad Design",
-          "Startup Branding",
-          "Mobile App Marketing"
+          "Investment Proposals",
+          "Financial Services",
+          "Presentation Design",
+          "Investor Relations"
       ],
-      "image": "/images/projects/wendi.jpg",
+      "image": "/images/projects/bison-capital-group.png",
       "featured": false
   },
   {
@@ -401,24 +401,29 @@ export const projects = [
       "featured": false
   },
   {
-      "id": 19,
-      "slug": "bison-capital-group",
-      "title": "Bison Capital Group",
-      "client": "Bison Capital Group",
+      "id": 27,
+      "slug": "modern-focus-pitch",
+      "title": "Modern Focus Investor Pitch",
+      "client": "Modern Focus",
       "category": "Executive Presentations",
       "year": 2022,
       "role": "Art Director / Designer",
-      "summary": "Created the investment proposal design for Bison Capital Group, developing a premium visual framework for institutional investor communications.",
-      "challenge": "Design investor materials that convey financial sophistication and institutional credibility while differentiating from typical private equity communications.",
-      "approach": "Developed a refined visual language with dark, authoritative color palettes, clean data presentation, and premium typography that communicated stability and strategic vision.",
-      "outcome": "Delivered an investment proposal that elevated the firm's communications and provided a scalable template for ongoing investor relations.",
+      "summary": "Designed the investor pitch deck for Modern Focus, creating a polished presentation that communicated the company's vision and market opportunity.",
+      "challenge": "Articulate a startup's value proposition clearly and compellingly in a competitive fundraising environment.",
+      "approach": "Created a streamlined pitch deck with strong visual hierarchy, clean data presentation, and a narrative structure that built toward a clear investment thesis.",
+      "outcome": "Delivered a professional pitch deck that supported fundraising conversations and set the visual standard for the company's external communications.",
       "capabilities": [
-          "Investment Proposals",
-          "Financial Services",
+          "Investor Pitch",
+          "Startup Branding",
           "Presentation Design",
-          "Investor Relations"
+          "Visual Strategy"
       ],
-      "image": "/images/projects/bison-capital-group.png",
+      "image": "/images/projects/modern-focus.png",
+      "testimonial": {
+          "quote": "Katherine was a pleasure to work with. We tasked her with modifying our pitch deck and she exceeded expectations. She was prompt and also receptive of feedback. After laying out our expectation, Katherine worked with us on edits and ideas that we had along the way. I am looking forward to doing more projects with her in the future!",
+          "author": "Myles",
+          "company": "Picture It"
+      },
       "featured": false
   },
   {
@@ -569,29 +574,24 @@ export const projects = [
       "featured": false
   },
   {
-      "id": 27,
-      "slug": "modern-focus-pitch",
-      "title": "Modern Focus Investor Pitch",
-      "client": "Modern Focus",
+      "id": 15,
+      "slug": "wendi-pitch",
+      "title": "Wendi - Pitch Deck & Ads",
+      "client": "Wendi",
       "category": "Executive Presentations",
       "year": 2022,
       "role": "Art Director / Designer",
-      "summary": "Designed the investor pitch deck for Modern Focus, creating a polished presentation that communicated the company's vision and market opportunity.",
-      "challenge": "Articulate a startup's value proposition clearly and compellingly in a competitive fundraising environment.",
-      "approach": "Created a streamlined pitch deck with strong visual hierarchy, clean data presentation, and a narrative structure that built toward a clear investment thesis.",
-      "outcome": "Delivered a professional pitch deck that supported fundraising conversations and set the visual standard for the company's external communications.",
+      "summary": "Created the pitch deck and advertisement design for Wendi, a mobile wellness platform, developing investor-ready materials and consumer-facing ad creative.",
+      "challenge": "Position a new wellness app in a saturated market through compelling pitch materials and ad creative that would resonate with both investors and consumers.",
+      "approach": "Designed a cohesive visual system spanning investor presentations and consumer advertisements, using lifestyle imagery and clean UI mockups to tell the product story.",
+      "outcome": "Delivered a unified pitch and marketing toolkit that supported fundraising conversations and established the brand's visual direction for market launch.",
       "capabilities": [
-          "Investor Pitch",
+          "Pitch Deck",
+          "Ad Design",
           "Startup Branding",
-          "Presentation Design",
-          "Visual Strategy"
+          "Mobile App Marketing"
       ],
-      "image": "/images/projects/modern-focus.png",
-      "testimonial": {
-          "quote": "Katherine was a pleasure to work with. We tasked her with modifying our pitch deck and she exceeded expectations. She was prompt and also receptive of feedback. After laying out our expectation, Katherine worked with us on edits and ideas that we had along the way. I am looking forward to doing more projects with her in the future!",
-          "author": "Myles",
-          "company": "Picture It"
-      },
+      "image": "/images/projects/wendi.jpg",
       "featured": false
   },
   {
