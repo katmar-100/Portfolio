@@ -130,6 +130,7 @@ const Resume = () => {
 
   const capabilities = [
     { name: 'Creative Direction', blurb: 'Leading end-to-end creative vision across campaigns, brand launches, and organizational storytelling.' },
+    { name: 'Art Direction', blurb: 'Guiding the visual direction and aesthetic execution of campaigns, shoots, and design projects from concept through delivery.' },
     { name: 'Brand Systems & Guidelines', blurb: 'Building scalable design systems, brand standards, and templates that maintain quality across teams and touchpoints.' },
     { name: 'Visual Identity', blurb: 'Crafting distinctive brand identities that communicate clearly and resonate with target audiences.' },
     { name: 'Campaign Development', blurb: 'Concepting and executing integrated campaigns across digital, print, social, and experiential channels.' },
@@ -139,6 +140,9 @@ const Resume = () => {
     { name: 'Cross-Functional Strategy', blurb: 'Bridging creative, marketing, product, and engineering teams to align on shared goals and outcomes.' },
     { name: 'Narrative Development', blurb: 'Shaping brand stories and strategic messaging that connect with audiences and drive business results.' },
     { name: 'Digital & Print Design', blurb: 'Delivering polished creative across web, mobile, social, packaging, and traditional print formats.' },
+    { name: 'Editorial & Publication Design', blurb: 'Creating layouts for booklets, guides, press kits, and thought leadership publications with editorial quality and clear hierarchy.' },
+    { name: 'Experiential & Event Design', blurb: 'Designing immersive brand experiences, trade show environments, and event identities that engage audiences in physical spaces.' },
+    { name: 'Data Visualization', blurb: 'Translating complex data and information into clear, compelling visual formats for presentations, publications, and digital platforms.' },
     { name: 'Motion & Video Direction', blurb: 'Directing motion graphics, video content, and animation that bring brand stories to life.' },
     { name: 'AI & Innovation Thinking', blurb: 'Integrating AI-assisted workflows and emerging tools to expand creative capability and efficiency.' },
   ];
