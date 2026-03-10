@@ -166,7 +166,8 @@ export default function Work() {
                   >
                     <span className={styles.requestIcon}>
                       <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                        <path d="M7 1v12M1 7h12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                        <rect x="1" y="3" width="12" height="9" rx="1.5" stroke="currentColor" strokeWidth="1.3"/>
+                        <path d="M1 4.5l6 4 6-4" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
                     </span>
                     Request Deliverables
@@ -212,6 +213,19 @@ export default function Work() {
                   {project.capabilities.map(cap => (
                     <span key={cap} className={styles.tag}>{cap}</span>
                   ))}
+                </div>
+              )}
+
+              {project.testimonial && (
+                <div className={styles.inlineTestimonial}>
+                  <div className={styles.testimonialQuoteMark}>"</div>
+                  <blockquote className={styles.testimonialQuote}>
+                    {project.testimonial.quote}
+                  </blockquote>
+                  <div className={styles.testimonialAttribution}>
+                    <span className={styles.testimonialAuthor}>{project.testimonial.author}</span>
+                    <span className={styles.testimonialCompany}>{project.testimonial.company}</span>
+                  </div>
                 </div>
               )}
 

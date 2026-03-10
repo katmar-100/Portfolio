@@ -103,6 +103,11 @@ export const projects = [
           "Event Branding"
       ],
       "image": "/images/projects/tedx-keynote.png",
+      "testimonial": {
+          "quote": "She's exceptional\u2014a true gem in her rapid grasp of ideas, concepts, and vision. Katherine is a rare find, invaluable in every sense. I'm looking forward to collaborating with her on many more ventures.",
+          "author": "Jean Fallacara",
+          "company": "Author & CEO"
+      },
       "featured": true
   },
   {
@@ -230,6 +235,11 @@ export const projects = [
           "Enterprise Design"
       ],
       "image": "/images/projects/ea-brand-system.png",
+      "testimonial": {
+          "quote": "Kat is an excellent source of energy and inspiration. I've worked with plenty of artists and graphic designers, and Kat's abilities are second to none. She brings a determination and focus on how good design can be used to improve both communication and how the business works. We need more Kats in this world!",
+          "author": "Matt Tomlinson",
+          "company": "Electronic Arts"
+      },
       "featured": true
   },
   {
@@ -465,45 +475,50 @@ export const projects = [
       "featured": false
   },
   {
-      "id": 23,
-      "slug": "press-kit-design",
-      "title": "Short Film Press Kit",
-      "client": "Independent Film",
-      "category": "Campaign & Storytelling",
+      "id": 33,
+      "slug": "hitachi-pitch",
+      "title": "Hitachi Pitch Deck",
+      "client": "Hitachi",
+      "category": "Executive Presentations",
       "year": 2022,
       "role": "Art Director / Designer",
-      "summary": "Designed the press kit layout for an independent short film, creating professional festival-ready materials that captured the film's visual tone.",
-      "challenge": "Create press materials that competed with larger productions while authentically representing the independent film's artistic vision.",
-      "approach": "Developed an editorial-quality press kit with cinematic imagery, structured filmmaker bios, and production details in a clean, professional layout.",
-      "outcome": "Delivered press materials that elevated the film's presentation at festivals and provided a professional framework for media outreach.",
+      "summary": "Designed the pitch deck for Hitachi, creating a professional presentation that communicated the brand's technological capabilities and enterprise solutions.",
+      "challenge": "Present a complex technology portfolio in a clear, compelling format that resonated with enterprise decision-makers across industries.",
+      "approach": "Developed a structured pitch deck with clean data visualization, strategic use of the Hitachi brand system, and a narrative flow that built from challenge to solution.",
+      "outcome": "Delivered a polished presentation that supported business development and demonstrated Hitachi's approach to solving enterprise-scale challenges.",
       "capabilities": [
-          "Press Kit",
-          "Layout Design",
-          "Film & Entertainment",
-          "Editorial Design"
+          "Pitch Deck",
+          "Enterprise Technology",
+          "Presentation Design",
+          "B2B Marketing"
       ],
-      "image": "/images/projects/press-kit.jpg",
+      "image": "/images/projects/hitachi.png",
       "featured": false
   },
   {
-      "id": 24,
-      "slug": "cybercatch-booth",
-      "title": "CyberCatch Booth Design",
+      "id": 31,
+      "slug": "ai-risk-guide",
+      "title": "CyberCatch AI Risk Guide",
       "client": "CyberCatch",
       "category": "Campaign & Storytelling",
-      "year": 2022,
+      "year": 2023,
       "role": "VP, Chief Marketing Officer",
-      "summary": "Designed CyberCatch's trade show booth for a major defense conference, creating an immersive experiential environment that communicated cybersecurity authority.",
-      "challenge": "Stand out in a crowded defense conference environment while communicating complex cybersecurity solutions to a highly technical, skeptical audience.",
-      "approach": "Created a bold booth design with interactive demonstrations, clear messaging hierarchy, and a professional aesthetic that conveyed both innovation and trust.",
-      "outcome": "Delivered a booth experience that generated qualified leads and reinforced CyberCatch's position as a serious player in defense cybersecurity.",
+      "summary": "Designed the layout for CyberCatch's AI Risk Guide, a publication authored by CEO Sai Huda, translating complex AI governance content into an authoritative, readable format.",
+      "challenge": "Transform dense technical and policy content about AI risk into a visually engaging publication that would be taken seriously by enterprise decision-makers.",
+      "approach": "Created a professional publication layout with structured content hierarchy, data callouts, and a visual system that communicated authority in the emerging AI governance space.",
+      "outcome": "Delivered a thought leadership publication that positioned CyberCatch as a voice of authority in AI risk management and supported business development efforts.",
       "capabilities": [
-          "Experiential Design",
-          "Trade Shows",
-          "Defense Industry",
-          "Brand Environments"
+          "Publication Design",
+          "Thought Leadership",
+          "AI & Technology",
+          "Layout Design"
       ],
-      "image": "/images/projects/cybercatch-booth.png",
+      "image": "/images/projects/ai-risk-guide.png",
+      "testimonial": {
+          "quote": "Katherine is outstanding! Brilliant talent, superb work products delivered consistently! Will hire again and again on other projects!",
+          "author": "Sai Huda",
+          "company": "Author & CEO"
+      },
       "featured": false
   },
   {
@@ -567,69 +582,32 @@ export const projects = [
           "Visual Strategy"
       ],
       "image": "/images/projects/modern-focus.png",
+      "testimonial": {
+          "quote": "Katherine was a pleasure to work with. We tasked her with modifying our pitch deck and she exceeded expectations. She was prompt and also receptive of feedback. After laying out our expectation, Katherine worked with us on edits and ideas that we had along the way. I am looking forward to doing more projects with her in the future!",
+          "author": "Myles",
+          "company": "Picture It"
+      },
       "featured": false
   },
   {
-      "id": 30,
-      "slug": "companion-medical",
-      "title": "Companion Medical - InPen",
-      "client": "Companion Medical",
+      "id": 23,
+      "slug": "press-kit-design",
+      "title": "Short Film Press Kit",
+      "client": "Independent Film",
       "category": "Campaign & Storytelling",
       "year": 2022,
       "role": "Art Director / Designer",
-      "summary": "Created realistic product mockups for Companion Medical's InPen smart insulin pen, developing visual assets for product pages and marketing collateral.",
-      "challenge": "Present a medical device in a way that felt accessible and modern rather than clinical, while maintaining accuracy and trust.",
-      "approach": "Designed photorealistic mockups showcasing the InPen in lifestyle contexts, creating product page layouts that balanced technical specifications with emotional appeal.",
-      "outcome": "Delivered a suite of product visuals that elevated the InPen's market presence and provided a visual framework for ongoing marketing efforts.",
+      "summary": "Designed the press kit layout for an independent short film, creating professional festival-ready materials that captured the film's visual tone.",
+      "challenge": "Create press materials that competed with larger productions while authentically representing the independent film's artistic vision.",
+      "approach": "Developed an editorial-quality press kit with cinematic imagery, structured filmmaker bios, and production details in a clean, professional layout.",
+      "outcome": "Delivered press materials that elevated the film's presentation at festivals and provided a professional framework for media outreach.",
       "capabilities": [
-          "Product Mockups",
-          "Medical Devices",
-          "Digital Design",
-          "Marketing Collateral"
+          "Press Kit",
+          "Layout Design",
+          "Film & Entertainment",
+          "Editorial Design"
       ],
-      "image": "/images/projects/companion-medical.jpg",
-      "featured": false
-  },
-  {
-      "id": 31,
-      "slug": "ai-risk-guide",
-      "title": "CyberCatch AI Risk Guide",
-      "client": "CyberCatch",
-      "category": "Campaign & Storytelling",
-      "year": 2023,
-      "role": "VP, Chief Marketing Officer",
-      "summary": "Designed the layout for CyberCatch's AI Risk Guide, a publication authored by CEO Sai Huda, translating complex AI governance content into an authoritative, readable format.",
-      "challenge": "Transform dense technical and policy content about AI risk into a visually engaging publication that would be taken seriously by enterprise decision-makers.",
-      "approach": "Created a professional publication layout with structured content hierarchy, data callouts, and a visual system that communicated authority in the emerging AI governance space.",
-      "outcome": "Delivered a thought leadership publication that positioned CyberCatch as a voice of authority in AI risk management and supported business development efforts.",
-      "capabilities": [
-          "Publication Design",
-          "Thought Leadership",
-          "AI & Technology",
-          "Layout Design"
-      ],
-      "image": "/images/projects/ai-risk-guide.png",
-      "featured": false
-  },
-  {
-      "id": 33,
-      "slug": "hitachi-pitch",
-      "title": "Hitachi Pitch Deck",
-      "client": "Hitachi",
-      "category": "Executive Presentations",
-      "year": 2022,
-      "role": "Art Director / Designer",
-      "summary": "Designed the pitch deck for Hitachi, creating a professional presentation that communicated the brand's technological capabilities and enterprise solutions.",
-      "challenge": "Present a complex technology portfolio in a clear, compelling format that resonated with enterprise decision-makers across industries.",
-      "approach": "Developed a structured pitch deck with clean data visualization, strategic use of the Hitachi brand system, and a narrative flow that built from challenge to solution.",
-      "outcome": "Delivered a polished presentation that supported business development and demonstrated Hitachi's approach to solving enterprise-scale challenges.",
-      "capabilities": [
-          "Pitch Deck",
-          "Enterprise Technology",
-          "Presentation Design",
-          "B2B Marketing"
-      ],
-      "image": "/images/projects/hitachi.png",
+      "image": "/images/projects/press-kit.jpg",
       "featured": false
   },
   {
