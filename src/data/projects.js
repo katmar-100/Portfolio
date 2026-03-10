@@ -228,6 +228,27 @@ export const projects = [
       "featured": false
   },
   {
+      "id": 15,
+      "slug": "wendi-pitch",
+      "title": "Wendi - Pitch Deck & Ads",
+      "client": "Wendi",
+      "category": "Executive Presentations",
+      "year": 2022,
+      "role": "Art Director / Designer",
+      "summary": "Created the pitch deck and advertisement design for Wendi, a mobile wellness platform, developing investor-ready materials and consumer-facing ad creative.",
+      "challenge": "Position a new wellness app in a saturated market through compelling pitch materials and ad creative that would resonate with both investors and consumers.",
+      "approach": "Designed a cohesive visual system spanning investor presentations and consumer advertisements, using lifestyle imagery and clean UI mockups to tell the product story.",
+      "outcome": "Delivered a unified pitch and marketing toolkit that supported fundraising conversations and established the brand's visual direction for market launch.",
+      "capabilities": [
+          "Pitch Deck",
+          "Ad Design",
+          "Startup Branding",
+          "Mobile App Marketing"
+      ],
+      "image": "/images/projects/wendi.jpg",
+      "featured": false
+  },
+  {
       "id": 10,
       "slug": "avon-espira-campaign",
       "title": "Avon - Espira Campaign Proposal",
@@ -267,6 +288,27 @@ export const projects = [
           "Print Design"
       ],
       "image": "/images/projects/ea-internal-comms.jpg",
+      "featured": false
+  },
+  {
+      "id": 13,
+      "slug": "deoleo-olive-oil",
+      "title": "DeoLeo Olive Oil Pitch",
+      "client": "DeoLeo",
+      "category": "Executive Presentations",
+      "year": 2022,
+      "role": "Art Director / Designer",
+      "summary": "Created the PowerPoint template and pitch presentation for DeoLeo, designing a premium visual framework for the olive oil brand's business development efforts.",
+      "challenge": "Elevate a food and beverage brand's pitch materials to match the premium quality of their product in competitive business contexts.",
+      "approach": "Designed a sophisticated template system with warm, Mediterranean-inspired aesthetics, product photography integration, and flexible slide layouts for various pitch scenarios.",
+      "outcome": "Delivered a professional presentation system that communicated DeoLeo's premium positioning and supported business development conversations.",
+      "capabilities": [
+          "Presentation Design",
+          "Template Systems",
+          "Food & Beverage",
+          "Brand Positioning"
+      ],
+      "image": "/images/projects/deoleo-olive-oil.png",
       "featured": false
   },
   {
@@ -356,6 +398,27 @@ export const projects = [
           "Executive Presentations"
       ],
       "image": "/images/projects/stratolaunch.jpg",
+      "featured": false
+  },
+  {
+      "id": 25,
+      "slug": "innovative-design-group",
+      "title": "Innovative Design Group Pitch",
+      "client": "Innovative Design Group",
+      "category": "Executive Presentations",
+      "year": 2022,
+      "role": "Art Director / Designer",
+      "summary": "Created the investor pitch deck for Innovative Design Group, developing a compelling visual narrative for their business development and fundraising efforts.",
+      "challenge": "Position a design-focused company through a pitch deck that itself demonstrated exceptional design thinking and visual communication.",
+      "approach": "Designed a pitch deck that served as both a presentation and a portfolio piece, showcasing the company's design philosophy through the quality of the deck itself.",
+      "outcome": "Delivered a pitch deck that doubled as a demonstration of capability, effectively communicating both the business case and creative authority.",
+      "capabilities": [
+          "Investor Pitch",
+          "Presentation Design",
+          "Business Development",
+          "Visual Strategy"
+      ],
+      "image": "/images/projects/innovative-design-group.png",
       "featured": false
   },
   {
@@ -490,111 +553,6 @@ export const projects = [
       "featured": false
   },
   {
-      "id": 33,
-      "slug": "hitachi-pitch",
-      "title": "Hitachi Pitch Deck",
-      "client": "Hitachi",
-      "category": "Executive Presentations",
-      "year": 2022,
-      "role": "Art Director / Designer",
-      "summary": "Designed the pitch deck for Hitachi, creating a professional presentation that communicated the brand's technological capabilities and enterprise solutions.",
-      "challenge": "Present a complex technology portfolio in a clear, compelling format that resonated with enterprise decision-makers across industries.",
-      "approach": "Developed a structured pitch deck with clean data visualization, strategic use of the Hitachi brand system, and a narrative flow that built from challenge to solution.",
-      "outcome": "Delivered a polished presentation that supported business development and demonstrated Hitachi's approach to solving enterprise-scale challenges.",
-      "capabilities": [
-          "Pitch Deck",
-          "Enterprise Technology",
-          "Presentation Design",
-          "B2B Marketing"
-      ],
-      "image": "/images/projects/hitachi.png",
-      "featured": false
-  },
-  {
-      "id": 13,
-      "slug": "deoleo-olive-oil",
-      "title": "DeoLeo Olive Oil Pitch",
-      "client": "DeoLeo",
-      "category": "Executive Presentations",
-      "year": 2022,
-      "role": "Art Director / Designer",
-      "summary": "Created the PowerPoint template and pitch presentation for DeoLeo, designing a premium visual framework for the olive oil brand's business development efforts.",
-      "challenge": "Elevate a food and beverage brand's pitch materials to match the premium quality of their product in competitive business contexts.",
-      "approach": "Designed a sophisticated template system with warm, Mediterranean-inspired aesthetics, product photography integration, and flexible slide layouts for various pitch scenarios.",
-      "outcome": "Delivered a professional presentation system that communicated DeoLeo's premium positioning and supported business development conversations.",
-      "capabilities": [
-          "Presentation Design",
-          "Template Systems",
-          "Food & Beverage",
-          "Brand Positioning"
-      ],
-      "image": "/images/projects/deoleo-olive-oil.png",
-      "featured": false
-  },
-  {
-      "id": 25,
-      "slug": "innovative-design-group",
-      "title": "Innovative Design Group Pitch",
-      "client": "Innovative Design Group",
-      "category": "Executive Presentations",
-      "year": 2022,
-      "role": "Art Director / Designer",
-      "summary": "Created the investor pitch deck for Innovative Design Group, developing a compelling visual narrative for their business development and fundraising efforts.",
-      "challenge": "Position a design-focused company through a pitch deck that itself demonstrated exceptional design thinking and visual communication.",
-      "approach": "Designed a pitch deck that served as both a presentation and a portfolio piece, showcasing the company's design philosophy through the quality of the deck itself.",
-      "outcome": "Delivered a pitch deck that doubled as a demonstration of capability, effectively communicating both the business case and creative authority.",
-      "capabilities": [
-          "Investor Pitch",
-          "Presentation Design",
-          "Business Development",
-          "Visual Strategy"
-      ],
-      "image": "/images/projects/innovative-design-group.png",
-      "featured": false
-  },
-  {
-      "id": 26,
-      "slug": "ea-wce-visual-systems",
-      "title": "EA Customer Experience Visual Systems",
-      "client": "Electronic Arts",
-      "category": "Brand & Identity Systems",
-      "year": 2018,
-      "role": "Branding & Design Specialist",
-      "summary": "Created visual style guides and branded PowerPoint templates for EA's Worldwide Customer Experience organization, standardizing communications across global teams.",
-      "challenge": "Create a unified visual system for a large, distributed organization within EA that operated with different communication styles across regions.",
-      "approach": "Developed comprehensive style guides with branded templates, icon libraries, and color systems that enabled teams to produce on-brand materials independently.",
-      "outcome": "Delivered a self-service visual system that reduced design bottlenecks and ensured brand consistency across the entire WCE organization.",
-      "capabilities": [
-          "Visual Systems",
-          "Template Design",
-          "Style Guides",
-          "Enterprise Branding"
-      ],
-      "image": "/images/projects/ea-wce.png",
-      "featured": false
-  },
-  {
-      "id": 15,
-      "slug": "wendi-pitch",
-      "title": "Wendi - Pitch Deck & Ads",
-      "client": "Wendi",
-      "category": "Executive Presentations",
-      "year": 2022,
-      "role": "Art Director / Designer",
-      "summary": "Created the pitch deck and advertisement design for Wendi, a mobile wellness platform, developing investor-ready materials and consumer-facing ad creative.",
-      "challenge": "Position a new wellness app in a saturated market through compelling pitch materials and ad creative that would resonate with both investors and consumers.",
-      "approach": "Designed a cohesive visual system spanning investor presentations and consumer advertisements, using lifestyle imagery and clean UI mockups to tell the product story.",
-      "outcome": "Delivered a unified pitch and marketing toolkit that supported fundraising conversations and established the brand's visual direction for market launch.",
-      "capabilities": [
-          "Pitch Deck",
-          "Ad Design",
-          "Startup Branding",
-          "Mobile App Marketing"
-      ],
-      "image": "/images/projects/wendi.jpg",
-      "featured": false
-  },
-  {
       "id": 23,
       "slug": "press-kit-design",
       "title": "Short Film Press Kit",
@@ -613,6 +571,27 @@ export const projects = [
           "Editorial Design"
       ],
       "image": "/images/projects/press-kit.jpg",
+      "featured": false
+  },
+  {
+      "id": 33,
+      "slug": "hitachi-pitch",
+      "title": "Hitachi Pitch Deck",
+      "client": "Hitachi",
+      "category": "Executive Presentations",
+      "year": 2022,
+      "role": "Art Director / Designer",
+      "summary": "Designed the pitch deck for Hitachi, creating a professional presentation that communicated the brand's technological capabilities and enterprise solutions.",
+      "challenge": "Present a complex technology portfolio in a clear, compelling format that resonated with enterprise decision-makers across industries.",
+      "approach": "Developed a structured pitch deck with clean data visualization, strategic use of the Hitachi brand system, and a narrative flow that built from challenge to solution.",
+      "outcome": "Delivered a polished presentation that supported business development and demonstrated Hitachi's approach to solving enterprise-scale challenges.",
+      "capabilities": [
+          "Pitch Deck",
+          "Enterprise Technology",
+          "Presentation Design",
+          "B2B Marketing"
+      ],
+      "image": "/images/projects/hitachi.png",
       "featured": false
   },
   {
