@@ -181,7 +181,7 @@ export const projects = [
       "testimonial": {
           "quote": "It was absolutely amazing to work with Katherine. She delivered very high-quality designs for my presentation. Katherine is really communicative and built on my feedback. All her milestones were delivered on time and at very high standard. I would like to work with Katherine again.",
           "author": "Claudia",
-          "company": "Marmont Labs"
+          "company": "Marmot Labs"
       },
       "featured": true
   },
