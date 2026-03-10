@@ -158,7 +158,20 @@ export default function Work() {
             >
               <div className={styles.studyHeader}>
                 <span className={styles.studyCategory}>{project.category}</span>
-                <h2 className={styles.studyTitle}>{project.title}</h2>
+                <div className={styles.titleRow}>
+                  <h2 className={styles.studyTitle}>{project.title}</h2>
+                  <Link
+                    to={`/contact?subject=Request+for+Deliverables&message=${encodeURIComponent(`Hi, I'd like to request full access to your ${project.title} project.`)}`}
+                    className={styles.requestButton}
+                  >
+                    <span className={styles.requestIcon}>
+                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                        <path d="M7 1v12M1 7h12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                      </svg>
+                    </span>
+                    Request Deliverables
+                  </Link>
+                </div>
                 <p className={styles.metadata}>
                   {project.client} · {project.role}
                 </p>
@@ -202,12 +215,6 @@ export default function Work() {
                 </div>
               )}
 
-              <Link
-                to={`/contact?subject=Request+for+Deliverables&message=${encodeURIComponent(`Hi, I'd like to request full access to your ${project.title} project.`)}`}
-                className={styles.requestButton}
-              >
-                REQUEST DELIVERABLES
-              </Link>
             </motion.div>
           </motion.div>
         ))}
