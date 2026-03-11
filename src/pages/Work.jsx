@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link, useSearchParams } from 'react-router-dom';
 import FadeIn from '../components/FadeIn';
+import Testimonials from '../components/Testimonials';
 import { projects } from '../data/projects';
 import styles from './Work.module.css';
 
@@ -242,6 +243,11 @@ export default function Work() {
             </div>
           </div>
         ))}
+      </section>
+
+      {/* Testimonials Section */}
+      <section className={styles.testimonialsSection}>
+        <Testimonials />
       </section>
 
       {/* CTA Section */}

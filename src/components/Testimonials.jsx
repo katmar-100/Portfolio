@@ -18,29 +18,13 @@ const Stars = () => (
 );
 
 const QuoteIcon = () => (
-  <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg" className={styles.quoteIcon}>
+  <svg width="32" height="26" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg" className={styles.quoteIcon}>
     <path d="M4 14c0-3.5 2-6 5-8l.8 1.2C7.8 9 7 10.5 6.8 12.5H10c.6 0 1 .4 1 1v4c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1v-3.5zm10 0c0-3.5 2-6 5-8l.8 1.2c-2 1.8-2.8 3.3-3 5.3H20c.6 0 1 .4 1 1v4c0 .6-.4 1-1 1h-4c-.6 0-1-.4-1-1v-3.5z" fill="currentColor" />
   </svg>
 );
 
 const allTestimonials = [
-  // Slide 1: Long + Long
-  {
-    quote: "Kat is an excellent source of energy and inspiration. I've worked with plenty of artists and graphic designers, and Kat's abilities are second to none. She brings a determination and focus on how good design can be used to improve both communication and how the business works. We need more Kats in this world!",
-    author: "Matt Tomlinson",
-    company: "Electronic Arts",
-  },
-  {
-    quote: "Katherine was a pleasure to work with. We tasked her with modifying our pitch deck and she exceeded expectations. She was prompt and also receptive of feedback. After laying out our expectation, Katherine worked with us on edits and ideas that we had along the way. I am looking forward to doing more projects with her in the future!",
-    author: "Myles",
-    company: "Picture It",
-  },
-  // Slide 2: Medium + Medium
-  {
-    quote: "She's exceptional\u2014a true gem in her rapid grasp of ideas, concepts, and vision. Katherine is a rare find, invaluable in every sense. I'm looking forward to collaborating with her on many more ventures.",
-    author: "Jean Fallacara",
-    company: "Author & CEO",
-  },
+  // Slide 1: Medium + Medium
   {
     quote: "Katherine was great! She took my outline and ideas and created a beautiful pitch presentation that far exceeded my expectations. Highly recommend to anyone who is looking for someone talented and very communicative.",
     author: "Upwork Client",
@@ -57,12 +41,7 @@ const allTestimonials = [
     author: "Upwork Client",
     company: "London, U.K.",
   },
-  // Slide 4: Long + Long
-  {
-    quote: "It was absolutely amazing to work with Katherine. She delivered very high-quality designs for my presentation. Katherine is really communicative and built on my feedback. All her milestones were delivered on time and at very high standard. I would like to work with Katherine again.",
-    author: "Claudia",
-    company: "Marmont Labs",
-  },
+  // Slide 3: Long + Long
   {
     quote: "Kat was extremely well-equipped to help us with the overhaul and reformatting of our presentations in coordination with a corporate re-branding effort. Her designs were creative and clean, incorporating imagery and new ways to present valuable information in a clear, simple and insightful manner.",
     author: "David Bradway",
@@ -79,12 +58,7 @@ const allTestimonials = [
     author: "Dean",
     company: "Mission Disrupt",
   },
-  // Slide 6: Short + Short
-  {
-    quote: "Katherine is outstanding! Brilliant talent, superb work products delivered consistently! Will hire again and again on other projects!",
-    author: "Sai Huda",
-    company: "Author & CEO",
-  },
+  // Slide 5: Short + Short
   {
     quote: "Was astonished by the efficiency of Katherine once again! Can't stop her creative and visionary mindset!",
     author: "Upwork Client",
@@ -173,12 +147,7 @@ const allTestimonials = [
     author: "Courtney & Grace",
     company: "Accrue",
   },
-  {
-    quote: "Katherine is amazing to work with. If you are looking for someone who has great communication skills on projects, don't hesitate to go with Katherine. We will definitely hire her to work on future projects for our company. She is spectacular at taking your vision you have and bringing it to life.",
-    author: "Kyle",
-    company: "Innovative Design",
-  },
-  // Slide 15: Medium + Short
+  // Slide 12: Medium + Short
   {
     quote: "Katherine is awesome to work with! I contacted her for assistance with a project I needed completed within hours of my request. She came to the rescue and provided exceptional collaboration! Communicated timely and effectively, provides appropriate recommendations, shows courtesy in her approach to collaboration, and delivers a quality product.",
     author: "Upwork Client",

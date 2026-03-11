@@ -3,47 +3,8 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import FadeIn from '../components/FadeIn';
 import ProjectCard from '../components/ProjectCard';
-import Testimonials from '../components/Testimonials';
 import { projects } from '../data/projects';
 import styles from './Home.module.css';
-
-// Inline SVG icons for the pillars
-const SystemsIcon = () => (
-  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect x="6" y="6" width="14" height="14" rx="3" stroke="currentColor" strokeWidth="1.5" />
-    <rect x="28" y="6" width="14" height="14" rx="3" stroke="currentColor" strokeWidth="1.5" />
-    <rect x="6" y="28" width="14" height="14" rx="3" stroke="currentColor" strokeWidth="1.5" />
-    <rect x="28" y="28" width="14" height="14" rx="3" stroke="currentColor" strokeWidth="1.5" />
-    <line x1="20" y1="13" x2="28" y2="13" stroke="currentColor" strokeWidth="1.5" strokeDasharray="2 2" />
-    <line x1="13" y1="20" x2="13" y2="28" stroke="currentColor" strokeWidth="1.5" strokeDasharray="2 2" />
-    <line x1="35" y1="20" x2="35" y2="28" stroke="currentColor" strokeWidth="1.5" strokeDasharray="2 2" />
-    <line x1="20" y1="35" x2="28" y2="35" stroke="currentColor" strokeWidth="1.5" strokeDasharray="2 2" />
-  </svg>
-);
-
-const StrategyIcon = () => (
-  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="24" cy="24" r="18" stroke="currentColor" strokeWidth="1.5" />
-    <circle cx="24" cy="24" r="10" stroke="currentColor" strokeWidth="1.5" />
-    <circle cx="24" cy="24" r="3" fill="currentColor" />
-    <line x1="24" y1="2" x2="24" y2="6" stroke="currentColor" strokeWidth="1.5" />
-    <line x1="24" y1="42" x2="24" y2="46" stroke="currentColor" strokeWidth="1.5" />
-    <line x1="2" y1="24" x2="6" y2="24" stroke="currentColor" strokeWidth="1.5" />
-    <line x1="42" y1="24" x2="46" y2="24" stroke="currentColor" strokeWidth="1.5" />
-  </svg>
-);
-
-const LeadershipIcon = () => (
-  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="24" cy="12" r="5" stroke="currentColor" strokeWidth="1.5" />
-    <circle cx="10" cy="28" r="4" stroke="currentColor" strokeWidth="1.5" />
-    <circle cx="38" cy="28" r="4" stroke="currentColor" strokeWidth="1.5" />
-    <path d="M24 17v4" stroke="currentColor" strokeWidth="1.5" />
-    <path d="M24 21l-10 7" stroke="currentColor" strokeWidth="1.5" />
-    <path d="M24 21l10 7" stroke="currentColor" strokeWidth="1.5" />
-    <path d="M10 32v4a4 4 0 004 4h20a4 4 0 004-4v-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-  </svg>
-);
 
 // Brand logo from local file
 const BrandLogo = ({ name, logo }) => {
@@ -192,6 +153,12 @@ export default function Home() {
 
       </section>
 
+      {/* TRUSTED BY */}
+      <div className={styles.brands}>
+        <h3 className={styles.brandsLabel}>Trusted by</h3>
+        <BrandCarousel brands={brands} />
+      </div>
+
       {/* SELECTED WORK SECTION */}
       <section id="selected-work" className={styles.work}>
         <FadeIn>
@@ -221,62 +188,7 @@ export default function Home() {
             </Link>
           </div>
         </FadeIn>
-      </section>
 
-      {/* TESTIMONIALS SECTION */}
-      <section className={styles.testimonials}>
-        <Testimonials />
-      </section>
-
-      {/* HOW I WORK SECTION */}
-      <section className={styles.pillars}>
-        <FadeIn>
-          <h2 className={styles.pillarsHeading}>
-            How I Work
-          </h2>
-          <div className={styles.pillarsAccentLine}></div>
-        </FadeIn>
-
-        <div className={styles.pillarsGrid}>
-          <FadeIn delay={0}>
-            <div className={styles.pillar}>
-              <div className={styles.pillarIcon}><SystemsIcon /></div>
-              <span className={styles.pillarTitle}>Systems Over Artifacts</span>
-              <p className={styles.pillarDesc}>
-                I design infrastructure, not just deliverables. Brand guidelines, templates, and standards that scale with the organization and hold up over time.
-              </p>
-            </div>
-          </FadeIn>
-
-          <FadeIn delay={0.1}>
-            <div className={styles.pillar}>
-              <div className={styles.pillarIcon}><StrategyIcon /></div>
-              <span className={styles.pillarTitle}>Strategy Through Craft</span>
-              <p className={styles.pillarDesc}>
-                Every visual decision is a strategic one. I bring clarity to complexity and make sure creative work is always tied to measurable business intent.
-              </p>
-            </div>
-          </FadeIn>
-
-          <FadeIn delay={0.2}>
-            <div className={styles.pillar}>
-              <div className={styles.pillarIcon}><LeadershipIcon /></div>
-              <span className={styles.pillarTitle}>Leadership & Culture</span>
-              <p className={styles.pillarDesc}>
-                I build teams, mentor talent, and create the conditions where great creative work becomes repeatable across the entire organization.
-              </p>
-            </div>
-          </FadeIn>
-        </div>
-
-        <FadeIn delay={0.1}>
-          <div className={styles.viewAll}>
-            <Link to="/" className={styles.viewAllLink}>
-              Learn more about me
-              <span className={styles.viewAllArrow}>→</span>
-            </Link>
-          </div>
-        </FadeIn>
       </section>
 
       {/* CTA SECTION */}

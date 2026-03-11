@@ -95,7 +95,7 @@ const Resume = () => {
       title: 'Branding & Design Specialist',
       company: 'Electronic Arts',
       dates: '2017 - 2020',
-      logo: '/images/logos/electronic-arts.png',
+      logo: '/images/logos/ea.png',
       bullets: [
         'Led global visual identity systems for EA\'s internal brand, employee experience platforms, and corporate communications supporting teams across North America, Europe, and Asia.',
         'Designed and managed large-scale asset libraries, iconography systems, brand guidelines, and photography standards used by internal creative, HR, and executive teams worldwide.',
@@ -254,9 +254,18 @@ const Resume = () => {
             {experiences.map((role, index) => (
               <div key={role.id} className={styles.roleContainer}>
                 <div className={styles.roleHeader}>
-                  <div className={styles.roleTitle}>{role.title}</div>
-                  <div className={styles.roleCompany}>{role.company}</div>
-                  <div className={styles.roleDates}>{role.dates}</div>
+                  <div className={styles.roleInfo}>
+                    <div className={styles.roleTitle}>{role.title}</div>
+                    <div className={styles.roleCompany}>{role.company}</div>
+                    <div className={styles.roleDates}>{role.dates}</div>
+                  </div>
+                  {role.logo && (
+                    <img
+                      src={role.logo}
+                      alt={`${role.company} logo`}
+                      className={styles.roleLogo}
+                    />
+                  )}
                 </div>
                 <ul className={styles.bullets}>
                   {role.bullets.map((bullet, idx) => (
