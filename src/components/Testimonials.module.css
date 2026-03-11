@@ -143,7 +143,11 @@
   }
 
   .testimonials {
-    padding: 2.5rem 1.5rem;
+    padding: 2.5rem 1rem;
+  }
+
+  .carouselContainer {
+    padding: 0 0.5rem;
   }
 
   .quoteText {

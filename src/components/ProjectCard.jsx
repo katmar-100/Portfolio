@@ -61,7 +61,7 @@ const ProjectCard = ({ project, index = 0 }) => {
           to={`/case-studies?category=${categorySlug(category)}`}
           className={styles.seeAllLink}
         >
-          SEE MORE {category.toUpperCase()}&nbsp;→
+          <span className={styles.seeText}>SEE </span>MORE {category.toUpperCase()}&nbsp;→
         </Link>
       </div>
     </motion.div>

@@ -252,7 +252,7 @@ export default function Work() {
             className={styles.exploreAllButton}
             onClick={() => { setActiveCategory('All'); setTimeout(() => window.scrollTo(0, 0), 0); }}
           >
-            EXPLORE ALL WORK
+            BACK TO ALL WORK
             <span className={styles.exploreAllArrow}>→</span>
           </button>
         </div>

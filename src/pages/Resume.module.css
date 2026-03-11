@@ -481,6 +481,10 @@
     font-size: 1rem;
   }
 
+  .roleLogo {
+    display: none;
+  }
+
   .tagsContainer {
     gap: 0.5rem;
   }
