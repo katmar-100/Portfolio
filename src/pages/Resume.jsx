@@ -45,6 +45,7 @@ const Resume = () => {
       title: 'Creative Director',
       company: 'ChenMed',
       dates: '2024 - Present',
+      logo: '/images/logos/chenmed.png',
       bullets: [
         'Lead the full in-house creative organization for a national consumer healthcare brand, directing a multidisciplinary team of writers, designers, animators, producers, videographers, and brand strategists.',
         'Rebuilt studio workflows and creative operating models, increasing output velocity and cross-departmental clarity while reducing revision cycles.',
@@ -61,6 +62,7 @@ const Resume = () => {
       title: 'VP, Chief Marketing Officer',
       company: 'CyberCatch',
       dates: '2021 - 2024',
+      logo: '/images/logos/Cybercatch.png',
       bullets: [
         'Owned creative, brand, and marketing strategy for a high-growth cybersecurity SaaS company. Helped drive the company to an IPO in Canada.',
         'Oversaw brand, creative, and marketing strategy for a rapidly scaling cybersecurity SaaS company serving enterprise and global customers in a highly competitive market.',
@@ -77,6 +79,7 @@ const Resume = () => {
       title: 'Creative Director & Visual Designer',
       company: 'Self-Employed',
       dates: '2020 - 2021',
+      logo: '/images/logos/self-employed.png',
       bullets: [
         'Led creative direction and brand identity for consumer brands, tech companies, and startups.',
         'Directed branding, visual identity development, and campaign creative for a wide range of consumer brands, tech startups, wellness companies, real estate groups, and B2B organizations.',
@@ -92,6 +95,7 @@ const Resume = () => {
       title: 'Branding & Design Specialist',
       company: 'Electronic Arts',
       dates: '2017 - 2020',
+      logo: '/images/logos/electronic-arts.png',
       bullets: [
         'Led global visual identity systems for EA\'s internal brand, employee experience platforms, and corporate communications supporting teams across North America, Europe, and Asia.',
         'Designed and managed large-scale asset libraries, iconography systems, brand guidelines, and photography standards used by internal creative, HR, and executive teams worldwide.',
@@ -105,6 +109,7 @@ const Resume = () => {
       title: 'Art Director',
       company: 'Hill+Knowlton Strategies',
       dates: '2014 - 2017',
+      logo: '/images/logos/hK-strategies.png',
       bullets: [
         'Responsible for day-to-day business development design work, such as: RFPs, presentation templates + decks for pitches, infographics, posters, follow-up emails, etc.',
         'Pitch-related design work helped win over $10M of new business, including: P&G, Vanguard, Hitachi, Hotels.com, NCR, Lee Jeans, Pfizer, ANA, & more.',
