@@ -209,9 +209,7 @@ export default function Home() {
 
         <div className={styles.projectGrid}>
           {featuredProjects.map((project, index) => (
-            <FadeIn key={project.id} delay={index * 0.08}>
-              <ProjectCard project={project} index={index} />
-            </FadeIn>
+            <ProjectCard key={project.id} project={project} index={index} />
           ))}
         </div>
 

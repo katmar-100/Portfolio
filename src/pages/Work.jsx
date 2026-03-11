@@ -149,31 +149,17 @@ export default function Work() {
       {/* Case Studies Section */}
       <section className={styles.caseStudiesContainer}>
         {filteredProjects.map((project, idx) => (
-          <motion.div
+          <div
             key={`case-${project.id}`}
             className={styles.caseStudy}
-            initial={{ opacity: 0, y: 60 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-50px' }}
-            transition={{
-              duration: 0.7,
-              ease: [0.25, 0.4, 0.25, 1],
-            }}
           >
             {/* Hero image or category icon */}
             {project.image ? (
               <div className={styles.studyImageWrap}>
-                <motion.img
+                <img
                   src={project.image}
                   alt={project.title}
                   className={styles.studyImage}
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true, margin: '-30px' }}
-                  transition={{
-                    duration: 0.8,
-                    ease: [0.25, 0.4, 0.25, 1],
-                  }}
                 />
               </div>
             ) : (
@@ -254,7 +240,7 @@ export default function Work() {
 
               </div>
             </div>
-          </motion.div>
+          </div>
         ))}
       </section>
 
