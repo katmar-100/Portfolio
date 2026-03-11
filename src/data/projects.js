@@ -1,5 +1,26 @@
 export const projects = [
   {
+      "id": 12,
+      "slug": "ea-style-guide",
+      "title": "EA Communication Style Guide",
+      "client": "Electronic Arts",
+      "category": "Brand & Identity Systems",
+      "year": 2018,
+      "role": "Branding & Design Specialist",
+      "summary": "Designed layout for EA's Good COP Communication Style Guide booklet, establishing standards for how the company communicates internally and externally.",
+      "challenge": "Create a reference document that codifies communication best practices in an engaging format that resonates with creative professionals.",
+      "approach": "Developed an editorial-quality booklet with structured content sections, visual examples, and clear formatting guidelines that balanced prescriptive standards with creative inspiration.",
+      "outcome": "Delivered a comprehensive communication guide that unified messaging standards and became a key reference tool for teams across the organization.",
+      "capabilities": [
+          "Style Guides",
+          "Layout Design",
+          "Brand Standards",
+          "Editorial Design"
+      ],
+      "image": "/images/projects/ea-style-guide.jpg",
+      "featured": false
+  },
+  {
       "id": 9,
       "slug": "tedx-keynote",
       "title": "TEDx Keynote Presentation",
@@ -19,7 +40,7 @@ export const projects = [
       ],
       "image": "/images/projects/tedx-keynote.png",
       "testimonial": {
-          "quote": "She's exceptional\u2014a true gem in her rapid grasp of ideas, concepts, and vision. Katherine is a rare find, invaluable in every sense. I'm looking forward to collaborating with her on many more ventures.",
+          "quote": "She\u2019s exceptional\u2014a true gem in her rapid grasp of ideas, concepts, and vision. Katherine is a rare find, invaluable in every sense. I\u2019m looking forward to collaborating with her on many more ventures.",
           "author": "Jean Fallacara",
           "company": "Author & CEO"
       },
@@ -47,49 +68,29 @@ export const projects = [
       "featured": true
   },
   {
-      "id": 6,
-      "slug": "fresh-lvmh-campaign",
-      "title": "fresh - LVMH Brand Campaign",
-      "client": "fresh (LVMH)",
-      "category": "Campaign & Storytelling",
-      "year": 2023,
-      "role": "Art Director / Designer",
-      "summary": "Developed campaign materials and influencer marketing assets for fresh, the luxury skincare brand under LVMH, creating premium narratives across digital platforms.",
-      "challenge": "Maintain luxury brand standards across diverse influencer collaborations and digital formats while driving authentic engagement.",
-      "approach": "Designed a cohesive visual campaign system featuring lifestyle photography, typography, and digital templates optimized for influencer storytelling and brand integrity.",
-      "outcome": "Delivered a campaign toolkit that scaled across influencer partnerships and established fresh as a premium digital-native brand presence.",
-      "capabilities": [
-          "Campaign Design",
-          "Luxury Branding",
-          "Influencer Marketing",
-          "Art Direction"
-      ],
-      "image": "/images/projects/fresh.png",
-      "featured": true
-  },
-  {
-      "id": 2,
-      "slug": "electronic-arts-brand-system",
-      "title": "Electronic Arts Global Brand System",
-      "client": "Electronic Arts",
+      "id": 5,
+      "slug": "marmot-labs-brand",
+      "title": "Marmot Labs Brand & Pitch",
+      "client": "Marmot Labs",
       "category": "Brand & Identity Systems",
-      "year": 2022,
-      "role": "Branding & Design Specialist",
-      "summary": "Created the corporate style guide and internal brand communication standards for EA, establishing visual consistency across global studios and internal communications.",
-      "challenge": "Unify brand expression across dozens of autonomous studios and regional offices without stifling creative expression or slowing production.",
-      "approach": "Built a comprehensive brand system documenting visual identity, typography, color, imagery standards, and communication guidelines. Created flexible templates ensuring consistency while allowing regional customization.",
-      "outcome": "Delivered a scalable brand infrastructure that reduced design inconsistencies and accelerated time-to-market for corporate communications across all EA divisions.",
+      "year": 2023,
+      "role": "Creative Director",
+      "summary": "Built the complete brand identity and investor pitch deck for Marmot Labs, an AI/technology startup entering competitive markets.",
+      "challenge": "Differentiate a nascent AI startup in a crowded market while communicating complex technology through accessible, compelling brand identity.",
+      "approach": "Developed a distinctive visual identity conveying technological sophistication with approachability. Created a comprehensive pitch deck articulating market opportunity, technology differentiation, and business strategy.",
+      "outcome": "Delivered a cohesive brand and pitch framework that positioned Marmot Labs for fundraising conversations and enterprise partnerships.",
       "capabilities": [
-          "Brand Systems",
-          "Style Guides",
-          "Internal Communications",
-          "Enterprise Design"
+          "Brand Identity",
+          "Pitch Development",
+          "Startup Branding",
+          "Visual Identity"
       ],
-      "image": "/images/projects/ea-brand-system.png",
+      "image": "/images/projects/marmot-labs.jpg",
+      "thumbnail": "/images/projects/marmot-labs-thumb.jpg",
       "testimonial": {
-          "quote": "Kat is an excellent source of energy and inspiration. I've worked with plenty of artists and graphic designers, and Kat's abilities are second to none. She brings a determination and focus on how good design can be used to improve both communication and how the business works. We need more Kats in this world!",
-          "author": "Matt Tomlinson",
-          "company": "Electronic Arts"
+          "quote": "It was absolutely amazing to work with Katherine. She delivered very high-quality designs for my presentation. Katherine is really communicative and built on my feedback. All her milestones were delivered on time and at very high standard. I would like to work with Katherine again.",
+          "author": "Claudia",
+          "company": "Marmot Labs"
       },
       "featured": true
   },
@@ -159,30 +160,24 @@ export const projects = [
       "featured": true
   },
   {
-      "id": 5,
-      "slug": "marmot-labs-brand",
-      "title": "Marmot Labs Brand & Pitch",
-      "client": "Marmot Labs",
-      "category": "Brand & Identity Systems",
+      "id": 6,
+      "slug": "fresh-lvmh-campaign",
+      "title": "fresh - LVMH Brand Campaign",
+      "client": "fresh (LVMH)",
+      "category": "Campaign & Storytelling",
       "year": 2023,
-      "role": "Creative Director",
-      "summary": "Built the complete brand identity and investor pitch deck for Marmot Labs, an AI/technology startup entering competitive markets.",
-      "challenge": "Differentiate a nascent AI startup in a crowded market while communicating complex technology through accessible, compelling brand identity.",
-      "approach": "Developed a distinctive visual identity conveying technological sophistication with approachability. Created a comprehensive pitch deck articulating market opportunity, technology differentiation, and business strategy.",
-      "outcome": "Delivered a cohesive brand and pitch framework that positioned Marmot Labs for fundraising conversations and enterprise partnerships.",
+      "role": "Art Director / Designer",
+      "summary": "Developed campaign materials and influencer marketing assets for fresh, the luxury skincare brand under LVMH, creating premium narratives across digital platforms.",
+      "challenge": "Maintain luxury brand standards across diverse influencer collaborations and digital formats while driving authentic engagement.",
+      "approach": "Designed a cohesive visual campaign system featuring lifestyle photography, typography, and digital templates optimized for influencer storytelling and brand integrity.",
+      "outcome": "Delivered a campaign toolkit that scaled across influencer partnerships and established fresh as a premium digital-native brand presence.",
       "capabilities": [
-          "Brand Identity",
-          "Pitch Development",
-          "Startup Branding",
-          "Visual Identity"
+          "Campaign Design",
+          "Luxury Branding",
+          "Influencer Marketing",
+          "Art Direction"
       ],
-      "image": "/images/projects/marmot-labs.jpg",
-      "thumbnail": "/images/projects/marmot-labs-thumb.jpg",
-      "testimonial": {
-          "quote": "It was absolutely amazing to work with Katherine. She delivered very high-quality designs for my presentation. Katherine is really communicative and built on my feedback. All her milestones were delivered on time and at very high standard. I would like to work with Katherine again.",
-          "author": "Claudia",
-          "company": "Marmot Labs"
-      },
+      "image": "/images/projects/fresh.png",
       "featured": true
   },
   {
@@ -207,25 +202,30 @@ export const projects = [
       "featured": false
   },
   {
-      "id": 12,
-      "slug": "ea-style-guide",
-      "title": "EA Communication Style Guide",
+      "id": 2,
+      "slug": "electronic-arts-brand-system",
+      "title": "Electronic Arts Global Brand System",
       "client": "Electronic Arts",
       "category": "Brand & Identity Systems",
-      "year": 2018,
+      "year": 2022,
       "role": "Branding & Design Specialist",
-      "summary": "Designed layout for EA's Good COP Communication Style Guide booklet, establishing standards for how the company communicates internally and externally.",
-      "challenge": "Create a reference document that codifies communication best practices in an engaging format that resonates with creative professionals.",
-      "approach": "Developed an editorial-quality booklet with structured content sections, visual examples, and clear formatting guidelines that balanced prescriptive standards with creative inspiration.",
-      "outcome": "Delivered a comprehensive communication guide that unified messaging standards and became a key reference tool for teams across the organization.",
+      "summary": "Created the corporate style guide and internal brand communication standards for EA, establishing visual consistency across global studios and internal communications.",
+      "challenge": "Unify brand expression across dozens of autonomous studios and regional offices without stifling creative expression or slowing production.",
+      "approach": "Built a comprehensive brand system documenting visual identity, typography, color, imagery standards, and communication guidelines. Created flexible templates ensuring consistency while allowing regional customization.",
+      "outcome": "Delivered a scalable brand infrastructure that reduced design inconsistencies and accelerated time-to-market for corporate communications across all EA divisions.",
       "capabilities": [
+          "Brand Systems",
           "Style Guides",
-          "Layout Design",
-          "Brand Standards",
-          "Editorial Design"
+          "Internal Communications",
+          "Enterprise Design"
       ],
-      "image": "/images/projects/ea-style-guide.jpg",
-      "featured": false
+      "image": "/images/projects/ea-brand-system.png",
+      "testimonial": {
+          "quote": "Kat is an excellent source of energy and inspiration. I've worked with plenty of artists and graphic designers, and Kat's abilities are second to none. She brings a determination and focus on how good design can be used to improve both communication and how the business works. We need more Kats in this world!",
+          "author": "Matt Tomlinson",
+          "company": "Electronic Arts"
+      },
+      "featured": true
   },
   {
       "id": 15,
