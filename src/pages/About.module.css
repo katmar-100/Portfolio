@@ -253,7 +253,7 @@
 /* What I Bring Section */
 .bringSection {
   padding: 5rem 1.5rem;
-  background: var(--bg-alt);
+  background: #131e30;
   text-align: center;
 }
 
@@ -326,7 +326,7 @@
 .personalBar {
   padding: 4rem 1.5rem;
   text-align: center;
-  background: #000000;
+  background: #0e1724;
 }
 
 .personalText {
@@ -369,7 +369,7 @@
 /* Testimonials Section */
 .testimonialsSection {
   padding: 3rem 0;
-  background: linear-gradient(135deg, #1E2A36 0%, #2D3C52 50%, #1E2A36 100%);
+  background: #000000;
   text-align: center;
 }
 
