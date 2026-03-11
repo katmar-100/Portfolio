@@ -50,7 +50,7 @@ const allTestimonials = [
   {
     quote: "Katherine is my first choice for enhancing and refining presentations. She consistently delivers excellent work!",
     author: "Upwork Client",
-    company: "",
+    company: "United States",
   },
   {
     quote: "Katherine is a great designer, hard working, high quality work - delivered on time. I will definitely use her again.",
@@ -88,7 +88,7 @@ const allTestimonials = [
   {
     quote: "Was astonished by the efficiency of Katherine once again! Can't stop her creative and visionary mindset!",
     author: "Upwork Client",
-    company: "",
+    company: "United States",
   },
   // Slide 7: Long + Long
   {
@@ -133,6 +133,78 @@ const allTestimonials = [
     quote: "Katherine once again proved her exceptional skills in enhancing my film pitch deck. This being our second collaboration, she consistently delivers top-notch quality, surpassing expectations with her attention to detail and creative insights. Her ability to elevate my vision has been invaluable.",
     author: "Devon Ryan",
     company: "CEO, Flying Aces Films",
+  },
+  // Slide 11: Long + Long
+  {
+    quote: "I had the pleasure of working with Katherine on redesigning our PowerPoint presentation, and I am thoroughly impressed with her work. She delivered an outstanding result on very short notice and was readily available whenever I needed her. The quality of her work was exceptional, and the revisions needed were minimal. Katherine's professionalism and dedication are truly commendable. I highly recommend her to anyone in need of top-notch design services, and I am confident that I will be collaborating with her on future projects as well.",
+    author: "Tiffany",
+    company: "Seattle, WA",
+  },
+  {
+    quote: "Katherine is an exceptional creative designer. Her responsiveness throughout our engagement was amazing. She provided thorough and high-quality work and went above and beyond, even with our tight deadline. Katherine was willing to hop on calls, provide regular updates, and maintain open communication throughout the project. I wholeheartedly recommend Katherine to anyone seeking a talented and reliable designer who prioritizes their clients' needs.",
+    author: "Miguel",
+    company: "Los Angeles, CA",
+  },
+  // Slide 12: Long + Long
+  {
+    quote: "Katherine is very creative, thoughtful, and detailed oriented. She does a great job of understanding the purpose and intent for the deliverables and focuses on supporting that, rather than pushing a personal agenda. She is extremely easy to work with and was very accommodating of our schedule. She is a true professional. We will continue to work with Katherine.",
+    author: "Patrick & Lisa",
+    company: "Yale University",
+  },
+  {
+    quote: "Katherine was fantastic. She was very professional and our pitch deck was revamped into an immaculate, modern look over the course of 3 weeks. We appreciated how efficient she worked and her strong communication skills. She always got back to us within <1 hour and responded quickly to our feedback. We couldn't recommend her more highly and will use her again for future projects!",
+    author: "Nicole & Max",
+    company: "United States",
+  },
+  // Slide 13: Medium + Medium
+  {
+    quote: "We had a very short deadline to turn a pitch outline into a visually appealing pitch deck. Katherine not only helped us meet the deadline but also created an incredible deck.",
+    author: "Dustin",
+    company: "Dallas, TX",
+  },
+  {
+    quote: "I had the pleasure of working with Katherine to enhance my client's sales presentation, and she did an extraordinary job! She's incredibly easy to work with, and her turnaround time is impressively fast. Katherine went above and beyond my expectations, delivering fantastic results. I deeply appreciate her dedication and the exceptional work she produced.",
+    author: "Yumna",
+    company: "United States",
+  },
+  // Slide 14: Medium + Medium
+  {
+    quote: "Katherine was beyond professional, responsive, and an absolute pleasure to work with! Would 1000% recommend to anyone. We definitely want to work with her again! Thank you Katherine!",
+    author: "Courtney & Grace",
+    company: "Accrue",
+  },
+  {
+    quote: "Katherine is amazing to work with. If you are looking for someone who has great communication skills on projects, don't hesitate to go with Katherine. We will definitely hire her to work on future projects for our company. She is spectacular at taking your vision you have and bringing it to life.",
+    author: "Kyle",
+    company: "Innovative Design",
+  },
+  // Slide 15: Medium + Short
+  {
+    quote: "Katherine is awesome to work with! I contacted her for assistance with a project I needed completed within hours of my request. She came to the rescue and provided exceptional collaboration! Communicated timely and effectively, provides appropriate recommendations, shows courtesy in her approach to collaboration, and delivers a quality product.",
+    author: "Upwork Client",
+    company: "Australia",
+  },
+  {
+    quote: "Katherine did some great work for us. She did it fast and did it really well. She was very responsive and receptive to our changes and ideas. Great experience!!",
+    author: "Upwork Client",
+    company: "Norfolk, VI",
+  },
+  // Slide 16: Short + Short
+  {
+    quote: "Katherine is my go-to expert for elevating presentations and pitch decks. She works efficiently and consistently delivers high-quality results.",
+    author: "Upwork Client",
+    company: "United States",
+  },
+  {
+    quote: "Katherine is exceptional. She effortlessly elevates and translates business language into compelling storytelling for presentations. Highly recommended!",
+    author: "Devon",
+    company: "Flying Aces Films",
+  },
+  // Slide 17: Short + Short
+  {
+    quote: "Katherine is incredible. You will not regret working with her. She's able to deliver a high quality product, work collaboratively, and does things efficiently. We're really glad we worked together on our pitch deck project.",
+    author: "Jorian",
+    company: "London, U.K.",
   },
 ];
 

@@ -199,7 +199,7 @@
   color: var(--text-secondary);
   font-family: var(--font-sans);
   margin-bottom: 3rem;
-  border-left: 3px solid var(--accent-light);
+  border-left: 3px solid #6EB4E0;
   padding-left: 1.25rem;
 }
 
@@ -317,14 +317,14 @@
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-weight: 600;
-  color: var(--accent-dark);
+  color: #FFFFFF;
   margin-bottom: 0.5rem;
 }
 
 .stars {
   font-size: 0.75rem;
   letter-spacing: 0.05em;
-  color: #FFFFFF;
+  color: #6EB4E0;
 }
 
 .testimonialQuote {
@@ -334,6 +334,7 @@
   color: var(--accent-electric);
   font-style: italic;
   margin: 0 0 0.75rem 0;
+  border-left-color: #FFFFFF;
 }
 
 .testimonialAttribution {

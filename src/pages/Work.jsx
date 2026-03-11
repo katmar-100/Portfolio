@@ -92,13 +92,14 @@ export default function Work() {
     21,  // Bountisphere — angled slides (teal)
     22,  // EA Game Launches — digital/screen
     25,  // Innovative Design Group — angled slides (red/black)
-    28,  // @kittydoodlez — device mockup
   ];
 
+  const kittydoodlezId = 28;
   const orderedProjects = customOrder
     .map(id => projects.find(p => p.id === id))
     .filter(Boolean)
-    .concat(projects.filter(p => !customOrder.includes(p.id)));
+    .concat(projects.filter(p => !customOrder.includes(p.id) && p.id !== kittydoodlezId))
+    .concat(projects.filter(p => p.id === kittydoodlezId));
 
   const filteredProjects = activeCategory === 'All'
     ? orderedProjects
@@ -184,16 +185,7 @@ export default function Work() {
             )}
 
             <div className={styles.studyInner}>
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: '-30px' }}
-                transition={{
-                  duration: 0.6,
-                  ease: [0.25, 0.4, 0.25, 1],
-                  delay: 0.15,
-                }}
-              >
+              <div>
                 <div className={styles.studyHeader}>
                   <span className={styles.studyCategory}>{project.category}</span>
                   <div className={styles.titleRow}>
@@ -217,18 +209,9 @@ export default function Work() {
                 </div>
 
                 <p className={styles.studySummary}>{project.summary}</p>
-              </motion.div>
+              </div>
 
-              <motion.div
-                initial={{ opacity: 0, y: 25 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: '-20px' }}
-                transition={{
-                  duration: 0.6,
-                  ease: [0.25, 0.4, 0.25, 1],
-                  delay: 0.3,
-                }}
-              >
+              <div>
                 <div className={styles.studyContent}>
                   <div className={styles.studyBlock}>
                     <p className={styles.label}>Challenge</p>
@@ -269,7 +252,7 @@ export default function Work() {
                   </div>
                 )}
 
-              </motion.div>
+              </div>
             </div>
           </motion.div>
         ))}

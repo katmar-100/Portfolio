@@ -419,6 +419,11 @@ export const projects = [
           "Visual Strategy"
       ],
       "image": "/images/projects/innovative-design-group.png",
+      "testimonial": {
+          "quote": "Katherine is amazing to work with. If you are looking for someone who has great communication skills on projects, don't hesitate to go with Katherine. We will definitely hire her to work on future projects for our company. She is spectacular at taking your vision you have and bringing it to life.",
+          "author": "Kyle",
+          "company": "Innovative Design"
+      },
       "featured": false
   },
   {
@@ -597,7 +602,7 @@ export const projects = [
   {
       "id": 28,
       "slug": "kittydoodlez",
-      "title": "@kittydoodlez Illustration",
+      "title": "@kittydoodlez Illustrations",
       "client": "Personal Project",
       "category": "Brand & Identity Systems",
       "year": "2014 - Present",
@@ -605,7 +610,7 @@ export const projects = [
       "summary": "Created photorealistic digital illustrations as a passion project using iPad Pro, Apple Pencil, and Procreate, building a dedicated following on Instagram.",
       "challenge": "Push the boundaries of digital illustration to achieve photorealistic quality while developing a consistent artistic voice and building an audience.",
       "approach": "Developed a distinctive illustration style through intensive practice and experimentation with Procreate, focusing on hyper-realistic animal portraits with expressive details.",
-      "outcome": "Built a growing Instagram presence that showcased technical illustration skills and demonstrated creative range beyond traditional corporate design.",
+      "outcome": "No outcome necessary for this personal project! If you're interested to see my technical illustration skills and creative range beyond traditional corporate design, follow along on IG: @kittydoodlez",
       "capabilities": [
           "Digital Illustration",
           "Procreate",
