@@ -437,6 +437,8 @@
 
   .themeHint {
     right: -0.5rem;
+    font-size: 0.65rem;
+    padding: 0.35rem 0.7rem;
   }
 }
 
@@ -489,71 +491,3 @@
   }
 }
 
-/* Mobile fullscreen theme hint - hidden on desktop */
-.mobileThemeHint {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  /* Hide desktop tooltip on mobile */
-  .themeHint {
-    display: none;
-  }
-
-  /* Show fullscreen overlay on mobile */
-  .mobileThemeHint {
-    display: flex;
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(8px);
-    z-index: 9999;
-    align-items: center;
-    justify-content: center;
-    animation: hintFadeIn 0.4s ease forwards;
-  }
-
-  .mobileThemeHintContent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-    padding: 2.5rem 2rem;
-    background: var(--section-card);
-    border: 1px solid var(--accent-border-subtle);
-    border-radius: 16px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-    max-width: 300px;
-    width: 85%;
-    text-align: center;
-  }
-
-  .mobileThemeHintText {
-    font-family: var(--font-sans);
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: var(--text-primary);
-    line-height: 1.5;
-    margin: 0;
-  }
-
-  .mobileThemeHintToggle {
-    transform: scale(1.4);
-  }
-
-  .mobileThemeHintDismiss {
-    background: none;
-    border: none;
-    font-family: var(--font-sans);
-    font-size: 0.75rem;
-    color: var(--text-secondary);
-    cursor: pointer;
-    padding: 0.4rem 0.8rem;
-    letter-spacing: 0.03em;
-    transition: color 0.2s ease;
-  }
-
-  .mobileThemeHintDismiss:hover {
-    color: var(--text-primary);
-  }
-}

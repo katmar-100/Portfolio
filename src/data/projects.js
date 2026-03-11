@@ -535,7 +535,7 @@ export const projects = [
       "testimonial": {
           "quote": "Katherine was a pleasure to work with. We tasked her with modifying our pitch deck and she exceeded expectations. She was prompt and also receptive of feedback. After laying out our expectation, Katherine worked with us on edits and ideas that we had along the way. I am looking forward to doing more projects with her in the future!",
           "author": "Myles",
-          "company": "Picture It"
+          "company": "Modern Focus"
       },
       "featured": false
   },
