@@ -409,10 +409,30 @@
   transform: translateX(28px);
 }
 
+/* Mobile controls wrapper - hidden on desktop */
+.mobileControls {
+  display: none;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Inline theme toggle for mobile - hidden on desktop */
+.themeToggleInline {
+  display: none;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .desktopNav {
     display: none;
+  }
+
+  .mobileControls {
+    display: flex;
+  }
+
+  .themeToggleInline {
+    display: flex;
   }
 
   .hamburger {
