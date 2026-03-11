@@ -1,7 +1,12 @@
 /* Header Section */
 .header {
-  padding-top: 14rem;
-  padding-bottom: 12rem;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 1.5rem 4rem;
   text-align: center;
   background: #0a0f1a;
   background-image:
