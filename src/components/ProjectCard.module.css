@@ -114,6 +114,21 @@
   transform: translateX(0);
 }
 
+.metadata {
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(110, 180, 224, 0.6);
+  margin: 0 0 1rem;
+}
+
+.yearLabel {
+  margin-left: 0.75rem;
+  color: rgba(255, 255, 255, 0.35);
+}
+
 .summary {
   font-family: var(--font-sans);
   font-size: 0.9rem;
@@ -124,8 +139,8 @@
 }
 
 .tagsContainer {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 0.45rem;
   margin-top: 1.25rem;
 }
@@ -220,4 +235,10 @@
   justify-content: center;
   position: relative;
   top: -1px;
+}
+
+@media (max-width: 768px) {
+  .tagsContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

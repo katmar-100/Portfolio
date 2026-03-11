@@ -215,14 +215,20 @@ const Testimonials = () => {
       onMouseLeave={() => setIsPaused(false)}
     >
       <div className={styles.carouselContainer}>
-        <AnimatePresence mode="wait">
+        <AnimatePresence mode="wait" initial={false} custom={direction}>
           <motion.div
             key={currentIndex}
+            custom={direction}
             className={styles.grid}
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -12 }}
-            transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
+            variants={{
+              enter: (d) => ({ opacity: 0, x: d * 80 }),
+              center: { opacity: 1, x: 0 },
+              exit: (d) => ({ opacity: 0, x: d * -80 }),
+            }}
+            initial="enter"
+            animate="center"
+            exit="exit"
+            transition={{ duration: 0.45, ease: [0.25, 0.1, 0.25, 1] }}
           >
             {currentItems.map((testimonial, index) => (
               <div key={index} className={styles.quoteContainer}>

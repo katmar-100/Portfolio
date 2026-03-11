@@ -137,6 +137,17 @@
   transform: scaleX(1);
 }
 
+.leadershipNote {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin: 1rem 0 1.5rem;
+  padding: 1rem 1.25rem;
+  background: linear-gradient(135deg, rgba(90, 130, 184, 0.08), rgba(110, 180, 224, 0.04));
+  border-left: 2px solid #6EB4E0;
+  border-radius: 0 8px 8px 0;
+}
+
 .infoParagraph {
   font-size: 0.88rem;
   color: var(--text-secondary);

@@ -77,8 +77,8 @@ export default function Work() {
     5,   // ★ Marmot Labs — poster/flyer
     34,  // Revlon — angled slides (red)
     16,  // Stratolaunch — book mockup
-    14,  // EA Hackathon — logo/text mockup
     4,   // Lamborghini — angled slides (blue/hexagon)
+    14,  // EA Hackathon — logo/text mockup
     27,  // ★ Modern Focus — angled slides (tech)
     17,  // EA Employee Experience — folded brochure
     8,   // Smithsonian — angled slides (orange)

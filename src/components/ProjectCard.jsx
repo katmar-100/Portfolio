@@ -6,7 +6,7 @@ import styles from './ProjectCard.module.css';
 const categorySlug = (cat) => cat.toLowerCase().replace(/\s+&\s+/g, '-').replace(/\s+/g, '-');
 
 const ProjectCard = ({ project, index = 0 }) => {
-  const { title, category, summary, capabilities, image, thumbnail } = project;
+  const { title, category, summary, capabilities, image, thumbnail, role, year } = project;
   const displayImage = thumbnail || image;
 
   return (
@@ -40,11 +40,16 @@ const ProjectCard = ({ project, index = 0 }) => {
         <h3 className={styles.title}>
           {title}
         </h3>
+        {role && (
+          <p className={styles.metadata}>
+            MY ROLE: {role} <span className={styles.yearLabel}>{year}</span>
+          </p>
+        )}
         <p className={styles.summary}>{summary}</p>
 
         {capabilities && capabilities.length > 0 && (
           <div className={styles.tagsContainer}>
-            {capabilities.slice(0, 3).map((cap, i) => (
+            {capabilities.slice(0, 6).map((cap, i) => (
               <span key={i} className={styles.tag}>
                 {cap}
               </span>

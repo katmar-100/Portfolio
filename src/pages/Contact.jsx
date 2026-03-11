@@ -48,6 +48,10 @@ const Contact = () => {
               LinkedIn Profile →
             </a>
 
+            <p className={styles.leadershipNote}>
+              I'm always interested in learning about senior creative leadership opportunities: Creative Director, Design Director, ECD, VP Brand & Creative, and similar roles. Don't hesitate to reach out!
+            </p>
+
             <p className={styles.infoParagraph}>
               Based in the United States. Also open to roles in Tokyo and London. Onsite, remote, and hybrid welcome.
             </p>
@@ -59,14 +63,6 @@ const Contact = () => {
         </div>
       </FadeIn>
 
-      {/* Availability Section */}
-      <FadeIn delay={0.1} direction="up" distance={20}>
-        <section className={styles.availability}>
-          <p className={styles.availabilityText}>
-            I'm always interested in learning about senior creative leadership opportunities: Creative Director, Design Director, ECD, VP Brand & Creative, and similar roles. Don't hesitate to reach out!
-          </p>
-        </section>
-      </FadeIn>
     </motion.div>
   );
 };

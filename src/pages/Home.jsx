@@ -135,7 +135,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.7 }}
           >
-            Creative leadership across healthcare, technology, entertainment, and global consumer brands.
+            Creative leadership across a wide range of industries, including: healthcare, technology, entertainment, logistics, and global consumer brands.
           </motion.p>
 
           <motion.div
@@ -145,7 +145,7 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 0.9 }}
           >
             <Link to="/case-studies" className={styles.heroButton}>
-              See More Work →
+              See My Work →
             </Link>
           </motion.div>
 

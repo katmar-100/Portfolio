@@ -13,9 +13,11 @@ export const projects = [
       "outcome": "Delivered a comprehensive communication guide that unified messaging standards and became a key reference tool for teams across the organization.",
       "capabilities": [
           "Style Guides",
-          "Layout Design",
-          "Brand Standards",
-          "Editorial Design"
+          "Layout",
+          "Standards",
+          "Editorial",
+          "Typography",
+          "Print"
       ],
       "image": "/images/projects/ea-style-guide.jpg",
       "featured": false
@@ -33,10 +35,12 @@ export const projects = [
       "approach": "Created a cinematic presentation design with bold imagery, data visualization, and typographic hierarchy that reinforced key takeaways while maintaining the energy of a live event.",
       "outcome": "Delivered a polished keynote experience that elevated the speaker's message and set a new standard for presentation design in the health and wellness space.",
       "capabilities": [
-          "Keynote Design",
-          "Data Visualization",
-          "Presentation Design",
-          "Event Branding"
+          "Keynotes",
+          "Data Viz",
+          "Presentations",
+          "Event Brand",
+          "Visual Hierarchy",
+          "Storytelling"
       ],
       "image": "/images/projects/tedx-keynote.png",
       "testimonial": {
@@ -60,9 +64,11 @@ export const projects = [
       "outcome": "Delivered a world-class proposal that set expectations for premium campaign execution and established the creative foundation for a major brand initiative.",
       "capabilities": [
           "Pitch Design",
-          "Campaign Strategy",
-          "Editorial Layout",
-          "Brand Storytelling"
+          "Strategy",
+          "Editorial",
+          "Storytelling",
+          "Creative Direction",
+          "Visual Hierarchy"
       ],
       "image": "/images/projects/lululemon.jpg",
       "featured": true
@@ -81,9 +87,11 @@ export const projects = [
       "outcome": "Delivered a cohesive brand and pitch framework that positioned Marmot Labs for fundraising conversations and enterprise partnerships.",
       "capabilities": [
           "Brand Identity",
-          "Pitch Development",
-          "Startup Branding",
-          "Visual Identity"
+          "Pitch Design",
+          "Startups",
+          "Visual Identity",
+          "Creative Direction",
+          "Design Systems"
       ],
       "image": "/images/projects/marmot-labs.jpg",
       "thumbnail": "/images/projects/marmot-labs-thumb.jpg",
@@ -107,10 +115,12 @@ export const projects = [
       "approach": "Designed a premium presentation system with refined typography, sophisticated color applications, and high-impact imagery. Created flexible template components for finance and marketing teams.",
       "outcome": "Delivered a presentation framework that elevated investor communications and established standards for luxury brand executive presentations.",
       "capabilities": [
-          "Investor Communications",
-          "Presentation Design",
-          "Luxury Branding",
-          "Visual Strategy"
+          "Investor Comms",
+          "Presentations",
+          "Luxury",
+          "Visual Strategy",
+          "Slide Design",
+          "Info Design"
       ],
       "image": "/images/projects/lamborghini.png",
       "thumbnail": "/images/projects/lamborghini-thumb.png",
@@ -129,10 +139,12 @@ export const projects = [
       "approach": "Developed a comprehensive visual language balancing luxury aesthetics with approachable storytelling. Designed the RFP presentation, conceptualized an immersive confessional booth experience, and created digital platform designs for seamless brand integration.",
       "outcome": "Delivered a unified campaign identity that communicated L'Oreal's commitment to entrepreneurship, establishing the foundation for a scalable, multi-market rollout.",
       "capabilities": [
-          "Campaign Design",
+          "Campaigns",
           "Experiential",
-          "Presentation Design",
-          "Digital Strategy"
+          "Presentations",
+          "Digital Strategy",
+          "Storytelling",
+          "Art Direction"
       ],
       "image": "/images/projects/loreal.jpg",
       "featured": true
@@ -150,10 +162,12 @@ export const projects = [
       "approach": "Designed campaign materials with bold color applications, fashion-forward typography, and lifestyle imagery that honored the brand's legacy while pushing it forward.",
       "outcome": "Delivered a suite of brand materials that supported marketing campaigns and reinforced Revlon's position in the competitive beauty landscape.",
       "capabilities": [
-          "Brand Materials",
-          "Beauty Industry",
-          "Campaign Design",
-          "Art Direction"
+          "Brand Assets",
+          "Beauty",
+          "Campaigns",
+          "Art Direction",
+          "Strategy",
+          "Digital"
       ],
       "image": "/images/projects/revlon.jpeg",
       "thumbnail": "/images/projects/revlon-thumb.jpeg",
@@ -172,10 +186,12 @@ export const projects = [
       "approach": "Designed a cohesive visual campaign system featuring lifestyle photography, typography, and digital templates optimized for influencer storytelling and brand integrity.",
       "outcome": "Delivered a campaign toolkit that scaled across influencer partnerships and established fresh as a premium digital-native brand presence.",
       "capabilities": [
-          "Campaign Design",
-          "Luxury Branding",
-          "Influencer Marketing",
-          "Art Direction"
+          "Campaigns",
+          "Luxury",
+          "Influencer",
+          "Art Direction",
+          "Content Design",
+          "Storytelling"
       ],
       "image": "/images/projects/fresh.png",
       "featured": true
@@ -193,10 +209,12 @@ export const projects = [
       "approach": "Developed sophisticated visual narratives through typography, imagery, and spatial design. Created materials across print and digital that established emotional connections with diverse audiences.",
       "outcome": "Delivered campaign and exhibit designs that engaged visitors and reinforced the Smithsonian's position as a premier cultural institution.",
       "capabilities": [
-          "Campaign Design",
-          "Institutional Branding",
-          "Visual Storytelling",
-          "Print & Digital"
+          "Campaigns",
+          "Institutional",
+          "Storytelling",
+          "Print & Digital",
+          "Strategy",
+          "Narrative"
       ],
       "image": "/images/projects/smithsonian.png",
       "featured": false
@@ -216,8 +234,10 @@ export const projects = [
       "capabilities": [
           "Brand Systems",
           "Style Guides",
-          "Internal Communications",
-          "Enterprise Design"
+          "Internal Comms",
+          "Enterprise",
+          "Design Systems",
+          "Visual Strategy"
       ],
       "image": "/images/projects/ea-brand-system.png",
       "testimonial": {
@@ -240,10 +260,12 @@ export const projects = [
       "approach": "Designed a cohesive visual system spanning investor presentations and consumer advertisements, using lifestyle imagery and clean UI mockups to tell the product story.",
       "outcome": "Delivered a unified pitch and marketing toolkit that supported fundraising conversations and established the brand's visual direction for market launch.",
       "capabilities": [
-          "Pitch Deck",
-          "Ad Design",
-          "Startup Branding",
-          "Mobile App Marketing"
+          "Pitch Decks",
+          "Advertising",
+          "Startups",
+          "Mobile",
+          "Visual Hierarchy",
+          "Content Strategy"
       ],
       "image": "/images/projects/wendi.jpg",
       "featured": false
@@ -261,10 +283,12 @@ export const projects = [
       "approach": "Developed a fresh visual direction with contemporary typography, vibrant color palette, and lifestyle-driven imagery that bridged Avon's heritage with modern beauty culture.",
       "outcome": "Delivered a campaign concept that demonstrated a viable path to brand modernization while preserving the warmth and accessibility that defines Avon.",
       "capabilities": [
-          "Campaign Proposal",
-          "Brand Repositioning",
+          "Campaigns",
+          "Repositioning",
           "Art Direction",
-          "Beauty & Lifestyle"
+          "Beauty",
+          "Storytelling",
+          "Strategy"
       ],
       "image": "/images/projects/avon.jpg",
       "featured": false
@@ -282,10 +306,12 @@ export const projects = [
       "approach": "Created a clean, modern booklet layout with infographics, illustrated examples, and structured content hierarchy that made meeting best practices accessible and actionable.",
       "outcome": "Delivered a polished internal resource adopted across EA studios, setting the standard for how internal training materials are designed and distributed.",
       "capabilities": [
-          "Layout Design",
-          "Internal Communications",
-          "Training Materials",
-          "Print Design"
+          "Layout",
+          "Internal Comms",
+          "Training",
+          "Print",
+          "Guidelines",
+          "Typography"
       ],
       "image": "/images/projects/ea-internal-comms.jpg",
       "featured": false
@@ -303,10 +329,12 @@ export const projects = [
       "approach": "Designed a sophisticated template system with warm, Mediterranean-inspired aesthetics, product photography integration, and flexible slide layouts for various pitch scenarios.",
       "outcome": "Delivered a professional presentation system that communicated DeoLeo's premium positioning and supported business development conversations.",
       "capabilities": [
-          "Presentation Design",
-          "Template Systems",
-          "Food & Beverage",
-          "Brand Positioning"
+          "Presentations",
+          "Templates",
+          "F&B",
+          "Positioning",
+          "Slide Design",
+          "Visual Hierarchy"
       ],
       "image": "/images/projects/deoleo-olive-oil.png",
       "featured": false
@@ -324,10 +352,12 @@ export const projects = [
       "approach": "Created a professional publication layout with structured content hierarchy, data callouts, and a visual system that communicated authority in the emerging AI governance space.",
       "outcome": "Delivered a thought leadership publication that positioned CyberCatch as a voice of authority in AI risk management and supported business development efforts.",
       "capabilities": [
-          "Publication Design",
+          "Publications",
           "Thought Leadership",
-          "AI & Technology",
-          "Layout Design"
+          "AI & Tech",
+          "Layout",
+          "Content Design",
+          "Narrative"
       ],
       "image": "/images/projects/ai-risk-guide.png",
       "testimonial": {
@@ -351,9 +381,11 @@ export const projects = [
       "outcome": "Delivered a distinctive event brand that energized participants and created a recognizable identity for EA's innovation programs.",
       "capabilities": [
           "Logo Design",
-          "Event Branding",
+          "Event Brand",
           "Visual Identity",
-          "Corporate Events"
+          "Typography",
+          "Creative Direction",
+          "Color Systems"
       ],
       "image": "/images/projects/hackathon.png",
       "featured": false
@@ -371,10 +403,12 @@ export const projects = [
       "approach": "Developed a refined visual language with dark, authoritative color palettes, clean data presentation, and premium typography that communicated stability and strategic vision.",
       "outcome": "Delivered an investment proposal that elevated the firm's communications and provided a scalable template for ongoing investor relations.",
       "capabilities": [
-          "Investment Proposals",
-          "Financial Services",
-          "Presentation Design",
-          "Investor Relations"
+          "Proposals",
+          "Finance",
+          "Presentations",
+          "Investor Comms",
+          "Visual Hierarchy",
+          "Info Design"
       ],
       "image": "/images/projects/bison-capital-group.png",
       "featured": false
@@ -394,8 +428,10 @@ export const projects = [
       "capabilities": [
           "RFP Design",
           "Aerospace",
-          "Layout Design",
-          "Executive Presentations"
+          "Layout",
+          "Executive",
+          "Info Design",
+          "Content Strategy"
       ],
       "image": "/images/projects/stratolaunch.jpg",
       "featured": false
@@ -414,9 +450,11 @@ export const projects = [
       "outcome": "Delivered a pitch deck that doubled as a demonstration of capability, effectively communicating both the business case and creative authority.",
       "capabilities": [
           "Investor Pitch",
-          "Presentation Design",
-          "Business Development",
-          "Visual Strategy"
+          "Presentations",
+          "Biz Dev",
+          "Visual Strategy",
+          "Storytelling",
+          "Creative Direction"
       ],
       "image": "/images/projects/innovative-design-group.png",
       "testimonial": {
@@ -439,10 +477,12 @@ export const projects = [
       "approach": "Created a gamified campaign system with collectible stickers, team leaderboards, and daily challenges that turned a high-stress period into a shared team experience.",
       "outcome": "Delivered an employee engagement program that improved morale, fostered cross-team collaboration, and became a recurring initiative during peak seasons.",
       "capabilities": [
-          "Employee Engagement",
-          "Campaign Design",
+          "Engagement",
+          "Campaigns",
           "Gamification",
-          "Internal Branding"
+          "Internal Brand",
+          "Strategy",
+          "Digital"
       ],
       "image": "/images/projects/ea-employee-experience.jpg",
       "featured": false
@@ -460,10 +500,12 @@ export const projects = [
       "approach": "Created a cinematic pitch deck with bold typography, documentary-style imagery, and data-driven slides that balanced emotional storytelling with business rationale.",
       "outcome": "Delivered a pitch deck that powerfully communicated the athlete's brand value and created a framework for approaching major athletic sponsorship opportunities.",
       "capabilities": [
-          "Sponsorship Pitch",
-          "Athlete Branding",
+          "Sponsorship",
+          "Athlete Brand",
           "Storytelling",
-          "Presentation Design"
+          "Presentations",
+          "Visual Hierarchy",
+          "Creative Direction"
       ],
       "image": "/images/projects/lex-gillette.png",
       "featured": false
@@ -482,9 +524,11 @@ export const projects = [
       "outcome": "Delivered a professional pitch deck that supported fundraising conversations and set the visual standard for the company's external communications.",
       "capabilities": [
           "Investor Pitch",
-          "Startup Branding",
-          "Presentation Design",
-          "Visual Strategy"
+          "Startups",
+          "Presentations",
+          "Visual Strategy",
+          "Slide Design",
+          "Content Strategy"
       ],
       "image": "/images/projects/modern-focus.png",
       "testimonial": {
@@ -507,10 +551,12 @@ export const projects = [
       "approach": "Created a playful bingo-style game with vibrant illustrations and achievable wellness challenges, distributed as desk drops to create surprise and delight moments.",
       "outcome": "Delivered a wellness campaign that drove participation through approachable design and gamification, contributing to a healthier workplace culture.",
       "capabilities": [
-          "Wellness Design",
+          "Wellness",
           "Gamification",
-          "Print Design",
-          "Employee Engagement"
+          "Print",
+          "Engagement",
+          "Storytelling",
+          "Content Design"
       ],
       "image": "/images/projects/ea-wellness.jpg",
       "featured": false
@@ -528,10 +574,12 @@ export const projects = [
       "approach": "Created a clean, modern pitch system with intuitive product visualizations, market data presentation, and a visual narrative that simplified complex financial concepts.",
       "outcome": "Delivered a polished pitch toolkit that supported the company's fundraising efforts and clearly communicated the product's value proposition.",
       "capabilities": [
-          "Pitch Deck",
+          "Pitch Decks",
           "Fintech",
-          "Startup Branding",
-          "Data Visualization"
+          "Startups",
+          "Data Viz",
+          "Slide Design",
+          "Info Design"
       ],
       "image": "/images/projects/bountisphere.png",
       "featured": false
@@ -549,10 +597,12 @@ export const projects = [
       "approach": "Developed a systematic approach to game launch materials with reusable design components, flexible templates, and clear brand guidelines that enabled rapid production.",
       "outcome": "Delivered a portfolio of launch materials that supported successful game releases and established efficient workflows for future campaigns.",
       "capabilities": [
-          "Game Marketing",
+          "Games",
           "Print & Digital",
-          "Campaign Materials",
-          "Launch Communications"
+          "Campaigns",
+          "Launches",
+          "Art Direction",
+          "Narrative"
       ],
       "image": "/images/projects/ea-game-launches.jpg",
       "featured": false
@@ -570,10 +620,12 @@ export const projects = [
       "approach": "Developed an editorial-quality press kit with cinematic imagery, structured filmmaker bios, and production details in a clean, professional layout.",
       "outcome": "Delivered press materials that elevated the film's presentation at festivals and provided a professional framework for media outreach.",
       "capabilities": [
-          "Press Kit",
-          "Layout Design",
-          "Film & Entertainment",
-          "Editorial Design"
+          "Press Kits",
+          "Layout",
+          "Film",
+          "Editorial",
+          "Storytelling",
+          "Strategy"
       ],
       "image": "/images/projects/press-kit.jpg",
       "featured": false
@@ -591,10 +643,12 @@ export const projects = [
       "approach": "Developed a structured pitch deck with clean data visualization, strategic use of the Hitachi brand system, and a narrative flow that built from challenge to solution.",
       "outcome": "Delivered a polished presentation that supported business development and demonstrated Hitachi's approach to solving enterprise-scale challenges.",
       "capabilities": [
-          "Pitch Deck",
-          "Enterprise Technology",
-          "Presentation Design",
-          "B2B Marketing"
+          "Pitch Decks",
+          "Enterprise",
+          "Presentations",
+          "B2B Marketing",
+          "Visual Hierarchy",
+          "Storytelling"
       ],
       "image": "/images/projects/hitachi.png",
       "featured": false
@@ -612,10 +666,12 @@ export const projects = [
       "approach": "Developed a distinctive illustration style through intensive practice and experimentation with Procreate, focusing on hyper-realistic animal portraits with expressive details.",
       "outcome": "No outcome necessary for this personal project! If you're interested to see my technical illustration skills and creative range beyond traditional corporate design, follow along on IG: @kittydoodlez",
       "capabilities": [
-          "Digital Illustration",
+          "Illustration",
           "Procreate",
-          "Personal Branding",
-          "Creative Exploration"
+          "Personal Brand",
+          "Exploration",
+          "Visual Strategy",
+          "Creative Direction"
       ],
       "image": "/images/projects/kittydoodlez.jpg",
       "featured": false
