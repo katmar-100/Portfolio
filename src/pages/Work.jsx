@@ -99,8 +99,7 @@ export default function Work() {
   const orderedProjects = customOrder
     .map(id => projects.find(p => p.id === id))
     .filter(Boolean)
-    .concat(projects.filter(p => !customOrder.includes(p.id) && p.id !== kittydoodlezId))
-    .concat(projects.filter(p => p.id === kittydoodlezId));
+    .concat(projects.filter(p => !customOrder.includes(p.id) && p.id !== kittydoodlezId));
 
   const filteredProjects = activeCategory === 'All'
     ? orderedProjects
@@ -161,6 +160,7 @@ export default function Work() {
                   src={project.image}
                   alt={project.title}
                   className={styles.studyImage}
+                  style={project.imagePosition ? { objectPosition: project.imagePosition } : undefined}
                 />
               </div>
             ) : (
@@ -234,7 +234,7 @@ export default function Work() {
                       "{project.testimonial.quote}"
                     </blockquote>
                     <p className={styles.testimonialAttribution}>
-                      — {project.testimonial.author}, {project.testimonial.company}
+                      - {project.testimonial.author}, {project.testimonial.company}
                     </p>
                   </div>
                 )}

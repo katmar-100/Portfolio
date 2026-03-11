@@ -545,18 +545,32 @@
   box-shadow: 0 12px 30px rgba(255, 255, 255, 0.15);
 }
 
-/* Light mode: glass-style See My Work button on blue backdrop */
-:global([data-theme="light"]) .seeWorkButton {
+/* Light mode: glass-style See My Work button on blue backdrop (narrative section only) */
+:global([data-theme="light"]) .narrative .seeWorkButton {
   background: rgba(255, 255, 255, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.4);
   color: #ffffff;
 }
 
-:global([data-theme="light"]) .seeWorkButton:hover {
+:global([data-theme="light"]) .narrative .seeWorkButton:hover {
   background: rgba(255, 255, 255, 0.25);
   border-color: rgba(255, 255, 255, 0.7);
   color: #ffffff;
   box-shadow: 0 12px 30px rgba(255, 255, 255, 0.15);
+}
+
+/* Light mode: visible button on light backdrop (bringSection) */
+:global([data-theme="light"]) .bringSection .seeWorkButton {
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  color: #ffffff;
+}
+
+:global([data-theme="light"]) .bringSection .seeWorkButton:hover {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+  color: #ffffff;
+  box-shadow: 0 12px 30px rgba(29, 73, 153, 0.2);
 }
 
 /* Responsive */

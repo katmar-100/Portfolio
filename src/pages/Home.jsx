@@ -128,7 +128,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
             transition={{ duration: 0.9, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
           >
-            Over a decade of building brands, systems, and stories that make organizations impossible to ignore.
+            The brands I've built don't just look right. They work - across 100+ locations, global studios, and boardrooms.
           </motion.h1>
 
           {/* Supporting detail */}
@@ -138,7 +138,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.7 }}
           >
-            Creative leadership across a wide range of industries, including: healthcare, technology, entertainment, logistics, and global consumer brands.
+            From startup to IPO, agency to in-house: I've led the creative teams, visions, and systems that drive what comes next.
           </motion.p>
 
           <motion.div
@@ -190,7 +190,7 @@ export default function Home() {
 
       {/* TRUSTED BY */}
       <div className={styles.brands}>
-        <h3 className={styles.brandsLabel}>Trusted by</h3>
+        <h3 className={styles.brandsLabel}>Agency & Contract Clients</h3>
         <BrandCarousel brands={brands} theme={theme} />
       </div>
 

@@ -508,6 +508,7 @@ export const projects = [
           "Creative Direction"
       ],
       "image": "/images/projects/lex-gillette.png",
+      "imagePosition": "bottom",
       "featured": false
   },
   {

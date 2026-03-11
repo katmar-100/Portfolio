@@ -27,18 +27,18 @@ const allTestimonials = [
   // Slide 1: Medium + Medium
   {
     quote: "Katherine was great! She took my outline and ideas and created a beautiful pitch presentation that far exceeded my expectations. Highly recommend to anyone who is looking for someone talented and very communicative.",
-    author: "Upwork Client",
+    author: "Contract Client",
     company: "St. Louis, MO",
   },
   // Slide 3: Short + Short
   {
     quote: "Katherine is my first choice for enhancing and refining presentations. She consistently delivers excellent work!",
-    author: "Upwork Client",
+    author: "Contract Client",
     company: "United States",
   },
   {
     quote: "Katherine is a great designer, hard working, high quality work - delivered on time. I will definitely use her again.",
-    author: "Upwork Client",
+    author: "Contract Client",
     company: "London, U.K.",
   },
   // Slide 3: Long + Long
@@ -61,13 +61,13 @@ const allTestimonials = [
   // Slide 5: Short + Short
   {
     quote: "Was astonished by the efficiency of Katherine once again! Can't stop her creative and visionary mindset!",
-    author: "Upwork Client",
+    author: "Contract Client",
     company: "United States",
   },
   // Slide 7: Long + Long
   {
     quote: "Katherine is a top-tier talent, consistently delivering work of impeccable quality. With a keen eye for detail and a masterful touch, she elevated my presentation deck, taking it to an extraordinary level of sophistication and impact. Her approach is both collaborative and effortless, making the process a true pleasure.",
-    author: "Upwork Client",
+    author: "Contract Client",
     company: "Atlanta, GA",
   },
   {
@@ -94,13 +94,13 @@ const allTestimonials = [
   },
   {
     quote: "Great to work with, very talented, and a true professional.",
-    author: "Upwork Client",
+    author: "Contract Client",
     company: "Dallas, TX",
   },
   // Slide 10: Long + Long
   {
     quote: "Whoaa! I just can't express how happy I was to find Katherine, she has been SO professional, so fast and definitely understood the requirements without questions nor back & forth. Katherine is now part of MY FAVORITE and I will be working with her for upcoming projects... I would recommend her for any Creative Projects you have, her design skills are the best!",
-    author: "Upwork Client",
+    author: "Contract Client",
     company: "Miami, FL",
   },
   {
@@ -110,7 +110,7 @@ const allTestimonials = [
   },
   // Slide 11: Long + Long
   {
-    quote: "I had the pleasure of working with Katherine on redesigning our PowerPoint presentation, and I am thoroughly impressed with her work. She delivered an outstanding result on very short notice and was readily available whenever I needed her. The quality of her work was exceptional, and the revisions needed were minimal. Katherine's professionalism and dedication are truly commendable. I highly recommend her to anyone in need of top-notch design services, and I am confident that I will be collaborating with her on future projects as well.",
+    quote: "I had the pleasure of working with Katherine and I am thoroughly impressed with her work. She delivered an outstanding result on very short notice and was readily available whenever I needed her. The quality of her work was exceptional, and the revisions needed were minimal. Katherine's professionalism and dedication are truly commendable. I highly recommend her to anyone in need of top-notch creative services, and I am confident that I will be collaborating with her on future projects as well.",
     author: "Tiffany",
     company: "Seattle, WA",
   },
@@ -150,20 +150,15 @@ const allTestimonials = [
   // Slide 12: Medium + Short
   {
     quote: "Katherine is awesome to work with! I contacted her for assistance with a project I needed completed within hours of my request. She came to the rescue and provided exceptional collaboration! Communicated timely and effectively, provides appropriate recommendations, shows courtesy in her approach to collaboration, and delivers a quality product.",
-    author: "Upwork Client",
+    author: "Contract Client",
     company: "Australia",
   },
   {
     quote: "Katherine did some great work for us. She did it fast and did it really well. She was very responsive and receptive to our changes and ideas. Great experience!!",
-    author: "Upwork Client",
+    author: "Contract Client",
     company: "Norfolk, VI",
   },
   // Slide 16: Short + Short
-  {
-    quote: "Katherine is my go-to expert for elevating presentations and pitch decks. She works efficiently and consistently delivers high-quality results.",
-    author: "Upwork Client",
-    company: "United States",
-  },
   {
     quote: "Katherine is exceptional. She effortlessly elevates and translates business language into compelling storytelling for presentations. Highly recommended!",
     author: "Devon",

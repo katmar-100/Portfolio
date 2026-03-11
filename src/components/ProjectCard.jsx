@@ -10,16 +10,12 @@ const ProjectCard = ({ project, index = 0 }) => {
   const displayImage = thumbnail || image;
 
   return (
-    <motion.div
+    <div
       className={styles.card}
-      whileHover={{
-        y: -8,
-        transition: { duration: 0.35, ease: [0.25, 0.4, 0.25, 1] },
-      }}
     >
       {displayImage && (
         <div className={styles.imageWrap}>
-          <img src={displayImage} alt={title} className={styles.image} loading="lazy" />
+          <img src={displayImage} alt={title} className={styles.image} loading="lazy" style={project.imagePosition ? { objectPosition: project.imagePosition } : undefined} />
         </div>
       )}
       <div className={styles.accentLine} />
@@ -64,7 +60,7 @@ const ProjectCard = ({ project, index = 0 }) => {
           <span className={styles.seeText}>SEE </span>MORE {category.toUpperCase()}&nbsp;→
         </Link>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

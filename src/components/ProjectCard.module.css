@@ -3,11 +3,12 @@
   border-radius: 10px;
   overflow: hidden;
   border: 1px solid var(--accent-tint-15);
-  transition: all 1s cubic-bezier(0.25, 0.4, 0.25, 1);
+  transition: box-shadow 0.5s ease, border-color 0.5s ease;
   display: flex;
   flex-direction: column;
   height: 100%;
   position: relative;
+  box-shadow: none;
 }
 
 .card:hover {
@@ -21,31 +22,37 @@
   aspect-ratio: 16 / 10;
   overflow: hidden;
   background: var(--section-card-alt);
+  position: relative;
+}
+
+.imageWrap::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-electric) 100%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 1.5s cubic-bezier(0.25, 0.4, 0.25, 1);
+  z-index: 1;
+}
+
+.card:hover .imageWrap::after {
+  transform: scaleX(1);
 }
 
 .image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
   transform: scale(1.05);
-  transition: transform 1.2s cubic-bezier(0.25, 0.4, 0.25, 1);
-}
-
-.card:hover .image {
-  transform: scale(1.07);
 }
 
 .accentLine {
-  height: 2px;
-  width: 100%;
-  background: var(--gradient-accent);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.5s cubic-bezier(0.25, 0.4, 0.25, 1);
-}
-
-.card:hover .accentLine {
-  transform: scaleX(1);
+  display: none;
 }
 
 .content {
@@ -150,7 +157,7 @@
   font-size: 0.65rem;
   padding: 0.2rem 0.6rem;
   white-space: nowrap;
-  border: 1px solid var(--accent-border-subtle);
+  border: 1px solid var(--accent-electric);
   border-radius: 20px;
   color: var(--accent-text-80);
   letter-spacing: 0.02em;
@@ -182,6 +189,15 @@
 .seeAllLink:hover {
   color: var(--accent-electric);
   text-decoration: none;
+}
+
+@keyframes floatUpDown {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+.card:hover .seeAllLink {
+  animation: floatUpDown 1.5s ease-in-out infinite;
 }
 
 .requestButton {

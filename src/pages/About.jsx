@@ -250,7 +250,7 @@ export default function About() {
               Creative leadership isn't about having all the answers. It's about asking better questions - and building the systems that allow great work to happen again and again.
             </p>
             <p className={styles.subtitleSub}>
-              I'm a Creative Director based in Miami, drawn to the space where strategy, design, and storytelling intersect.
+              I'm a Creative Director based in Miami - leading at the intersection of brand strategy, design systems, and organizational storytelling.
             </p>
           </div>
         </FadeIn>
@@ -258,7 +258,7 @@ export default function About() {
 
       {/* TRUSTED BY BRANDS - Logo carousel */}
       <section className={styles.brands}>
-        <h3 className={styles.brandsLabel}>Trusted by</h3>
+        <h3 className={styles.brandsLabel}>Agency & Contract Clients</h3>
         <BrandCarousel brands={brands} theme={theme} />
       </section>
 
@@ -266,61 +266,49 @@ export default function About() {
       <section className={styles.narrative}>
         <FadeIn delay={0} direction="up" distance={20}>
           <div className={styles.pullQuote}>
-            <span>My career has taken shape at the intersection of strategy and&nbsp;aesthetics.</span>
+            <span>My career has been shaped by a single, consistent challenge: translating complexity into&nbsp;clarity.</span>
           </div>
         </FadeIn>
 
         <FadeIn delay={0.05} direction="up" distance={20}>
           <p>
-            Leading creative teams, building brand systems, and shaping the visual language of organizations at moments of growth and change has become my bread and butter.
+            I've spent over a decade leading creative teams, building brand systems, and defining the visual language of organizations at pivotal moments - across healthcare, technology, entertainment, logistics, and global consumer brands. The industries change. The mandate doesn't.
           </p>
         </FadeIn>
 
         <FadeIn delay={0.1} direction="up" distance={20}>
           <p>
-            The industries have varied across a wide range, but the underlying challenge has stayed the same...
+            Today, as Creative Director at ChenMed, I lead the in-house creative organization for a national healthcare brand. I build scalable creative systems, set the quality bar, and turn organizational ambition into brand expression across more than 100 locations.
           </p>
         </FadeIn>
 
         <FadeIn delay={0.15} direction="up" distance={20}>
-          <div className={styles.pullQuote}>
-            <span>Translating complexity into clarity through brand, systems, and&nbsp;storytelling.</span>
-          </div>
+          <p>
+            Before ChenMed, I served as VP and Chief Marketing Officer at a cybersecurity startup, where I built the brand, marketing, and creative function from zero - and helped drive the company from inception through rapid growth to IPO preparation.
+          </p>
         </FadeIn>
 
         <FadeIn delay={0.2} direction="up" distance={20}>
           <p>
-            That challenge continues to shape how I lead today. As Creative Director at ChenMed, I lead the in-house creative organization for a national healthcare brand. My work focuses on building scalable creative systems, raising quality standards, and translating organizational ambition into a cohesive brand expression across more than 100 locations.
+            Earlier, I helped shape global visual systems at Electronic Arts and cut my teeth in the agency world as an Art Director at H+K Strategies, where my pitch work contributed to more than $10M in major account wins.
           </p>
         </FadeIn>
 
         <FadeIn delay={0.25} direction="up" distance={20}>
           <p>
-            Before that, I was the VP and Chief Marketing Officer at a cybersecurity startup. I built the company's brand, marketing, and creative function from the ground up - and played a major role from inception, to a period of rapid growth, to IPO preparation in a highly competitive market.
+            Along the way, I spent several years as an independent creative director, partnering with founders and leadership teams to build brands that hold up under pressure.
           </p>
         </FadeIn>
 
         <FadeIn delay={0.3} direction="up" distance={20}>
-          <p>
-            Earlier in my career, I helped develop global visual systems at Electronic Arts. I also lived the agency life as an Art Director, crafting campaign storytelling at H+K Strategies (that contributed to more than $10M in major account wins!)
-          </p>
+          <div className={styles.pullQuote}>
+            <span>A core belief runs through all of it: design is infrastructure, not&nbsp;decoration.</span>
+          </div>
         </FadeIn>
 
         <FadeIn delay={0.35} direction="up" distance={20}>
           <p>
-            Along the way, I spent several years working independently as a creative director, partnering directly with founders and leadership teams to build brands that perform.
-          </p>
-        </FadeIn>
-
-        <FadeIn delay={0.4} direction="up" distance={20}>
-          <div className={styles.pullQuote}>
-            <span>What connects all of this is a core belief: design is infrastructure, not&nbsp;decoration.</span>
-          </div>
-        </FadeIn>
-
-        <FadeIn delay={0.45} direction="up" distance={20}>
-          <p>
-            The best creative work isn't defined by taste alone. It's built on systems that scale, narratives that endure, and standards that make excellence repeatable. That philosophy shapes how I approach creative leadership every day.
+            The best creative work isn't about taste alone - it's built on systems that scale, narratives that endure, and standards that make excellence repeatable.
           </p>
         </FadeIn>
 
@@ -337,7 +325,7 @@ export default function About() {
       {/* What I Bring Section */}
       <section className={styles.bringSection}>
         <FadeIn delay={0}>
-          <h2 className={styles.bringHeading}>My Unique Talents</h2>
+          <h2 className={styles.bringHeading}>Leadership Capabilities</h2>
         </FadeIn>
         <FadeIn delay={0.05}>
           <div className={styles.bringAccentLine}></div>

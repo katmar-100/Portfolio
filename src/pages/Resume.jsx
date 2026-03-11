@@ -51,14 +51,9 @@ const Resume = () => {
       logo: '/images/logos/chenmed.png',
       lightLogo: '/images/logos/light mode/chenmed-light.png',
       bullets: [
-        'Lead the full in-house creative organization for a national consumer healthcare brand, directing a multidisciplinary team of writers, designers, animators, producers, videographers, and brand strategists.',
-        'Rebuilt studio workflows and creative operating models, increasing output velocity and cross-departmental clarity while reducing revision cycles.',
-        'Set creative vision and brand aesthetic across all channels including digital, social, retail-inspired clinic experiences, environmental graphics, print, and experiential storytelling.',
-        'Directed photo, video, motion, and illustration systems that elevated brand perception and audience emotional connection.',
-        'Partnered with Executive, Marketing, Growth, and Operations leaders to translate business goals into integrated creative strategies.',
-        'Introduced AI-assisted ideation, photo editing, motion generation, and asset scaling tools to improve studio efficiency and quality.',
-        'Established a high-performance, inclusive creative culture centered on accountability, curiosity, and innovation.',
-        'Elevated team culture by implementing accountability frameworks, creative rituals, collaborative reviews, and mentorship practices that strengthened team performance and innovation.'
+        'Lead the in-house creative organization for a national healthcare brand, setting creative vision and brand standards across digital, social, environmental, print, and experiential channels spanning 100+ locations.',
+        'Rebuilt studio operations and creative workflows, introduced AI-assisted production tools, and established accountability frameworks that elevated both output quality and team performance.',
+        'Partner with executive and cross-functional leadership to align creative strategy with business goals - building a high-performance culture where scalable systems, mentorship, and creative rigor drive consistently excellent work.'
       ]
     },
     {
@@ -69,14 +64,9 @@ const Resume = () => {
       logo: '/images/logos/Cybercatch.png',
       lightLogo: '/images/logos/light mode/cybercatch-light.png',
       bullets: [
-        'Owned creative, brand, and marketing strategy for a high-growth cybersecurity SaaS company. Helped drive the company to an IPO in Canada.',
-        'Oversaw brand, creative, and marketing strategy for a rapidly scaling cybersecurity SaaS company serving enterprise and global customers in a highly competitive market.',
-        'Directed multidisciplinary teams across creative, digital marketing, content development, CRM, demand generation, and go-to-market functions to ensure alignment and execution against growth targets.',
-        'Led development of comprehensive visual identity systems, messaging frameworks, content architectures, and brand guidelines that defined company positioning across all channels and audiences.',
-        'Oversaw creation of motion graphics, video storytelling, photography, technical product demos, and UX-driven content that simplified complex cybersecurity concepts for broad audiences.',
-        'Managed global creative production, ensuring quality and consistency across campaigns, product releases, conferences, and customer education platforms.',
-        'Partnered with Product, Sales, and Executive teams to develop creative strategies that supported pipeline growth, product adoption, and competitive differentiation.',
-        'Strengthened market position through integrated campaigns, refined creative systems, and improved brand storytelling across digital channels, paid media, and B2B environments.'
+        'Owned brand, creative, and marketing strategy for a high-growth cybersecurity SaaS company, building the function from the ground up and helping drive the company through rapid scaling to IPO in Canada.',
+        'Led multidisciplinary teams across creative, digital marketing, content, CRM, and demand generation - developing comprehensive visual identity systems, messaging frameworks, and go-to-market strategies that defined company positioning in a highly competitive enterprise market.',
+        'Partnered with Product, Sales, and Executive leadership to translate complex cybersecurity concepts into clear brand storytelling that supported pipeline growth, product adoption, and competitive differentiation.'
       ]
     },
     {
@@ -87,13 +77,9 @@ const Resume = () => {
       logo: '/images/logos/self-employed.png',
       lightLogo: '/images/logos/light mode/self-employed-light.png',
       bullets: [
-        'Led creative direction and brand identity for consumer brands, tech companies, and startups.',
-        'Directed branding, visual identity development, and campaign creative for a wide range of consumer brands, tech startups, wellness companies, real estate groups, and B2B organizations.',
-        'Delivered comprehensive creative direction including photography art direction, UI/UX design, motion graphics, product visualization, packaging concepts, and launch-driven digital assets.',
-        'Developed scalable style guides, iconography systems, content templates, and visual systems used across web platforms, apps, ecommerce experiences, and social channels.',
-        'Partnered with founders, CMOs, and product teams to build brand architecture, positioning, narrative development, and multi-channel creative strategies from concept through execution.',
-        'Managed end-to-end creative workflows including discovery, concepting, prototyping, production, QA, and asset activation across digital, print, and motion environments.',
-        'Provided operational guidance to early-stage companies, helping establish creative processes, measurable KPIs, asset libraries, and repeatable systems that supported sustainable brand growth.'
+        'Led creative direction and brand identity for a diverse portfolio of consumer brands, tech startups, wellness companies, and B2B organizations - delivering everything from visual identity systems and campaign creative to UI/UX, motion, packaging, and product visualization.',
+        'Built scalable brand architectures, style guides, and creative systems that clients could maintain and grow long after engagement.',
+        'Partnered directly with founders, CMOs, and product teams to translate early-stage ambition into polished, market-ready brand experiences across digital, print, and motion.'
       ]
     },
     {
@@ -104,11 +90,9 @@ const Resume = () => {
       logo: '/images/logos/ea.png',
       lightLogo: '/images/logos/light mode/ea-light.png',
       bullets: [
-        'Led global visual identity systems for EA\'s internal brand, employee experience platforms, and corporate communications supporting teams across North America, Europe, and Asia.',
-        'Designed and managed large-scale asset libraries, iconography systems, brand guidelines, and photography standards used by internal creative, HR, and executive teams worldwide.',
-        'Developed presentation systems, brand playbooks, and visual governance frameworks ensuring consistent execution across hundreds of deliverables and cross-functional teams.',
-        'Collaborated with internal stakeholders on employee engagement campaigns, internal product launches, and culture-building initiatives with high adoption and engagement rates.',
-        'Conducted brand training workshops for global teams to ensure correct usage of visual standards, toolkits, and communication assets.'
+        'Led global visual identity systems for EA\'s internal brand and employee experience platforms, designing and managing the asset libraries, brand guidelines, iconography systems, and photography standards used by creative, HR, and executive teams across North America, Europe, and Asia.',
+        'Developed presentation systems and visual governance frameworks that ensured consistent brand execution across hundreds of deliverables and cross-functional teams worldwide.',
+        'Collaborated on employee engagement campaigns and culture-building initiatives while conducting brand training workshops to drive adoption of visual standards across global studios.'
       ]
     },
     {
@@ -119,13 +103,9 @@ const Resume = () => {
       logo: '/images/logos/hK-strategies.png',
       lightLogo: '/images/logos/light mode/hk-strategies-light.png',
       bullets: [
-        'Responsible for day-to-day business development design work, such as: RFPs, presentation templates + decks for pitches, infographics, posters, follow-up emails, etc.',
-        'Pitch-related design work helped win over $10M of new business, including: P&G, Vanguard, Hitachi, Hotels.com, NCR, Lee Jeans, Pfizer, ANA, & more.',
-        'Produced integrated brand campaigns, design systems, and motion-supported storytelling for high-profile clients including Target, P&G, Pfizer, and Mazda.',
-        'Led creative direction across concept development, photography, motion, presentations, and digital content for nationally visible campaigns and corporate initiatives.',
-        'Partnered closely with strategy teams, account leads, and video producers to deliver insight-driven creative aligned to client objectives and audience research.',
-        'Directed visual assets for multimillion-dollar new-business pitches, contributing to several major account wins.',
-        'Managed timelines, creative workflows, and art direction for cross-functional teams executing under tight deadlines.'
+        'Led creative direction for business development and client campaigns at a top global communications firm, with pitch-related design work contributing to more than $10M in new business wins including P&G, Vanguard, Hitachi, Pfizer, and ANA.',
+        'Produced integrated brand campaigns, design systems, and motion-supported storytelling for high-profile clients including Target, Mazda, and Pfizer - owning concept development, photography direction, and digital content across nationally visible initiatives.',
+        'Partnered with strategy teams and account leads to deliver insight-driven creative under tight deadlines, managing cross-functional workflows from pitch through execution.'
       ]
     }
   ];
@@ -212,7 +192,7 @@ const Resume = () => {
         className={styles.capabilitiesSection}
         onMouseLeave={() => setHoveredCap(null)}
       >
-          <h2 className={styles.sectionHeading}>Core Capabilities</h2>
+          <h2 className={styles.sectionHeading}>Areas of Expertise</h2>
           <div className={styles.tagsContainer}>
             {capabilities.map((capability, index) => (
               <motion.span
@@ -310,7 +290,7 @@ const Resume = () => {
 
       {/* TRUSTED BY BRANDS - Logo carousel */}
       <section className={styles.brands}>
-        <h3 className={styles.brandsLabel}>Trusted by</h3>
+        <h3 className={styles.brandsLabel}>Agency & Contract Clients</h3>
         <BrandCarousel brands={brands} theme={theme} />
       </section>
 
