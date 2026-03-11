@@ -46,10 +46,14 @@ const Resume = () => {
       company: 'ChenMed',
       dates: '2024 - Present',
       bullets: [
-        'Lead the in-house creative organization for a national healthcare brand serving 100+ locations across the United States.',
-        'Built scalable brand systems, design standards, and creative workflows that elevated quality and consistency at scale.',
-        'Direct cross-functional collaboration with marketing, communications, and executive leadership.',
-        'Introduced AI-assisted workflows and operational improvements that increased team capacity and output quality.'
+        'Lead the full in-house creative organization for a national consumer healthcare brand, directing a multidisciplinary team of writers, designers, animators, producers, videographers, and brand strategists.',
+        'Rebuilt studio workflows and creative operating models, increasing output velocity and cross-departmental clarity while reducing revision cycles.',
+        'Set creative vision and brand aesthetic across all channels including digital, social, retail-inspired clinic experiences, environmental graphics, print, and experiential storytelling.',
+        'Directed photo, video, motion, and illustration systems that elevated brand perception and audience emotional connection.',
+        'Partnered with Executive, Marketing, Growth, and Operations leaders to translate business goals into integrated creative strategies.',
+        'Introduced AI-assisted ideation, photo editing, motion generation, and asset scaling tools to improve studio efficiency and quality.',
+        'Established a high-performance, inclusive creative culture centered on accountability, curiosity, and innovation.',
+        'Elevated team culture by implementing accountability frameworks, creative rituals, collaborative reviews, and mentorship practices that strengthened team performance and innovation.'
       ]
     },
     {
@@ -58,10 +62,14 @@ const Resume = () => {
       company: 'CyberCatch',
       dates: '2021 - 2024',
       bullets: [
-        'Built the brand, marketing, and creative function from zero through high-growth and IPO-readiness stages.',
-        'Developed go-to-market strategy, investor materials, and executive communications for institutional credibility.',
-        'Led all visual identity, messaging, and campaign development as the sole creative and marketing leader.',
-        'Managed agency relationships, media strategy, and cross-functional alignment with product and sales.'
+        'Owned creative, brand, and marketing strategy for a high-growth cybersecurity SaaS company. Helped drive the company to an IPO in Canada.',
+        'Oversaw brand, creative, and marketing strategy for a rapidly scaling cybersecurity SaaS company serving enterprise and global customers in a highly competitive market.',
+        'Directed multidisciplinary teams across creative, digital marketing, content development, CRM, demand generation, and go-to-market functions to ensure alignment and execution against growth targets.',
+        'Led development of comprehensive visual identity systems, messaging frameworks, content architectures, and brand guidelines that defined company positioning across all channels and audiences.',
+        'Oversaw creation of motion graphics, video storytelling, photography, technical product demos, and UX-driven content that simplified complex cybersecurity concepts for broad audiences.',
+        'Managed global creative production, ensuring quality and consistency across campaigns, product releases, conferences, and customer education platforms.',
+        'Partnered with Product, Sales, and Executive teams to develop creative strategies that supported pipeline growth, product adoption, and competitive differentiation.',
+        'Strengthened market position through integrated campaigns, refined creative systems, and improved brand storytelling across digital channels, paid media, and B2B environments.'
       ]
     },
     {
@@ -70,9 +78,13 @@ const Resume = () => {
       company: 'Self-Employed',
       dates: '2020 - 2021',
       bullets: [
-        'Provided end-to-end creative direction and brand strategy for startups, consumer brands, and B2B technology companies.',
-        'Developed brand identities, visual systems, campaign concepts, and digital experiences across wellness, real estate, and lifestyle.',
-        'Partnered directly with founders and executive teams as a strategic creative advisor.'
+        'Led creative direction and brand identity for consumer brands, tech companies, and startups.',
+        'Directed branding, visual identity development, and campaign creative for a wide range of consumer brands, tech startups, wellness companies, real estate groups, and B2B organizations.',
+        'Delivered comprehensive creative direction including photography art direction, UI/UX design, motion graphics, product visualization, packaging concepts, and launch-driven digital assets.',
+        'Developed scalable style guides, iconography systems, content templates, and visual systems used across web platforms, apps, ecommerce experiences, and social channels.',
+        'Partnered with founders, CMOs, and product teams to build brand architecture, positioning, narrative development, and multi-channel creative strategies from concept through execution.',
+        'Managed end-to-end creative workflows including discovery, concepting, prototyping, production, QA, and asset activation across digital, print, and motion environments.',
+        'Provided operational guidance to early-stage companies, helping establish creative processes, measurable KPIs, asset libraries, and repeatable systems that supported sustainable brand growth.'
       ]
     },
     {
@@ -81,9 +93,11 @@ const Resume = () => {
       company: 'Electronic Arts',
       dates: '2017 - 2020',
       bullets: [
-        'Developed global visual communication standards and internal brand infrastructure.',
-        'Created design systems and templates enabling consistent brand expression across autonomous global studios.',
-        'Collaborated with marketing, communications, and studio leadership on high-visibility campaigns.'
+        'Led global visual identity systems for EA\'s internal brand, employee experience platforms, and corporate communications supporting teams across North America, Europe, and Asia.',
+        'Designed and managed large-scale asset libraries, iconography systems, brand guidelines, and photography standards used by internal creative, HR, and executive teams worldwide.',
+        'Developed presentation systems, brand playbooks, and visual governance frameworks ensuring consistent execution across hundreds of deliverables and cross-functional teams.',
+        'Collaborated with internal stakeholders on employee engagement campaigns, internal product launches, and culture-building initiatives with high adoption and engagement rates.',
+        'Conducted brand training workshops for global teams to ensure correct usage of visual standards, toolkits, and communication assets.'
       ]
     },
     {
@@ -92,9 +106,13 @@ const Resume = () => {
       company: 'Hill+Knowlton Strategies',
       dates: '2014 - 2017',
       bullets: [
-        'Led visual direction for campaign concepts, client presentations, and new business pitch materials.',
-        'Developed motion-supported storytelling and integrated campaign visuals contributing to major account wins.',
-        'Managed design execution across print, digital, social, and experiential channels for Fortune 500 clients.'
+        'Responsible for day-to-day business development design work, such as: RFPs, presentation templates + decks for pitches, infographics, posters, follow-up emails, etc.',
+        'Pitch-related design work helped win over $10M of new business, including: P&G, Vanguard, Hitachi, Hotels.com, NCR, Lee Jeans, Pfizer, ANA, & more.',
+        'Produced integrated brand campaigns, design systems, and motion-supported storytelling for high-profile clients including Target, P&G, Pfizer, and Mazda.',
+        'Led creative direction across concept development, photography, motion, presentations, and digital content for nationally visible campaigns and corporate initiatives.',
+        'Partnered closely with strategy teams, account leads, and video producers to deliver insight-driven creative aligned to client objectives and audience research.',
+        'Directed visual assets for multimillion-dollar new-business pitches, contributing to several major account wins.',
+        'Managed timelines, creative workflows, and art direction for cross-functional teams executing under tight deadlines.'
       ]
     }
   ];
@@ -182,42 +200,11 @@ const Resume = () => {
         <BrandCarousel brands={brands} />
       </section>
 
-      {/* Experience Section */}
-      <div className={styles.experienceWrap}>
-        <FadeIn delay={0.1} direction="up" distance={20}>
-          <section className={styles.experience}>
-            <h2 className={styles.sectionHeading}>Experience</h2>
-
-            {experiences.map((role, index) => (
-              <div key={role.id} className={styles.roleContainer}>
-                <div className={styles.roleHeader}>
-                  <div className={styles.roleTitle}>{role.title}</div>
-                  <div className={styles.roleCompany}>{role.company}</div>
-                  <div className={styles.roleDates}>{role.dates}</div>
-                </div>
-                <ul className={styles.bullets}>
-                  {role.bullets.map((bullet, idx) => (
-                    <li key={idx}>{bullet}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </section>
-          <div className={styles.seeWorkWrap}>
-            <Link to="/work" className={styles.seeWorkButton}>
-              SEE MY WORK
-              <span className={styles.seeWorkArrow}>→</span>
-            </Link>
-          </div>
-        </FadeIn>
-      </div>
-
       {/* Capabilities Section */}
-      <FadeIn delay={0.2} direction="up" distance={20}>
-        <section
-          className={styles.capabilitiesSection}
-          onMouseLeave={() => setHoveredCap(null)}
-        >
+      <section
+        className={styles.capabilitiesSection}
+        onMouseLeave={() => setHoveredCap(null)}
+      >
           <h2 className={styles.sectionHeading}>Core Capabilities</h2>
           <div className={styles.tagsContainer}>
             {capabilities.map((capability, index) => (
@@ -251,8 +238,38 @@ const Resume = () => {
               )}
             </AnimatePresence>
           </div>
-        </section>
-      </FadeIn>
+      </section>
+
+      {/* Experience Section */}
+      <div className={styles.experienceWrap}>
+        <FadeIn delay={0.1} direction="up" distance={20}>
+          <section className={styles.experience}>
+            <h2 className={styles.sectionHeading}>Experience</h2>
+
+            {experiences.map((role, index) => (
+              <div key={role.id} className={styles.roleContainer}>
+                <div className={styles.roleHeader}>
+                  <div className={styles.roleTitle}>{role.title}</div>
+                  <div className={styles.roleCompany}>{role.company}</div>
+                  <div className={styles.roleDates}>{role.dates}</div>
+                </div>
+                <ul className={styles.bullets}>
+                  {role.bullets.map((bullet, idx) => (
+                    <li key={idx}>{bullet}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </section>
+          <div className={styles.seeWorkWrap}>
+            <Link to="/work" className={styles.seeWorkButton}>
+              SEE MY WORK
+              <span className={styles.seeWorkArrow}>→</span>
+            </Link>
+          </div>
+        </FadeIn>
+
+      </div>
 
       {/* Education Section */}
       <div className={styles.educationWrap}>

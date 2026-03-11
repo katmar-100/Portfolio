@@ -1,3 +1,7 @@
+.page {
+  background: #000000;
+}
+
 .header {
   padding-top: 10rem;
   padding-bottom: 3rem;
@@ -9,17 +13,18 @@
   font-size: 3.5rem;
   font-weight: 300;
   color: var(--text-primary);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   letter-spacing: -0.03em;
 }
 
-.subtitleCard {
-  max-width: 640px;
-  margin: 0 auto;
-  background: linear-gradient(135deg, rgba(90,130,184,0.06), rgba(110,180,224,0.03));
-  border: 1px solid rgba(90,130,184,0.1);
-  border-radius: 12px;
-  padding: 1.25rem 2rem;
+.subtitleAccent {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 2rem;
 }
 
 .subtitle {
@@ -27,7 +32,8 @@
   color: var(--text-secondary);
   line-height: 1.65;
   font-family: var(--font-sans);
-  margin: 0;
+  max-width: 520px;
+  margin: 0 auto;
 }
 
 /* Filter Section */
@@ -78,23 +84,46 @@
 }
 
 .caseStudy {
-  padding: 3.5rem 0;
+  padding: 0;
   border-bottom: none;
   text-align: left;
-  transition: all 0.3s ease;
+  transition: all 0.45s cubic-bezier(0.25, 0.4, 0.25, 1);
   position: relative;
+  background: #131a26;
+  border: 1px solid rgba(90, 130, 184, 0.15);
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  overflow: hidden;
 }
 
-.caseStudy:first-child {
-  padding-top: 1rem;
+.caseStudy:hover {
+  border-color: rgba(110, 180, 224, 0.4);
+  box-shadow:
+    0 20px 50px rgba(90, 130, 184, 0.15),
+    0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-8px);
+}
+
+.studyInner {
+  padding: 1.5rem 1.75rem 2rem;
 }
 
 /* Hero image for projects with thumbnails */
 .studyImage {
   width: 100%;
   height: auto;
-  border-radius: 8px;
-  margin-bottom: 1.5rem;
+  display: block;
+  transition: transform 0.5s cubic-bezier(0.25, 0.4, 0.25, 1);
+}
+
+.caseStudy:hover .studyImage {
+  transform: scale(1.04);
+}
+
+.studyImageWrap {
+  width: 100%;
+  overflow: hidden;
+  background: #0F1520;
 }
 
 /* Icon row above each case study */
@@ -159,6 +188,11 @@
   font-family: var(--font-sans);
 }
 
+.yearLabel {
+  color: rgba(255, 255, 255, 0.35);
+  font-weight: 700;
+}
+
 .studySummary {
   font-size: 1rem;
   line-height: 1.75;
@@ -207,12 +241,13 @@
 .tag {
   font-size: 0.7rem;
   padding: 0.2rem 0.7rem;
-  border: 1px solid var(--accent-light);
+  border: 1px solid rgba(110, 180, 224, 0.25);
   border-radius: 20px;
-  color: var(--accent);
+  color: rgba(110, 180, 224, 0.8);
   letter-spacing: 0.02em;
   font-family: var(--font-sans);
   text-transform: capitalize;
+  background: rgba(5, 10, 20, 0.8);
 }
 
 .requestButton {
@@ -227,7 +262,7 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #FFFFFF;
-  background: linear-gradient(135deg, #3A5F8F 0%, #5B8AB8 50%, #6EB4E0 100%);
+  background: var(--gradient-main);
   border: none;
   border-radius: 100px;
   transition: all 0.35s cubic-bezier(0.25, 0.4, 0.25, 1);
@@ -379,6 +414,10 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 0.75rem;
+  }
+
+  .studyInner {
+    padding: 1.25rem 1.25rem 1.5rem;
   }
 
   .filter {

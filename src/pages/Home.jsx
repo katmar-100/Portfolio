@@ -80,8 +80,8 @@ const BrandCarousel = ({ brands }) => {
 };
 
 export default function Home() {
-  // Custom order: L'Oreal, Lamborghini, Revlon, EA Global, Marmot Labs, TEDx, fresh, Lululemon
-  const featuredOrder = [1, 4, 34, 2, 5, 9, 6, 3];
+  // Custom order: L'Oreal, Lamborghini, Revlon, Marmot Labs, Lululemon, TEDx, fresh, EA Global
+  const featuredOrder = [1, 4, 34, 6, 5, 3, 2, 9];
   const featuredProjects = featuredOrder
     .map(id => projects.find(p => p.id === id))
     .filter(Boolean)
@@ -183,9 +183,9 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.9 }}
           >
-            <a href="#selected-work" className={styles.heroButton}>
-              See My Work →
-            </a>
+            <Link to="/case-studies" className={styles.heroButton}>
+              See More Work →
+            </Link>
           </motion.div>
 
         </div>
@@ -198,8 +198,11 @@ export default function Home() {
           <h2 className={styles.workHeading}>
             Selected Work
           </h2>
+          <p className={styles.workCallout}>
+            Full Case Studies & Deliverables Available on Request
+          </p>
           <p className={styles.workSubtext}>
-            Case studies available upon request. Here's a glimpse of the work and the thinking behind it.
+            Here's a glimpse of the work and the thinking behind it...
           </p>
           <div className={styles.workAccentLine}></div>
         </FadeIn>

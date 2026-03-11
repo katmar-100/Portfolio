@@ -65,12 +65,48 @@ export default function Work() {
     }
   }, [categoryFromUrl]);
 
+  // Custom display order
+  // Ordered for visual diversity + testimonials (★) spaced every 5 positions
+  const customOrder = [
+    9,   // ★ TEDx — angled slides (dark/neon)
+    18,  // Lex Gillette — full photo
+    6,   // fresh — angled slides (pink)
+    11,  // EA Internal Comms — book mockup
+    1,   // L'Oreal — gallery wall
+    5,   // ★ Marmot Labs — poster/flyer
+    34,  // Revlon — angled slides (red)
+    16,  // Stratolaunch — book mockup
+    14,  // EA Hackathon — logo/text mockup
+    4,   // Lamborghini — angled slides (blue/hexagon)
+    27,  // ★ Modern Focus — angled slides (tech)
+    17,  // EA Employee Experience — folded brochure
+    8,   // Smithsonian — angled slides (orange)
+    12,  // EA Style Guide — book mockup
+    13,  // DeoLeo — angled slides (green)
+    31,  // ★ CyberCatch — book/report
+    15,  // Wendi — angled slides (purple)
+    20,  // EA Wellness — poster/flyer
+    19,  // Bison Capital Group — angled slides (olive)
+    3,   // Lululemon — full photo
+    2,   // ★ EA Global Brand System — single booklet
+    21,  // Bountisphere — angled slides (teal)
+    22,  // EA Game Launches — digital/screen
+    25,  // Innovative Design Group — angled slides (red/black)
+    28,  // @kittydoodlez — device mockup
+  ];
+
+  const orderedProjects = customOrder
+    .map(id => projects.find(p => p.id === id))
+    .filter(Boolean)
+    .concat(projects.filter(p => !customOrder.includes(p.id)));
+
   const filteredProjects = activeCategory === 'All'
-    ? projects
-    : projects.filter(p => p.category === activeCategory);
+    ? orderedProjects
+    : orderedProjects.filter(p => p.category === activeCategory);
 
   return (
     <motion.div
+      className={styles.page}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -80,13 +116,12 @@ export default function Work() {
       <header className={styles.header}>
         <FadeIn delay={0}>
           <h1>Project Case Studies</h1>
+          <p className={styles.subtitleAccent}>Full Case Studies & Deliverables Available on Request</p>
         </FadeIn>
         <FadeIn delay={0.05}>
-          <div className={styles.subtitleCard}>
-            <p className={styles.subtitle}>
-              A curated selection spanning brand systems, campaigns, strategic communications, and executive presentations. Full case studies and deliverables available upon request.
-            </p>
-          </div>
+          <p className={styles.subtitle}>
+            A curated selection spanning brand systems, campaigns, strategic communications, and executive presentations.
+          </p>
         </FadeIn>
       </header>
 
@@ -126,112 +161,116 @@ export default function Work() {
           >
             {/* Hero image or category icon */}
             {project.image ? (
-              <motion.img
-                src={project.image}
-                alt={project.title}
-                className={styles.studyImage}
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true, margin: '-30px' }}
-                transition={{
-                  duration: 0.8,
-                  ease: [0.25, 0.4, 0.25, 1],
-                }}
-              />
+              <div className={styles.studyImageWrap}>
+                <motion.img
+                  src={project.image}
+                  alt={project.title}
+                  className={styles.studyImage}
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true, margin: '-30px' }}
+                  transition={{
+                    duration: 0.8,
+                    ease: [0.25, 0.4, 0.25, 1],
+                  }}
+                />
+              </div>
             ) : (
-              <div className={styles.studyIconRow}>
+              <div className={`${styles.studyInner} ${styles.studyIconRow}`}>
                 {categoryIcons[project.category] && (
                   <span className={styles.studyIcon}>{categoryIcons[project.category]}</span>
                 )}
               </div>
             )}
 
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-30px' }}
-              transition={{
-                duration: 0.6,
-                ease: [0.25, 0.4, 0.25, 1],
-                delay: 0.15,
-              }}
-            >
-              <div className={styles.studyHeader}>
-                <span className={styles.studyCategory}>{project.category}</span>
-                <div className={styles.titleRow}>
-                  <h2 className={styles.studyTitle}>{project.title}</h2>
-                  <Link
-                    to={`/contact?subject=Request+for+Deliverables&message=${encodeURIComponent(`Hi, I'd like to request full access to your ${project.title} project.`)}`}
-                    className={styles.requestButton}
-                  >
-                    <span className={styles.requestIcon}>
-                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                        <rect x="1" y="3" width="12" height="9" rx="1.5" stroke="currentColor" strokeWidth="1.3"/>
-                        <path d="M1 4.5l6 4 6-4" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round"/>
-                      </svg>
-                    </span>
-                    Request Deliverables
-                  </Link>
-                </div>
-                <p className={styles.metadata}>
-                  {project.client} · {project.role}
-                </p>
-              </div>
-
-              <p className={styles.studySummary}>{project.summary}</p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 25 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-20px' }}
-              transition={{
-                duration: 0.6,
-                ease: [0.25, 0.4, 0.25, 1],
-                delay: 0.3,
-              }}
-            >
-              <div className={styles.studyContent}>
-                <div className={styles.studyBlock}>
-                  <p className={styles.label}>Challenge</p>
-                  <p className={styles.studyText}>{project.challenge}</p>
-                </div>
-
-                <div className={styles.studyBlock}>
-                  <p className={styles.label}>Approach</p>
-                  <p className={styles.studyText}>{project.approach}</p>
-                </div>
-
-                <div className={styles.studyBlock}>
-                  <p className={styles.label}>Outcome</p>
-                  <p className={styles.studyText}>{project.outcome}</p>
-                </div>
-              </div>
-
-              {project.capabilities && (
-                <div className={styles.tags}>
-                  {project.capabilities.map(cap => (
-                    <span key={cap} className={styles.tag}>{cap}</span>
-                  ))}
-                </div>
-              )}
-
-              {project.testimonial && (
-                <div className={styles.inlineTestimonial}>
-                  <p className={styles.testimonialLabel}>
-                    Client Testimonial
-                    <span className={styles.stars}>★★★★★</span>
-                  </p>
-                  <blockquote className={styles.testimonialQuote}>
-                    "{project.testimonial.quote}"
-                  </blockquote>
-                  <p className={styles.testimonialAttribution}>
-                    — {project.testimonial.author}, {project.testimonial.company}
+            <div className={styles.studyInner}>
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: '-30px' }}
+                transition={{
+                  duration: 0.6,
+                  ease: [0.25, 0.4, 0.25, 1],
+                  delay: 0.15,
+                }}
+              >
+                <div className={styles.studyHeader}>
+                  <span className={styles.studyCategory}>{project.category}</span>
+                  <div className={styles.titleRow}>
+                    <h2 className={styles.studyTitle}>{project.title}</h2>
+                    <Link
+                      to={`/contact?subject=Request+for+Deliverables&message=${encodeURIComponent(`Hi, I'd like to request full access to your ${project.title} project.`)}`}
+                      className={styles.requestButton}
+                    >
+                      <span className={styles.requestIcon}>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                          <rect x="1" y="3" width="12" height="9" rx="1.5" stroke="currentColor" strokeWidth="1.3"/>
+                          <path d="M1 4.5l6 4 6-4" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                      </span>
+                      Request Deliverables
+                    </Link>
+                  </div>
+                  <p className={styles.metadata}>
+                    MY ROLE: {project.role} <span className={styles.yearLabel}>{project.year}</span>
                   </p>
                 </div>
-              )}
 
-            </motion.div>
+                <p className={styles.studySummary}>{project.summary}</p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 25 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: '-20px' }}
+                transition={{
+                  duration: 0.6,
+                  ease: [0.25, 0.4, 0.25, 1],
+                  delay: 0.3,
+                }}
+              >
+                <div className={styles.studyContent}>
+                  <div className={styles.studyBlock}>
+                    <p className={styles.label}>Challenge</p>
+                    <p className={styles.studyText}>{project.challenge}</p>
+                  </div>
+
+                  <div className={styles.studyBlock}>
+                    <p className={styles.label}>Approach</p>
+                    <p className={styles.studyText}>{project.approach}</p>
+                  </div>
+
+                  <div className={styles.studyBlock}>
+                    <p className={styles.label}>Outcome</p>
+                    <p className={styles.studyText}>{project.outcome}</p>
+                  </div>
+                </div>
+
+                {project.capabilities && (
+                  <div className={styles.tags}>
+                    {project.capabilities.map(cap => (
+                      <span key={cap} className={styles.tag}>{cap}</span>
+                    ))}
+                  </div>
+                )}
+
+                {project.testimonial && (
+                  <div className={styles.inlineTestimonial}>
+                    <p className={styles.testimonialLabel}>
+                      Client Testimonial
+                      <span className={styles.stars}>★★★★★</span>
+                    </p>
+                    <blockquote className={styles.testimonialQuote}>
+                      "{project.testimonial.quote}"
+                    </blockquote>
+                    <p className={styles.testimonialAttribution}>
+                      — {project.testimonial.author}, {project.testimonial.company}
+                    </p>
+                  </div>
+                )}
+
+              </motion.div>
+            </div>
           </motion.div>
         ))}
       </section>

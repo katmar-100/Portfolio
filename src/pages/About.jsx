@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import FadeIn from '../components/FadeIn';
 import ContactForm from '../components/ContactForm';
@@ -95,6 +95,13 @@ const BrandCarousel = ({ brands }) => {
 };
 
 export default function About() {
+  const { scrollY } = useScroll();
+  const nameOpacity = useTransform(scrollY, [0, 120], [1, 0]);
+  const nameY = useTransform(scrollY, [0, 120], [0, -60]);
+  const nameScale = useTransform(scrollY, [0, 120], [1, 0.7]);
+  const headshotY = useTransform(scrollY, [0, 150], [0, 70]);
+  const headshotScale = useTransform(scrollY, [0, 150], [1, 1.25]);
+
   const brands = [
     { name: "L'Oreal", logo: "/images/logos/loreal.png" },
     { name: "Electronic Arts", logo: "/images/logos/electronic-arts.png" },
@@ -217,28 +224,31 @@ export default function About() {
       {/* Header Section */}
       <header className={styles.header}>
         <FadeIn delay={0}>
-          <div className={styles.headshotWrap}>
+          <motion.div className={styles.headshotWrap} style={{ y: headshotY, scale: headshotScale }}>
             <img
               src="/images/katherine-atmar.jpg"
               alt="Katherine Atmar"
               className={styles.headshot}
             />
-          </div>
+          </motion.div>
+        </FadeIn>
+        <FadeIn delay={0.03}>
+          <motion.div
+            className={styles.nameWrap}
+            style={{ opacity: nameOpacity, y: nameY, scale: nameScale }}
+          >
+            <div className={styles.heroName}>Katherine Atmar</div>
+            <div className={styles.heroRole}>Creative Director & Brand Leader</div>
+          </motion.div>
         </FadeIn>
         <FadeIn delay={0.05}>
-          <div className={styles.subtitleCard}>
+          <div className={styles.headerTextWrap}>
             <p className={styles.subtitleBold}>
               Creative leadership isn't about having all the answers. It's about asking better questions - and building the systems that allow great work to happen again and again.
             </p>
             <p className={styles.subtitleSub}>
               I'm a Creative Director based in Miami, drawn to the space where strategy, design, and storytelling intersect.
             </p>
-          </div>
-          <div className={styles.seeWorkWrap}>
-            <Link to="/work" className={styles.seeWorkButton}>
-              See My Work
-              <span className={styles.seeWorkArrow}>→</span>
-            </Link>
           </div>
         </FadeIn>
       </header>
@@ -252,62 +262,62 @@ export default function About() {
       {/* Narrative Section */}
       <section className={styles.narrative}>
         <FadeIn delay={0} direction="up" distance={20}>
-          <p>
-            My career has taken shape at the intersection of strategy and aesthetics - leading creative teams, building brand systems, and shaping the visual language of organizations at moments of growth and change.
-          </p>
+          <div className={styles.pullQuote}>
+            <span>My career has taken shape at the intersection of strategy and&nbsp;aesthetics.</span>
+          </div>
         </FadeIn>
 
         <FadeIn delay={0.05} direction="up" distance={20}>
           <p>
-            From healthcare to cybersecurity, entertainment to consumer wellness, the industries have varied, but the underlying challenge has stayed the same: translating complexity into clarity through brand, systems, and storytelling.
+            Leading creative teams, building brand systems, and shaping the visual language of organizations at moments of growth and change has become my bread and butter.
           </p>
         </FadeIn>
 
         <FadeIn delay={0.1} direction="up" distance={20}>
-          <div className={styles.pullQuote}>
-            <span>That challenge continues to shape how I lead today.</span>
-          </div>
+          <p>
+            The industries have varied across a wide range, but the underlying challenge has stayed the same...
+          </p>
         </FadeIn>
 
         <FadeIn delay={0.15} direction="up" distance={20}>
-          <p>
-            As Creative Director at ChenMed, I lead the in-house creative organization for a national healthcare brand. My work focuses on building scalable creative systems, raising quality standards, and translating organizational ambition into a cohesive brand expression across more than 100 locations.
-          </p>
+          <div className={styles.pullQuote}>
+            <span>Translating complexity into clarity through brand, systems, and&nbsp;storytelling.</span>
+          </div>
         </FadeIn>
 
         <FadeIn delay={0.2} direction="up" distance={20}>
           <p>
-            Before that, as VP and Chief Marketing Officer at CyberCatch, I built the company's brand, marketing, and creative function from the ground up during a period of rapid growth and IPO preparation.
+            That challenge continues to shape how I lead today. As Creative Director at ChenMed, I lead the in-house creative organization for a national healthcare brand. My work focuses on building scalable creative systems, raising quality standards, and translating organizational ambition into a cohesive brand expression across more than 100 locations.
           </p>
         </FadeIn>
 
         <FadeIn delay={0.25} direction="up" distance={20}>
           <p>
-            Earlier in my career, I helped develop global visual systems at Electronic Arts and crafted campaign storytelling at H+K Strategies that contributed to more than $10M in major account wins.
+            Before that, I was the VP and Chief Marketing Officer at a cybersecurity startup. I built the company's brand, marketing, and creative function from the ground up - and played a major role from inception, to a period of rapid growth, to IPO preparation in a highly competitive market.
           </p>
         </FadeIn>
 
         <FadeIn delay={0.3} direction="up" distance={20}>
           <p>
-            Along the way, I also spent several years working independently as a creative director, partnering directly with founders and leadership teams to build brands that perform.
+            Earlier in my career, I helped develop global visual systems at Electronic Arts. I also lived the agency life as an Art Director, crafting campaign storytelling at H+K Strategies (that contributed to more than $10M in major account wins!)
           </p>
         </FadeIn>
 
         <FadeIn delay={0.35} direction="up" distance={20}>
-          <div className={styles.pullQuote}>
-            <span>What connects all of this is a belief that design is infrastructure, not decoration.</span>
-          </div>
+          <p>
+            Along the way, I spent several years working independently as a creative director, partnering directly with founders and leadership teams to build brands that perform.
+          </p>
         </FadeIn>
 
         <FadeIn delay={0.4} direction="up" distance={20}>
-          <p>
-            The best creative work isn't defined by taste alone. It's built on systems that scale, narratives that endure, and standards that make excellence repeatable.
-          </p>
+          <div className={styles.pullQuote}>
+            <span>What connects all of this is a core belief: design is infrastructure, not&nbsp;decoration.</span>
+          </div>
         </FadeIn>
 
         <FadeIn delay={0.45} direction="up" distance={20}>
           <p>
-            That philosophy shapes how I approach creative leadership every day.
+            The best creative work isn't defined by taste alone. It's built on systems that scale, narratives that endure, and standards that make excellence repeatable. That philosophy shapes how I approach creative leadership every day.
           </p>
         </FadeIn>
 
@@ -324,7 +334,7 @@ export default function About() {
       {/* What I Bring Section */}
       <section className={styles.bringSection}>
         <FadeIn delay={0}>
-          <h2 className={styles.bringHeading}>What I Bring</h2>
+          <h2 className={styles.bringHeading}>My Unique Talents</h2>
         </FadeIn>
         <FadeIn delay={0.05}>
           <div className={styles.bringAccentLine}></div>

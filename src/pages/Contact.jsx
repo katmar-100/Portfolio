@@ -7,6 +7,7 @@ import styles from './Contact.module.css';
 const Contact = () => {
   return (
     <motion.div
+      className={styles.page}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}

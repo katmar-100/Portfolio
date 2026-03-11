@@ -1,9 +1,13 @@
 /* Header Section */
 .header {
-  padding-top: 10rem;
-  padding-bottom: 5rem;
+  padding-top: 14rem;
+  padding-bottom: 12rem;
   text-align: center;
-  background: linear-gradient(160deg, #1a2a3a 0%, #1f3a4a 30%, #182e3e 55%, #141919 100%);
+  background: #0a0f1a;
+  background-image:
+    radial-gradient(ellipse 80% 60% at 30% 40%, rgba(26,53,104,0.7) 0%, rgba(18,38,74,0.4) 30%, rgba(12,22,42,0.15) 55%, transparent 80%),
+    radial-gradient(ellipse 60% 80% at 75% 55%, rgba(19,44,80,0.5) 0%, rgba(14,32,60,0.25) 30%, rgba(10,18,34,0.1) 55%, transparent 80%),
+    radial-gradient(ellipse 50% 50% at 50% 20%, rgba(30,60,120,0.3) 0%, rgba(20,40,80,0.15) 35%, rgba(12,22,42,0.05) 60%, transparent 85%);
   position: relative;
 }
 
@@ -14,6 +18,12 @@
   color: var(--text-primary);
   margin-bottom: 1.5rem;
   letter-spacing: -0.02em;
+}
+
+.headerTextWrap {
+  max-width: 620px;
+  margin: 0 auto 1.5rem;
+  text-align: center;
 }
 
 .subtitleCard {
@@ -40,7 +50,7 @@
 
 .subtitleBold {
   font-family: var(--font-sans);
-  font-size: 1.15rem;
+  font-size: 1.35rem;
   color: var(--text-primary);
   font-weight: 600;
   line-height: 1.65;
@@ -49,7 +59,7 @@
 
 .subtitleSub {
   font-family: var(--font-sans);
-  font-size: 1rem;
+  font-size: 1.15rem;
   color: var(--text-secondary);
   font-weight: 400;
   line-height: 1.65;
@@ -121,7 +131,13 @@
   line-height: 1.6;
   color: #FFFFFF;
   letter-spacing: -0.01em;
-  font-style: italic;
+  font-style: normal;
+  display: block;
+}
+
+.pullQuoteBold {
+  font-weight: 700;
+  margin-top: 0.75rem;
 }
 
 /* Thin divider between narrative paragraphs */
@@ -141,12 +157,38 @@
 }
 
 .headshot {
-  width: 200px;
-  height: 200px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center top;
   border: 2px solid rgba(110, 180, 224, 0.3);
+}
+
+/* Hero name/title below headshot */
+.nameWrap {
+  text-align: center;
+  margin-bottom: 2rem;
+  will-change: transform, opacity;
+}
+
+.heroName {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 1.8rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 0.4rem;
+}
+
+.heroRole {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 500;
 }
 
 .roleLabel {
@@ -165,6 +207,11 @@
   margin-top: 2rem;
 }
 
+@keyframes floatButton {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
 .seeWorkButton {
   display: inline-flex;
   align-items: center;
@@ -178,16 +225,18 @@
   color: #FFFFFF;
   border: 1.5px solid rgba(110, 180, 224, 0.5);
   border-radius: 4px;
-  background: transparent;
+  background: rgba(0, 0, 0, 0.3);
   transition: all 0.35s cubic-bezier(0.25, 0.4, 0.25, 1);
   font-family: var(--font-sans);
+  animation: floatButton 3s ease-in-out infinite;
 }
 
 .seeWorkButton:hover {
-  background: rgba(110, 180, 224, 0.1);
+  background: rgba(0, 0, 0, 0.4);
   border-color: #6EB4E0;
   color: #FFFFFF;
   text-decoration: none;
+  animation-play-state: paused;
   transform: translateY(-2px);
   box-shadow: 0 4px 20px rgba(110, 180, 224, 0.15);
 }
@@ -293,6 +342,7 @@
 .contactSection {
   padding: 5rem 1.5rem;
   text-align: center;
+  background: #000000;
 }
 
 .contactHeading {

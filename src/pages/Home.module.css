@@ -11,7 +11,11 @@
   position: relative;
   overflow: hidden;
   padding: 10rem 2rem 5rem;
-  background: linear-gradient(160deg, #1a2a3a 0%, #1f3a4a 30%, #182e3e 55%, #141919 100%);
+  background: #0a0f1a;
+  background-image:
+    radial-gradient(ellipse 80% 60% at 30% 40%, rgba(26,53,104,0.7) 0%, rgba(18,38,74,0.4) 30%, rgba(12,22,42,0.15) 55%, transparent 80%),
+    radial-gradient(ellipse 60% 80% at 75% 55%, rgba(19,44,80,0.5) 0%, rgba(14,32,60,0.25) 30%, rgba(10,18,34,0.1) 55%, transparent 80%),
+    radial-gradient(ellipse 50% 50% at 50% 20%, rgba(30,60,120,0.3) 0%, rgba(20,40,80,0.15) 35%, rgba(12,22,42,0.05) 60%, transparent 85%);
 }
 
 /* Animated mesh background — large soft gradient blobs */
@@ -136,12 +140,17 @@
   margin-top: 2.5rem;
 }
 
+@keyframes floatButton {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
 .heroButton {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   padding: 0.85rem 2.5rem;
-  border: 1px solid rgba(110, 180, 224, 0.3);
+  border: 1.5px solid rgba(110, 180, 224, 0.5);
   border-radius: 6px;
   color: #FFFFFF;
   text-decoration: none;
@@ -150,16 +159,19 @@
   font-size: 0.78rem;
   font-weight: 600;
   font-family: var(--font-sans);
-  background: transparent;
+  background: rgba(0, 0, 0, 0.3);
   transition: all 0.35s cubic-bezier(0.25, 0.4, 0.25, 1);
+  animation: floatButton 3s ease-in-out infinite;
 }
 
 .heroButton:hover {
-  border-color: rgba(110, 180, 224, 0.6);
-  background: rgba(110, 180, 224, 0.08);
-  transform: translateY(-2px);
+  border-color: #6EB4E0;
+  background: rgba(0, 0, 0, 0.4);
   color: #FFFFFF;
   text-decoration: none;
+  animation-play-state: paused;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(110, 180, 224, 0.15);
 }
 
 
@@ -329,7 +341,7 @@
 
 .pillars {
   padding: 5rem 1.5rem;
-  background: var(--bg-alt);
+  background: #0e1724;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -433,6 +445,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  background: #000000;
 }
 
 /* Subtle atmospheric gradient */
@@ -456,6 +469,18 @@
   line-height: 1.1;
   font-family: var(--font-sans);
   letter-spacing: -0.025em;
+}
+
+.workCallout {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #6EB4E0;
+  max-width: 480px;
+  margin: 0 auto 0.75rem;
+  line-height: 1.65;
 }
 
 .workSubtext {
@@ -500,15 +525,17 @@
   color: #FFFFFF;
   border: 1.5px solid rgba(110, 180, 224, 0.5);
   border-radius: 4px;
-  background: transparent;
+  background: rgba(0, 0, 0, 0.3);
   transition: all 0.35s cubic-bezier(0.25, 0.4, 0.25, 1);
+  animation: floatButton 3s ease-in-out infinite;
 }
 
 .viewAllLink:hover {
-  background: rgba(110, 180, 224, 0.1);
+  background: rgba(0, 0, 0, 0.4);
   border-color: #6EB4E0;
   color: #FFFFFF;
   text-decoration: none;
+  animation-play-state: paused;
   transform: translateY(-2px);
   box-shadow: 0 4px 20px rgba(110, 180, 224, 0.15);
 }
@@ -529,7 +556,7 @@
 
 .testimonials {
   padding: 3rem 0;
-  background: linear-gradient(135deg, #1E2A36 0%, #2D3C52 50%, #1E2A36 100%);
+  background: #131e30;
 }
 
 
@@ -541,16 +568,14 @@
   padding: 12rem 1.5rem 7rem;
   text-align: center;
   position: relative;
-  background:
-    radial-gradient(ellipse at 50% 50%, rgba(90, 130, 184, 0.04) 0%, transparent 60%),
-    var(--bg);
+  background: #000000;
 }
 
 .ctaHeading {
   font-size: clamp(2rem, 4.5vw, 3.2rem);
   font-weight: 400;
   color: var(--text-primary);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   line-height: 1.15;
   font-family: var(--font-sans);
   letter-spacing: -0.02em;
