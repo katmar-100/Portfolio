@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import FadeIn from '../components/FadeIn';
 import ContactForm from '../components/ContactForm';
 import Testimonials from '../components/Testimonials';
+import { useTheme } from '../contexts/ThemeContext';
 import styles from './About.module.css';
 
 // Inline SVG icons for What I Bring
@@ -60,15 +61,16 @@ const FutureIcon = () => (
   </svg>
 );
 
-// Brand logo from local file
-const BrandLogo = ({ name, logo }) => {
+// Brand logo — swaps to light variant in light mode
+const BrandLogo = ({ name, logo, lightLogo, theme }) => {
   const [imgError, setImgError] = useState(false);
+  const src = theme === 'light' && lightLogo ? lightLogo : logo;
 
   if (!logo || imgError) return null;
 
   return (
     <img
-      src={logo}
+      src={src}
       alt={`${name} logo`}
       className={styles.brandImg}
       onError={() => setImgError(true)}
@@ -78,7 +80,7 @@ const BrandLogo = ({ name, logo }) => {
 };
 
 // Brand carousel with CSS animation for smooth scrolling
-const BrandCarousel = ({ brands }) => {
+const BrandCarousel = ({ brands, theme }) => {
   const doubled = [...brands, ...brands];
 
   return (
@@ -86,7 +88,7 @@ const BrandCarousel = ({ brands }) => {
       <div className={styles.carouselTrack}>
         {doubled.map((brand, idx) => (
           <div key={idx} className={styles.carouselItem}>
-            <BrandLogo name={brand.name} logo={brand.logo} />
+            <BrandLogo name={brand.name} logo={brand.logo} lightLogo={brand.lightLogo} theme={theme} />
           </div>
         ))}
       </div>
@@ -95,6 +97,7 @@ const BrandCarousel = ({ brands }) => {
 };
 
 export default function About() {
+  const { theme } = useTheme();
   const { scrollY } = useScroll();
   const nameOpacity = useTransform(scrollY, [0, 120], [1, 0]);
   const nameY = useTransform(scrollY, [0, 120], [0, -60]);
@@ -103,30 +106,30 @@ export default function About() {
   const headshotScale = useTransform(scrollY, [0, 150], [1, 1.25]);
 
   const brands = [
-    { name: "L'Oreal", logo: "/images/logos/loreal.png" },
-    { name: "Electronic Arts", logo: "/images/logos/electronic-arts.png" },
-    { name: "Lululemon", logo: "/images/logos/lululemon.png" },
-    { name: "Lamborghini", logo: "/images/logos/lamborghini.png" },
-    { name: "Nike", logo: "/images/logos/nike.png" },
-    { name: "Revlon", logo: "/images/logos/revlon.png" },
-    { name: "Smithsonian", logo: "/images/logos/smithsonian.png" },
-    { name: "P&G", logo: "/images/logos/pg.png" },
-    { name: "Target", logo: "/images/logos/target.png" },
-    { name: "Ford", logo: "/images/logos/ford.png" },
-    { name: "ESPN", logo: "/images/logos/espn.png" },
-    { name: "Dove", logo: "/images/logos/dove.png" },
-    { name: "Pfizer", logo: "/images/logos/pfizer.png" },
-    { name: "Hitachi", logo: "/images/logos/hitache.png" },
-    { name: "Deloitte", logo: "/images/logos/deloitte.png" },
-    { name: "Nestle", logo: "/images/logos/nestle.png" },
-    { name: "GEICO", logo: "/images/logos/geico.png" },
-    { name: "General Mills", logo: "/images/logos/general-mills.png" },
-    { name: "Mazda", logo: "/images/logos/mazda.png" },
-    { name: "Harvard Medical", logo: "/images/logos/harvard-medical.png" },
-    { name: "Allstate", logo: "/images/logos/allstate.png" },
-    { name: "TRESemme", logo: "/images/logos/tresemme.png" },
-    { name: "Chick-fil-A", logo: "/images/logos/chick-fil-a.png" },
-    { name: "ANA", logo: "/images/logos/ana.png" },
+    { name: "L'Oreal", logo: "/images/logos/loreal.png", lightLogo: "/images/logos/light mode/loreal-light.png" },
+    { name: "Electronic Arts", logo: "/images/logos/electronic-arts.png", lightLogo: "/images/logos/light mode/electronic-arts-light.png" },
+    { name: "Lululemon", logo: "/images/logos/lululemon.png", lightLogo: "/images/logos/light mode/lululemon-light.png" },
+    { name: "Lamborghini", logo: "/images/logos/lamborghini.png", lightLogo: "/images/logos/light mode/lamborghini-light.png" },
+    { name: "Nike", logo: "/images/logos/nike.png", lightLogo: "/images/logos/light mode/nike-light.png" },
+    { name: "Revlon", logo: "/images/logos/revlon.png", lightLogo: "/images/logos/light mode/revlon-light.png" },
+    { name: "Smithsonian", logo: "/images/logos/smithsonian.png", lightLogo: "/images/logos/light mode/smithsonian-light.png" },
+    { name: "P&G", logo: "/images/logos/pg.png", lightLogo: "/images/logos/light mode/pg-light.png" },
+    { name: "Target", logo: "/images/logos/target.png", lightLogo: "/images/logos/light mode/target-light.png" },
+    { name: "Ford", logo: "/images/logos/ford.png", lightLogo: "/images/logos/light mode/ford-light.png" },
+    { name: "ESPN", logo: "/images/logos/espn.png", lightLogo: "/images/logos/light mode/espn-light.png" },
+    { name: "Dove", logo: "/images/logos/dove.png", lightLogo: "/images/logos/light mode/dove-light.png" },
+    { name: "Pfizer", logo: "/images/logos/pfizer.png", lightLogo: "/images/logos/light mode/pfizer-light.png" },
+    { name: "Hitachi", logo: "/images/logos/hitache.png", lightLogo: "/images/logos/light mode/hitachi-light.png" },
+    { name: "Deloitte", logo: "/images/logos/deloitte.png", lightLogo: "/images/logos/light mode/deloitte-light.png" },
+    { name: "Nestle", logo: "/images/logos/nestle.png", lightLogo: "/images/logos/light mode/nestle-light.png" },
+    { name: "GEICO", logo: "/images/logos/geico.png", lightLogo: "/images/logos/light mode/geico-light.png" },
+    { name: "General Mills", logo: "/images/logos/general-mills.png", lightLogo: "/images/logos/light mode/general-mills-light.png" },
+    { name: "Mazda", logo: "/images/logos/mazda.png", lightLogo: "/images/logos/light mode/mazda-light.png" },
+    { name: "Harvard Medical", logo: "/images/logos/harvard-medical.png", lightLogo: "/images/logos/light mode/harvard-medical-light.png" },
+    { name: "Allstate", logo: "/images/logos/allstate.png", lightLogo: "/images/logos/light mode/allstate-light.png" },
+    { name: "TRESemme", logo: "/images/logos/tresemme.png", lightLogo: "/images/logos/light mode/tresseme-light.png" },
+    { name: "Chick-fil-A", logo: "/images/logos/chick-fil-a.png", lightLogo: "/images/logos/light mode/chick-fil-a-light.png" },
+    { name: "ANA", logo: "/images/logos/ana.png", lightLogo: "/images/logos/light mode/ana-light.png" },
   ];
   const bringItems = [
     {
@@ -256,7 +259,7 @@ export default function About() {
       {/* TRUSTED BY BRANDS - Logo carousel */}
       <section className={styles.brands}>
         <h3 className={styles.brandsLabel}>Trusted by</h3>
-        <BrandCarousel brands={brands} />
+        <BrandCarousel brands={brands} theme={theme} />
       </section>
 
       {/* Narrative Section */}
@@ -371,19 +374,6 @@ export default function About() {
         </FadeIn>
       </section>
 
-      {/* Personal Section */}
-      <section className={styles.personalBar}>
-        <FadeIn delay={0} direction="up" distance={20}>
-          <p className={styles.personalText}>
-            When I'm not building brands, I'm usually exploring new ways technology and creativity intersect, experimenting with visual ideas, or simply stepping away long enough to recharge and stay curious. I've found that the best creative leaders are the ones who never stop learning - and I try to stay that way.
-          </p>
-        </FadeIn>
-      </section>
-
-      {/* Testimonials Section */}
-      <section className={styles.testimonialsSection}>
-        <Testimonials testimonials={aboutTestimonials} />
-      </section>
 
       {/* Contact Form Section */}
       <section className={styles.contactSection}>
@@ -399,6 +389,11 @@ export default function About() {
         <FadeIn delay={0.3} direction="up" distance={20}>
           <ContactForm />
         </FadeIn>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className={styles.testimonialsSection}>
+        <Testimonials testimonials={aboutTestimonials} />
       </section>
     </motion.div>
   );

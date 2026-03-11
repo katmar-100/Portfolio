@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import styles from './Testimonials.module.css';
 
@@ -181,6 +181,10 @@ const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState(1);
   const [isPaused, setIsPaused] = useState(false);
+  const [wrapHeight, setWrapHeight] = useState(260);
+  const [measured, setMeasured] = useState(false);
+  const measureRef = useRef(null);
+  const gridRef = useRef(null);
 
   // Show 2 testimonials at a time
   const itemsPerPage = 2;
@@ -203,9 +207,29 @@ const Testimonials = () => {
     return () => clearInterval(timer);
   }, [goToNext, isPaused]);
 
+  // Measure ALL pages on mount to find the max height
+  useEffect(() => {
+    if (!measureRef.current) return;
+    const pages = measureRef.current.querySelectorAll('[data-measure-page]');
+    let maxH = 0;
+    pages.forEach(page => {
+      const h = page.getBoundingClientRect().height;
+      if (h > maxH) maxH = h;
+    });
+    if (maxH > 0) {
+      setWrapHeight(maxH);
+      setMeasured(true);
+    }
+  }, []);
+
   const currentItems = allTestimonials.slice(
     currentIndex * itemsPerPage,
     currentIndex * itemsPerPage + itemsPerPage
+  );
+
+  // Build all pages for measurement
+  const allPages = Array.from({ length: totalPages }, (_, i) =>
+    allTestimonials.slice(i * itemsPerPage, i * itemsPerPage + itemsPerPage)
   );
 
   return (
@@ -214,39 +238,35 @@ const Testimonials = () => {
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
-      <div className={styles.carouselContainer}>
-        <AnimatePresence mode="wait" initial={false} custom={direction}>
-          <motion.div
-            key={currentIndex}
-            custom={direction}
-            className={styles.grid}
-            variants={{
-              enter: (d) => ({ opacity: 0, x: d * 80 }),
-              center: { opacity: 1, x: 0 },
-              exit: (d) => ({ opacity: 0, x: d * -80 }),
-            }}
-            initial="enter"
-            animate="center"
-            exit="exit"
-            transition={{ duration: 0.45, ease: [0.25, 0.1, 0.25, 1] }}
-          >
-            {currentItems.map((testimonial, index) => (
-              <div key={index} className={styles.quoteContainer}>
-                <Stars />
-                <QuoteIcon />
-                <p className={styles.quoteText}>{testimonial.quote}</p>
-                <div className={styles.attribution}>
-                  <div className={styles.name}>{testimonial.author}</div>
-                  {testimonial.company && (
-                    <div className={styles.company}>{testimonial.company}</div>
-                  )}
+      {/* Hidden container to measure all pages */}
+      {!measured && (
+        <div
+          ref={measureRef}
+          aria-hidden="true"
+          style={{ position: 'absolute', visibility: 'hidden', width: '100%', maxWidth: 900, left: '50%', transform: 'translateX(-50%)' }}
+        >
+          {allPages.map((pageItems, pageIdx) => (
+            <div key={pageIdx} data-measure-page className={styles.grid} style={{ position: 'relative' }}>
+              {pageItems.map((testimonial, idx) => (
+                <div key={idx} className={styles.quoteContainer}>
+                  <Stars />
+                  <QuoteIcon />
+                  <p className={styles.quoteText}>{testimonial.quote}</p>
+                  <div className={styles.attribution}>
+                    <div className={styles.name}>{testimonial.author}</div>
+                    {testimonial.company && (
+                      <div className={styles.company}>{testimonial.company}</div>
+                    )}
+                  </div>
                 </div>
-              </div>
-            ))}
-          </motion.div>
-        </AnimatePresence>
+              ))}
+            </div>
+          ))}
+        </div>
+      )}
 
-        {/* Navigation */}
+      <div className={styles.carouselContainer}>
+        {/* Navigation — above testimonials */}
         <div className={styles.carouselNav}>
           <button
             className={styles.navButton}
@@ -277,6 +297,40 @@ const Testimonials = () => {
           >
             &#8594;
           </button>
+        </div>
+
+        <div className={styles.gridWrap} style={{ height: wrapHeight }}>
+          <AnimatePresence mode="wait" initial={false} custom={direction}>
+            <motion.div
+              ref={gridRef}
+              key={currentIndex}
+              custom={direction}
+              className={styles.grid}
+              variants={{
+                enter: (d) => ({ opacity: 0, x: d * 80 }),
+                center: { opacity: 1, x: 0 },
+                exit: (d) => ({ opacity: 0, x: d * -80 }),
+              }}
+              initial="enter"
+              animate="center"
+              exit="exit"
+              transition={{ duration: 0.45, ease: [0.25, 0.1, 0.25, 1] }}
+            >
+              {currentItems.map((testimonial, index) => (
+                <div key={index} className={styles.quoteContainer}>
+                  <Stars />
+                  <QuoteIcon />
+                  <p className={styles.quoteText}>{testimonial.quote}</p>
+                  <div className={styles.attribution}>
+                    <div className={styles.name}>{testimonial.author}</div>
+                    {testimonial.company && (
+                      <div className={styles.company}>{testimonial.company}</div>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </motion.div>
+          </AnimatePresence>
         </div>
       </div>
     </section>

@@ -8,11 +8,8 @@
   align-items: center;
   padding: 6rem 1.5rem 4rem;
   text-align: center;
-  background: #0a0f1a;
-  background-image:
-    radial-gradient(ellipse 80% 60% at 30% 40%, rgba(26,53,104,0.7) 0%, rgba(18,38,74,0.4) 30%, rgba(12,22,42,0.15) 55%, transparent 80%),
-    radial-gradient(ellipse 60% 80% at 75% 55%, rgba(19,44,80,0.5) 0%, rgba(14,32,60,0.25) 30%, rgba(10,18,34,0.1) 55%, transparent 80%),
-    radial-gradient(ellipse 50% 50% at 50% 20%, rgba(30,60,120,0.3) 0%, rgba(20,40,80,0.15) 35%, rgba(12,22,42,0.05) 60%, transparent 85%);
+  background: var(--section-nebula);
+  background-image: var(--nebula-bg);
   position: relative;
 }
 
@@ -34,15 +31,15 @@
 .subtitleCard {
   max-width: 620px;
   margin: 0 auto;
-  background: linear-gradient(135deg, rgba(90,130,184,0.06), rgba(110,180,224,0.03));
-  border: 1px solid rgba(90,130,184,0.1);
+  background: var(--accent-bg-gradient);
+  border: 1px solid var(--accent-tint-10);
   border-radius: 12px;
   padding: 1.25rem 2rem;
   transition: border-color 0.4s ease;
 }
 
 .subtitleCard:hover {
-  border-color: rgba(90,130,184,0.2);
+  border-color: var(--accent-tint-15);
 }
 
 .subtitle {
@@ -76,7 +73,7 @@
   max-width: 100%;
   padding: 4rem 1.5rem;
   text-align: center;
-  background: #000000;
+  background: var(--section-black);
 }
 
 .narrative p,
@@ -94,7 +91,7 @@
   color: var(--text-secondary);
   margin-bottom: 2.75rem;
   padding-bottom: 2.75rem;
-  border-bottom: 1px solid rgba(110, 180, 224, 0.22);
+  border-bottom: 1px solid var(--accent-border-subtle);
   font-family: var(--font-sans);
 }
 
@@ -118,15 +115,15 @@
   max-width: 700px;
   margin: 1rem auto 2.75rem;
   padding: 1.5rem 2.5rem;
-  background: linear-gradient(135deg, rgba(90, 130, 184, 0.12), rgba(110, 180, 224, 0.06));
-  border: 1px solid rgba(90, 130, 184, 0.28);
+  background: var(--accent-bg-gradient-strong);
+  border: 1px solid var(--accent-tint-28);
   border-radius: 12px;
   text-align: center;
   transition: border-color 0.4s ease;
 }
 
 .pullQuote:hover {
-  border-color: rgba(90, 130, 184, 0.4);
+  border-color: var(--accent-tint-30);
 }
 
 .pullQuote span {
@@ -134,7 +131,7 @@
   font-size: 1.35rem;
   font-weight: 500;
   line-height: 1.6;
-  color: #FFFFFF;
+  color: var(--text-on-dark);
   letter-spacing: -0.01em;
   font-style: normal;
   display: block;
@@ -162,12 +159,15 @@
 }
 
 .headshot {
-  width: 160px;
-  height: 160px;
+  width: 164px;
+  height: 164px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center top;
-  border: 2px solid rgba(110, 180, 224, 0.3);
+  border: 2px solid transparent;
+  background:
+    linear-gradient(var(--section-black), var(--section-black)) padding-box,
+    linear-gradient(135deg, var(--accent), var(--accent-electric)) border-box;
 }
 
 /* Hero name/title below headshot */
@@ -183,7 +183,7 @@
   font-size: 1.8rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: var(--text-on-dark);
   margin-bottom: 0.4rem;
 }
 
@@ -193,7 +193,7 @@
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--accent);
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .roleLabel {
@@ -201,7 +201,7 @@
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.28em;
-  font-weight: 500;
+  font-weight: 700;
   color: var(--accent);
   text-align: center;
   margin-bottom: 5rem;
@@ -227,23 +227,23 @@
   letter-spacing: 0.2em;
   font-weight: 600;
   text-decoration: none;
-  color: #FFFFFF;
-  border: 1.5px solid rgba(110, 180, 224, 0.5);
+  color: var(--text-on-dark);
+  border: 1.5px solid var(--accent-border);
   border-radius: 4px;
-  background: rgba(0, 0, 0, 0.3);
+  background: var(--overlay-light);
   transition: all 0.35s cubic-bezier(0.25, 0.4, 0.25, 1);
   font-family: var(--font-sans);
   animation: floatButton 3s ease-in-out infinite;
 }
 
 .seeWorkButton:hover {
-  background: rgba(0, 0, 0, 0.4);
-  border-color: #6EB4E0;
-  color: #FFFFFF;
+  background: var(--overlay-medium);
+  border-color: var(--accent);
+  color: var(--text-on-dark);
   text-decoration: none;
   animation-play-state: paused;
   transform: translateY(-2px);
-  box-shadow: 0 4px 20px rgba(110, 180, 224, 0.15);
+  box-shadow: 0 4px 20px var(--accent-glow);
 }
 
 .seeWorkArrow {
@@ -258,7 +258,7 @@
 /* What I Bring Section */
 .bringSection {
   padding: 5rem 1.5rem;
-  background: #131e30;
+  background: var(--section-deep);
   text-align: center;
 }
 
@@ -294,7 +294,7 @@
 }
 
 .bringItem:hover {
-  background: rgba(90, 130, 184, 0.04);
+  background: var(--accent-tint-04);
   transform: translateY(-4px);
 }
 
@@ -327,27 +327,12 @@
   color: var(--text-secondary);
 }
 
-/* Personal Section */
-.personalBar {
-  padding: 4rem 1.5rem;
-  text-align: center;
-  background: #131e30;
-}
-
-.personalText {
-  font-family: var(--font-sans);
-  font-size: 1.05rem;
-  color: var(--text-secondary);
-  max-width: 620px;
-  margin: 0 auto;
-  line-height: 1.8;
-}
 
 /* Contact Form Section */
 .contactSection {
   padding: 5rem 1.5rem;
   text-align: center;
-  background: #000000;
+  background: var(--section-black);
 }
 
 .contactHeading {
@@ -374,7 +359,7 @@
 /* Testimonials Section */
 .testimonialsSection {
   padding: 3rem 0;
-  background: #000000;
+  background: var(--section-black);
   text-align: center;
 }
 
@@ -394,7 +379,7 @@
 .brands {
   padding: 4rem 1.5rem 3.5rem;
   text-align: center;
-  background: #000000;
+  background: var(--section-carousel);
   overflow: hidden;
 }
 
@@ -402,10 +387,10 @@
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.3em;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 2.5rem;
   display: block;
-  color: var(--accent);
+  color: var(--carousel-label);
 }
 
 /* Brand Carousel */
@@ -455,12 +440,14 @@
   width: auto;
   max-width: 160px;
   object-fit: contain;
-  opacity: 0.6;
-  transition: opacity 0.3s ease;
+  opacity: var(--carousel-logo-opacity);
+  border-radius: var(--carousel-logo-radius);
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .carouselItem:hover .brandImg {
-  opacity: 0.85;
+  opacity: var(--carousel-logo-hover-opacity);
+  transform: scale(1.08);
 }
 
 .carouselName {
@@ -468,14 +455,108 @@
   font-size: 0.6rem;
   text-transform: uppercase;
   letter-spacing: 0.14em;
-  color: rgba(255, 255, 255, 0.35);
+  color: var(--carousel-text);
   font-weight: 600;
   white-space: nowrap;
   transition: color 0.3s ease;
 }
 
 .carouselItem:hover .carouselName {
-  color: rgba(110, 180, 224, 0.8);
+  color: var(--carousel-text-hover);
+}
+
+/* Light mode: blue narrative section to blend with carousel */
+:global([data-theme="light"]) .narrative {
+  background: var(--section-carousel);
+}
+
+:global([data-theme="light"]) .narrative p {
+  color: rgba(255, 255, 255, 0.85);
+  border-bottom-color: rgba(255, 255, 255, 0.15);
+}
+
+:global([data-theme="light"]) .pullQuote {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+:global([data-theme="light"]) .pullQuote:hover {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+:global([data-theme="light"]) .pullQuote span {
+  color: #ffffff;
+}
+
+:global([data-theme="light"]) .narrativeDivider {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Light mode: blue testimonials section to keep white text readable */
+:global([data-theme="light"]) .testimonialsSection {
+  background: var(--section-carousel);
+}
+
+:global([data-theme="light"]) .testimonialsHeading {
+  color: #ffffff;
+}
+
+:global([data-theme="light"]) .testimonialsSubtext {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Light mode: blue contact/Get in Touch section for seamless bottom */
+:global([data-theme="light"]) .contactSection {
+  background: var(--section-carousel);
+}
+
+:global([data-theme="light"]) .contactHeading {
+  color: #ffffff;
+}
+
+:global([data-theme="light"]) .contactAccentLine {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+:global([data-theme="light"]) .contactSubtext {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Override form label + button within the blue contact section */
+:global([data-theme="light"]) .contactSection {
+  --accent-dark: rgba(255, 255, 255, 0.7);
+  --gradient-main: none;
+  --accent-tint-30: rgba(255, 255, 255, 0.15);
+}
+
+:global([data-theme="light"]) .contactSection :global(button[type="submit"]),
+:global([data-theme="light"]) .contactSection :global([class*="submitButton"]) {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+  backdrop-filter: blur(8px);
+}
+
+:global([data-theme="light"]) .contactSection :global(button[type="submit"]):hover,
+:global([data-theme="light"]) .contactSection :global([class*="submitButton"]):hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.7);
+  color: #ffffff;
+  box-shadow: 0 12px 30px rgba(255, 255, 255, 0.15);
+}
+
+/* Light mode: glass-style See My Work button on blue backdrop */
+:global([data-theme="light"]) .seeWorkButton {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+}
+
+:global([data-theme="light"]) .seeWorkButton:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.7);
+  color: #ffffff;
+  box-shadow: 0 12px 30px rgba(255, 255, 255, 0.15);
 }
 
 /* Responsive */

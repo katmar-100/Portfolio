@@ -6,12 +6,12 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.6rem 1rem;
-  background: rgba(0, 0, 0, 0.25);
+  background: var(--overlay-light);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--text-white-08);
   border-radius: 4px;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--text-white-50);
   font-family: var(--font-sans);
   font-size: 0.6rem;
   font-weight: 500;
@@ -33,9 +33,9 @@
 
 .backToTop:hover {
   opacity: 1;
-  background: rgba(0, 0, 0, 0.35);
-  border-color: rgba(255, 255, 255, 0.15);
-  color: rgba(255, 255, 255, 0.8);
+  background: var(--overlay-medium);
+  border-color: var(--text-white-15);
+  color: var(--text-white-80);
 }
 
 .arrow {

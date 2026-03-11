@@ -2,17 +2,19 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import FadeIn from '../components/FadeIn';
+import { useTheme } from '../contexts/ThemeContext';
 import styles from './Resume.module.css';
 
-// Brand logo from local file
-const BrandLogo = ({ name, logo }) => {
+// Brand logo — swaps to light variant in light mode
+const BrandLogo = ({ name, logo, lightLogo, theme }) => {
   const [imgError, setImgError] = useState(false);
+  const src = theme === 'light' && lightLogo ? lightLogo : logo;
 
   if (!logo || imgError) return null;
 
   return (
     <img
-      src={logo}
+      src={src}
       alt={`${name} logo`}
       className={styles.brandImg}
       onError={() => setImgError(true)}
@@ -22,7 +24,7 @@ const BrandLogo = ({ name, logo }) => {
 };
 
 // Brand carousel with CSS animation for smooth scrolling
-const BrandCarousel = ({ brands }) => {
+const BrandCarousel = ({ brands, theme }) => {
   const doubled = [...brands, ...brands];
 
   return (
@@ -30,7 +32,7 @@ const BrandCarousel = ({ brands }) => {
       <div className={styles.carouselTrack}>
         {doubled.map((brand, idx) => (
           <div key={idx} className={styles.carouselItem}>
-            <BrandLogo name={brand.name} logo={brand.logo} />
+            <BrandLogo name={brand.name} logo={brand.logo} lightLogo={brand.lightLogo} theme={theme} />
           </div>
         ))}
       </div>
@@ -39,6 +41,7 @@ const BrandCarousel = ({ brands }) => {
 };
 
 const Resume = () => {
+  const { theme } = useTheme();
   const experiences = [
     {
       id: 1,
@@ -46,6 +49,7 @@ const Resume = () => {
       company: 'ChenMed',
       dates: '2024 - Present',
       logo: '/images/logos/chenmed.png',
+      lightLogo: '/images/logos/light mode/chenmed-light.png',
       bullets: [
         'Lead the full in-house creative organization for a national consumer healthcare brand, directing a multidisciplinary team of writers, designers, animators, producers, videographers, and brand strategists.',
         'Rebuilt studio workflows and creative operating models, increasing output velocity and cross-departmental clarity while reducing revision cycles.',
@@ -63,6 +67,7 @@ const Resume = () => {
       company: 'CyberCatch',
       dates: '2021 - 2024',
       logo: '/images/logos/Cybercatch.png',
+      lightLogo: '/images/logos/light mode/cybercatch-light.png',
       bullets: [
         'Owned creative, brand, and marketing strategy for a high-growth cybersecurity SaaS company. Helped drive the company to an IPO in Canada.',
         'Oversaw brand, creative, and marketing strategy for a rapidly scaling cybersecurity SaaS company serving enterprise and global customers in a highly competitive market.',
@@ -80,6 +85,7 @@ const Resume = () => {
       company: 'Self-Employed',
       dates: '2020 - 2021',
       logo: '/images/logos/self-employed.png',
+      lightLogo: '/images/logos/light mode/self-employed-light.png',
       bullets: [
         'Led creative direction and brand identity for consumer brands, tech companies, and startups.',
         'Directed branding, visual identity development, and campaign creative for a wide range of consumer brands, tech startups, wellness companies, real estate groups, and B2B organizations.',
@@ -96,6 +102,7 @@ const Resume = () => {
       company: 'Electronic Arts',
       dates: '2017 - 2020',
       logo: '/images/logos/ea.png',
+      lightLogo: '/images/logos/light mode/ea-light.png',
       bullets: [
         'Led global visual identity systems for EA\'s internal brand, employee experience platforms, and corporate communications supporting teams across North America, Europe, and Asia.',
         'Designed and managed large-scale asset libraries, iconography systems, brand guidelines, and photography standards used by internal creative, HR, and executive teams worldwide.',
@@ -110,6 +117,7 @@ const Resume = () => {
       company: 'Hill+Knowlton Strategies',
       dates: '2014 - 2017',
       logo: '/images/logos/hK-strategies.png',
+      lightLogo: '/images/logos/light mode/hk-strategies-light.png',
       bullets: [
         'Responsible for day-to-day business development design work, such as: RFPs, presentation templates + decks for pitches, infographics, posters, follow-up emails, etc.',
         'Pitch-related design work helped win over $10M of new business, including: P&G, Vanguard, Hitachi, Hotels.com, NCR, Lee Jeans, Pfizer, ANA, & more.',
@@ -123,30 +131,30 @@ const Resume = () => {
   ];
 
   const brands = [
-    { name: "L'Oreal", logo: "/images/logos/loreal.png" },
-    { name: "Electronic Arts", logo: "/images/logos/electronic-arts.png" },
-    { name: "Lululemon", logo: "/images/logos/lululemon.png" },
-    { name: "Lamborghini", logo: "/images/logos/lamborghini.png" },
-    { name: "Nike", logo: "/images/logos/nike.png" },
-    { name: "Revlon", logo: "/images/logos/revlon.png" },
-    { name: "Smithsonian", logo: "/images/logos/smithsonian.png" },
-    { name: "P&G", logo: "/images/logos/pg.png" },
-    { name: "Target", logo: "/images/logos/target.png" },
-    { name: "Ford", logo: "/images/logos/ford.png" },
-    { name: "ESPN", logo: "/images/logos/espn.png" },
-    { name: "Dove", logo: "/images/logos/dove.png" },
-    { name: "Pfizer", logo: "/images/logos/pfizer.png" },
-    { name: "Hitachi", logo: "/images/logos/hitache.png" },
-    { name: "Deloitte", logo: "/images/logos/deloitte.png" },
-    { name: "Nestle", logo: "/images/logos/nestle.png" },
-    { name: "GEICO", logo: "/images/logos/geico.png" },
-    { name: "General Mills", logo: "/images/logos/general-mills.png" },
-    { name: "Mazda", logo: "/images/logos/mazda.png" },
-    { name: "Harvard Medical", logo: "/images/logos/harvard-medical.png" },
-    { name: "Allstate", logo: "/images/logos/allstate.png" },
-    { name: "TRESemme", logo: "/images/logos/tresemme.png" },
-    { name: "Chick-fil-A", logo: "/images/logos/chick-fil-a.png" },
-    { name: "ANA", logo: "/images/logos/ana.png" },
+    { name: "L'Oreal", logo: "/images/logos/loreal.png", lightLogo: "/images/logos/light mode/loreal-light.png" },
+    { name: "Electronic Arts", logo: "/images/logos/electronic-arts.png", lightLogo: "/images/logos/light mode/electronic-arts-light.png" },
+    { name: "Lululemon", logo: "/images/logos/lululemon.png", lightLogo: "/images/logos/light mode/lululemon-light.png" },
+    { name: "Lamborghini", logo: "/images/logos/lamborghini.png", lightLogo: "/images/logos/light mode/lamborghini-light.png" },
+    { name: "Nike", logo: "/images/logos/nike.png", lightLogo: "/images/logos/light mode/nike-light.png" },
+    { name: "Revlon", logo: "/images/logos/revlon.png", lightLogo: "/images/logos/light mode/revlon-light.png" },
+    { name: "Smithsonian", logo: "/images/logos/smithsonian.png", lightLogo: "/images/logos/light mode/smithsonian-light.png" },
+    { name: "P&G", logo: "/images/logos/pg.png", lightLogo: "/images/logos/light mode/pg-light.png" },
+    { name: "Target", logo: "/images/logos/target.png", lightLogo: "/images/logos/light mode/target-light.png" },
+    { name: "Ford", logo: "/images/logos/ford.png", lightLogo: "/images/logos/light mode/ford-light.png" },
+    { name: "ESPN", logo: "/images/logos/espn.png", lightLogo: "/images/logos/light mode/espn-light.png" },
+    { name: "Dove", logo: "/images/logos/dove.png", lightLogo: "/images/logos/light mode/dove-light.png" },
+    { name: "Pfizer", logo: "/images/logos/pfizer.png", lightLogo: "/images/logos/light mode/pfizer-light.png" },
+    { name: "Hitachi", logo: "/images/logos/hitache.png", lightLogo: "/images/logos/light mode/hitachi-light.png" },
+    { name: "Deloitte", logo: "/images/logos/deloitte.png", lightLogo: "/images/logos/light mode/deloitte-light.png" },
+    { name: "Nestle", logo: "/images/logos/nestle.png", lightLogo: "/images/logos/light mode/nestle-light.png" },
+    { name: "GEICO", logo: "/images/logos/geico.png", lightLogo: "/images/logos/light mode/geico-light.png" },
+    { name: "General Mills", logo: "/images/logos/general-mills.png", lightLogo: "/images/logos/light mode/general-mills-light.png" },
+    { name: "Mazda", logo: "/images/logos/mazda.png", lightLogo: "/images/logos/light mode/mazda-light.png" },
+    { name: "Harvard Medical", logo: "/images/logos/harvard-medical.png", lightLogo: "/images/logos/light mode/harvard-medical-light.png" },
+    { name: "Allstate", logo: "/images/logos/allstate.png", lightLogo: "/images/logos/light mode/allstate-light.png" },
+    { name: "TRESemme", logo: "/images/logos/tresemme.png", lightLogo: "/images/logos/light mode/tresseme-light.png" },
+    { name: "Chick-fil-A", logo: "/images/logos/chick-fil-a.png", lightLogo: "/images/logos/light mode/chick-fil-a-light.png" },
+    { name: "ANA", logo: "/images/logos/ana.png", lightLogo: "/images/logos/light mode/ana-light.png" },
   ];
 
   const [hoveredCap, setHoveredCap] = useState(null);
@@ -255,7 +263,7 @@ const Resume = () => {
                   </div>
                   {role.logo && (
                     <img
-                      src={role.logo}
+                      src={theme === 'light' && role.lightLogo ? role.lightLogo : role.logo}
                       alt={`${role.company} logo`}
                       className={styles.roleLogo}
                     />
@@ -303,20 +311,18 @@ const Resume = () => {
       {/* TRUSTED BY BRANDS - Logo carousel */}
       <section className={styles.brands}>
         <h3 className={styles.brandsLabel}>Trusted by</h3>
-        <BrandCarousel brands={brands} />
+        <BrandCarousel brands={brands} theme={theme} />
       </section>
 
       {/* CTA Section */}
-      <FadeIn delay={0.4} direction="up" distance={20}>
-        <section className={styles.cta}>
-          <p className={styles.ctaText}>
-            Let's discuss how I can contribute to your organization.
-          </p>
-          <Link to="/contact" className={styles.ctaLink}>
-            Get in Touch
-          </Link>
-        </section>
-      </FadeIn>
+      <section className={styles.cta}>
+        <p className={styles.ctaText}>
+          Let's discuss how I can contribute to your organization.
+        </p>
+        <Link to="/contact" className={styles.ctaLink}>
+          Get in Touch
+        </Link>
+      </section>
     </motion.div>
   );
 };

@@ -1,5 +1,5 @@
 .page {
-  background: #000000;
+  background: var(--section-black);
 }
 
 .header {
@@ -19,15 +19,15 @@
 .subtitleCard {
   max-width: 560px;
   margin: 0 auto;
-  background: linear-gradient(135deg, rgba(90, 130, 184, 0.12), rgba(110, 180, 224, 0.06));
-  border: 1px solid rgba(90, 130, 184, 0.28);
+  background: var(--accent-bg-gradient-strong);
+  border: 1px solid var(--accent-tint-28);
   border-radius: 12px;
   padding: 1.5rem 2.5rem;
   transition: border-color 0.4s ease;
 }
 
 .subtitleCard:hover {
-  border-color: rgba(90, 130, 184, 0.4);
+  border-color: var(--accent-tint-30);
 }
 
 .subtitle {
@@ -87,7 +87,7 @@
   left: 0;
   width: 100%;
   height: 1px;
-  background: linear-gradient(135deg, #5B8AB8, #6EB4E0);
+  background: var(--gradient-accent-short);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.35s cubic-bezier(0.25, 0.4, 0.25, 1);
@@ -121,7 +121,7 @@
   left: 0;
   width: 100%;
   height: 1px;
-  background: linear-gradient(135deg, #5B8AB8, #6EB4E0);
+  background: var(--gradient-accent-short);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.35s cubic-bezier(0.25, 0.4, 0.25, 1);
@@ -143,8 +143,8 @@
   line-height: 1.65;
   margin: 1rem 0 1.5rem;
   padding: 1rem 1.25rem;
-  background: linear-gradient(135deg, rgba(90, 130, 184, 0.08), rgba(110, 180, 224, 0.04));
-  border-left: 2px solid #6EB4E0;
+  background: var(--accent-bg-gradient);
+  border-left: 2px solid var(--accent);
   border-radius: 0 8px 8px 0;
 }
 
@@ -239,4 +239,9 @@
   .availabilityText {
     font-size: 0.85rem;
   }
+}
+
+/* Light mode */
+:global([data-theme="light"]) .title {
+  color: var(--accent);
 }

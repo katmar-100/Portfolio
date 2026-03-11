@@ -8,11 +8,8 @@
   position: relative;
   overflow: hidden;
   padding: 10rem 2rem 5rem;
-  background: #0a0f1a;
-  background-image:
-    radial-gradient(ellipse 80% 60% at 30% 40%, rgba(26,53,104,0.7) 0%, rgba(18,38,74,0.4) 30%, rgba(12,22,42,0.15) 55%, transparent 80%),
-    radial-gradient(ellipse 60% 80% at 75% 55%, rgba(19,44,80,0.5) 0%, rgba(14,32,60,0.25) 30%, rgba(10,18,34,0.1) 55%, transparent 80%),
-    radial-gradient(ellipse 50% 50% at 50% 20%, rgba(30,60,120,0.3) 0%, rgba(20,40,80,0.15) 35%, rgba(12,22,42,0.05) 60%, transparent 85%);
+  background: var(--section-nebula);
+  background-image: var(--nebula-bg);
 }
 
 .heroContent {
@@ -27,7 +24,7 @@
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.28em;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 2rem;
   color: var(--accent);
 }
@@ -39,13 +36,13 @@
   line-height: 1.2;
   letter-spacing: -0.025em;
   margin: 0 0 2rem;
-  color: #FFFFFF;
+  color: var(--text-on-dark);
 }
 
 .heroSub {
   font-family: var(--font-sans);
   font-size: clamp(0.9rem, 1.6vw, 1.05rem);
-  color: rgba(255, 255, 255, 0.55);
+  color: var(--text-white-55);
   max-width: 500px;
   margin: 0 auto;
   line-height: 1.7;
@@ -67,28 +64,28 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.85rem 2.5rem;
-  border: 1.5px solid rgba(110, 180, 224, 0.5);
+  border: 1.5px solid var(--accent-border);
   border-radius: 6px;
-  color: #FFFFFF;
+  color: var(--text-on-dark);
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font-size: 0.78rem;
   font-weight: 600;
   font-family: var(--font-sans);
-  background: rgba(0, 0, 0, 0.3);
+  background: var(--overlay-light);
   transition: all 0.35s cubic-bezier(0.25, 0.4, 0.25, 1);
   animation: floatButton 3s ease-in-out infinite;
 }
 
 .seeWorkButton:hover {
-  border-color: #6EB4E0;
-  background: rgba(0, 0, 0, 0.4);
-  color: #FFFFFF;
+  border-color: var(--accent);
+  background: var(--overlay-medium);
+  color: var(--text-on-dark);
   text-decoration: none;
   animation-play-state: paused;
   transform: translateY(-2px);
-  box-shadow: 0 4px 20px rgba(110, 180, 224, 0.15);
+  box-shadow: 0 4px 20px var(--accent-glow);
 }
 
 .seeWorkArrow {
@@ -121,7 +118,7 @@
 
 /* Experience Section */
 .experienceWrap {
-  background: #131e30;
+  background: var(--section-deep);
   padding: 3rem 0;
 }
 
@@ -218,7 +215,7 @@
 /* Capabilities Section */
 .capabilitiesSection {
   padding: 4rem 1.5rem;
-  background-color: #000000;
+  background-color: var(--section-black);
   text-align: center;
 }
 
@@ -277,7 +274,7 @@
 }
 
 .educationWrap {
-  background: #0a0f1a;
+  background: var(--section-nebula);
 }
 
 .educationEntry {
@@ -318,7 +315,7 @@
 .cta {
   padding: 6rem 1.5rem;
   text-align: center;
-  background: #000000;
+  background: var(--section-black);
 }
 
 .ctaText {
@@ -335,7 +332,7 @@
   display: inline-block;
   padding: 1rem 3rem;
   background: var(--gradient-main);
-  color: #FFFFFF;
+  color: var(--text-on-accent);
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.12em;
@@ -355,14 +352,14 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+  background: linear-gradient(90deg, transparent, var(--shimmer), transparent);
   transition: left 0.6s ease;
 }
 
 .ctaLink:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 30px rgba(90, 130, 184, 0.3);
-  color: #FFFFFF;
+  box-shadow: 0 12px 30px var(--accent-tint-30);
+  color: var(--text-on-accent);
   text-decoration: none;
 }
 
@@ -377,7 +374,7 @@
 .brands {
   padding: 4rem 1.5rem 3.5rem;
   text-align: center;
-  background: #000000;
+  background: var(--section-carousel);
   overflow: hidden;
 }
 
@@ -385,10 +382,10 @@
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.3em;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 2.5rem;
   display: block;
-  color: var(--accent);
+  color: var(--carousel-label);
 }
 
 /* Brand Carousel */
@@ -438,12 +435,14 @@
   width: auto;
   max-width: 160px;
   object-fit: contain;
-  opacity: 0.6;
-  transition: opacity 0.3s ease;
+  opacity: var(--carousel-logo-opacity);
+  border-radius: var(--carousel-logo-radius);
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .carouselItem:hover .brandImg {
-  opacity: 0.85;
+  opacity: var(--carousel-logo-hover-opacity);
+  transform: scale(1.08);
 }
 
 .carouselName {
@@ -451,14 +450,71 @@
   font-size: 0.6rem;
   text-transform: uppercase;
   letter-spacing: 0.14em;
-  color: rgba(255, 255, 255, 0.35);
+  color: var(--carousel-text);
   font-weight: 600;
   white-space: nowrap;
   transition: color 0.3s ease;
 }
 
 .carouselItem:hover .carouselName {
-  color: rgba(110, 180, 224, 0.8);
+  color: var(--carousel-text-hover);
+}
+
+/* Light mode: blue headlines */
+:global([data-theme="light"]) .heroHeadline {
+  color: var(--accent);
+}
+
+:global([data-theme="light"]) .sectionHeading {
+  color: var(--accent);
+}
+
+:global([data-theme="light"]) .roleContainer {
+  border-bottom-color: #97D2FF;
+}
+
+/* Light mode: blue Core Capabilities section */
+:global([data-theme="light"]) .capabilitiesSection {
+  background-color: var(--section-carousel);
+}
+
+:global([data-theme="light"]) .capabilitiesSection .sectionHeading {
+  color: #ffffff;
+}
+
+:global([data-theme="light"]) .tag {
+  border-color: rgba(255, 255, 255, 0.35);
+  color: #ffffff;
+}
+
+:global([data-theme="light"]) .tag:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.6);
+  color: #ffffff;
+}
+
+:global([data-theme="light"]) .capBlurb {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Light mode: blue CTA to blend with carousel */
+:global([data-theme="light"]) .cta {
+  background: var(--section-carousel);
+}
+
+:global([data-theme="light"]) .ctaText {
+  color: #ffffff;
+}
+
+:global([data-theme="light"]) .ctaLink {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+}
+
+:global([data-theme="light"]) .ctaLink:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.7);
 }
 
 /* Responsive Design */

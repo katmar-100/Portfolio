@@ -2,7 +2,7 @@
   padding: 3rem 1.5rem;
   padding-top: 6rem;
   margin-top: 0;
-  background: #000000;
+  background: var(--section-black);
 }
 
 .container {
@@ -40,6 +40,48 @@
 .link:hover {
   color: var(--accent);
   transform: translateY(-2px);
+}
+
+/* Light mode: blue footer to blend with carousel/CTA */
+:global([data-theme="light"]) .footer {
+  background: var(--section-carousel);
+}
+
+:global([data-theme="light"]) .container {
+  border-top-color: rgba(255, 255, 255, 0.2);
+}
+
+:global([data-theme="light"]) .copyright {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+:global([data-theme="light"]) .link {
+  color: #ffffff;
+}
+
+:global([data-theme="light"]) .link:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Light mode: contact page footer matches page bg (not blue) */
+:global([data-theme="light"]) .footerContact {
+  background: var(--bg);
+}
+
+:global([data-theme="light"]) .footerContact .container {
+  border-top-color: var(--border);
+}
+
+:global([data-theme="light"]) .footerContact .copyright {
+  color: var(--text-secondary);
+}
+
+:global([data-theme="light"]) .footerContact .link {
+  color: var(--text-secondary);
+}
+
+:global([data-theme="light"]) .footerContact .link:hover {
+  color: var(--accent);
 }
 
 /* Responsive */
