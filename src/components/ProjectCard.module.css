@@ -139,21 +139,23 @@
 }
 
 .tagsContainer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 0.45rem;
   margin-top: 1.25rem;
+  max-width: 320px;
 }
 
 .tag {
   font-family: var(--font-sans);
   font-size: 0.65rem;
-  padding: 0.2rem 0.65rem;
+  padding: 0.2rem 0.6rem;
+  white-space: nowrap;
   border: 1px solid rgba(110, 180, 224, 0.25);
   border-radius: 20px;
   color: rgba(110, 180, 224, 0.8);
   letter-spacing: 0.02em;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: 500;
   background: rgba(5, 10, 20, 0.8);
   transition: all 0.3s cubic-bezier(0.25, 0.4, 0.25, 1);
@@ -238,7 +240,4 @@
 }
 
 @media (max-width: 768px) {
-  .tagsContainer {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }

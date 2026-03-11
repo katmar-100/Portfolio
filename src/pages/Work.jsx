@@ -245,6 +245,19 @@ export default function Work() {
         ))}
       </section>
 
+      {/* Explore All Work Button (filtered views only) */}
+      {activeCategory !== 'All' && (
+        <div className={styles.exploreAllWrap}>
+          <button
+            className={styles.exploreAllButton}
+            onClick={() => { setActiveCategory('All'); setTimeout(() => window.scrollTo(0, 0), 0); }}
+          >
+            EXPLORE ALL WORK
+            <span className={styles.exploreAllArrow}>→</span>
+          </button>
+        </div>
+      )}
+
       {/* Testimonials Section */}
       <section className={styles.testimonialsSection}>
         <Testimonials />

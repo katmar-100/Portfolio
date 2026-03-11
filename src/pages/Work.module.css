@@ -346,6 +346,54 @@
   padding: 2rem 0;
 }
 
+/* Explore All Work Button */
+.exploreAllWrap {
+  text-align: center;
+  padding: 3rem 1.5rem 1rem;
+}
+
+@keyframes floatExplore {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.exploreAllButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1rem 2.5rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  color: #FFFFFF;
+  border: 1.5px solid rgba(110, 180, 224, 0.5);
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  font-family: var(--font-sans);
+  transition: all 0.35s cubic-bezier(0.25, 0.4, 0.25, 1);
+  animation: floatExplore 3s ease-in-out infinite;
+}
+
+.exploreAllButton:hover {
+  background: rgba(0, 0, 0, 0.4);
+  border-color: #6EB4E0;
+  color: #FFFFFF;
+  animation-play-state: paused;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(110, 180, 224, 0.15);
+}
+
+.exploreAllArrow {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.25, 0.4, 0.25, 1);
+}
+
+.exploreAllButton:hover .exploreAllArrow {
+  transform: translateX(4px);
+}
+
 /* CTA Section */
 .cta {
   text-align: center;

@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import GrainOverlay from './components/GrainOverlay';
 import ScrollProgress from './components/ScrollProgress';
+import BackToTop from './components/BackToTop';
 import Home from './pages/Home';
 import Work from './pages/Work';
 import About from './pages/About';
@@ -38,6 +39,7 @@ export default function App() {
         </AnimatePresence>
       </main>
       <Footer />
+      <BackToTop />
     </>
   );
 }
