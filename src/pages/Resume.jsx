@@ -199,12 +199,6 @@ const Resume = () => {
         </div>
       </section>
 
-      {/* TRUSTED BY BRANDS - Logo carousel */}
-      <section className={styles.brands}>
-        <h3 className={styles.brandsLabel}>Trusted by</h3>
-        <BrandCarousel brands={brands} />
-      </section>
-
       {/* Capabilities Section */}
       <section
         className={styles.capabilitiesSection}
@@ -305,6 +299,12 @@ const Resume = () => {
           </section>
         </FadeIn>
       </div>
+
+      {/* TRUSTED BY BRANDS - Logo carousel */}
+      <section className={styles.brands}>
+        <h3 className={styles.brandsLabel}>Trusted by</h3>
+        <BrandCarousel brands={brands} />
+      </section>
 
       {/* CTA Section */}
       <FadeIn delay={0.4} direction="up" distance={20}>

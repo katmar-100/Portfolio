@@ -22,7 +22,7 @@
   opacity: 0;
   pointer-events: none;
   transform: translateY(10px);
-  transition: opacity 0.3s ease, transform 0.3s ease, background 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease, background 0.3s ease, bottom 0.3s ease;
 }
 
 .backToTop.visible {
@@ -48,9 +48,23 @@
   transform: translateY(-2px);
 }
 
-/* Hide on mobile */
+/* Mobile: compact circle with arrow only */
 @media (max-width: 768px) {
   .backToTop {
+    padding: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    justify-content: center;
+    bottom: 1.25rem;
+    right: 1.25rem;
+  }
+
+  .label {
     display: none;
+  }
+
+  .arrow {
+    font-size: 0.85rem;
   }
 }

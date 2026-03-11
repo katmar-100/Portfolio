@@ -153,12 +153,6 @@ export default function Home() {
 
       </section>
 
-      {/* TRUSTED BY */}
-      <div className={styles.brands}>
-        <h3 className={styles.brandsLabel}>Trusted by</h3>
-        <BrandCarousel brands={brands} />
-      </div>
-
       {/* SELECTED WORK SECTION */}
       <section id="selected-work" className={styles.work}>
         <FadeIn>
@@ -190,6 +184,12 @@ export default function Home() {
         </FadeIn>
 
       </section>
+
+      {/* TRUSTED BY */}
+      <div className={styles.brands}>
+        <h3 className={styles.brandsLabel}>Trusted by</h3>
+        <BrandCarousel brands={brands} />
+      </div>
 
       {/* CTA SECTION */}
       <section className={styles.cta}>
