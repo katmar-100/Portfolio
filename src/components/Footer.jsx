@@ -8,7 +8,7 @@ const Footer = () => {
   const { theme } = useTheme();
   const location = useLocation();
   const isContactPage = location.pathname === '/contact';
-  const iconInner = theme === 'light' ? (isContactPage ? '#141919' : '#1D4999') : '#141919';
+  const iconInner = 'var(--icon-inner)';
 
   return (
     <footer className={`${styles.footer} ${isContactPage ? styles.footerContact : ''}`}>

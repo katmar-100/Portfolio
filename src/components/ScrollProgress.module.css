@@ -8,3 +8,7 @@
   transition: width 0.1s linear;
   will-change: width;
 }
+
+:global([data-theme="light"]) .progressBar {
+  background: var(--accent-electric);
+}
