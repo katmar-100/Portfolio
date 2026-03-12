@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import GrainOverlay from './components/GrainOverlay';
 import ScrollProgress from './components/ScrollProgress';
 import BackToTop from './components/BackToTop';
+import { Analytics } from '@vercel/analytics/react';
 import Home from './pages/Home';
 import Work from './pages/Work';
 import About from './pages/About';
@@ -40,6 +41,7 @@ export default function App() {
       </main>
       <Footer />
       <BackToTop />
+      <Analytics />
     </>
   );
 }
