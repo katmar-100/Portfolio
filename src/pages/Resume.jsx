@@ -184,6 +184,21 @@ const Resume = () => {
           >
             These are the roles, teams, and organizations that shaped how I lead creative work today.
           </motion.p>
+          <motion.a
+            href="/Katherine-Atmar-Resume.pdf"
+            download
+            className={styles.downloadButton}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.9 }}
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            Download PDF Resume
+          </motion.a>
         </div>
       </section>
 

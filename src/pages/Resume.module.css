@@ -49,6 +49,46 @@
   font-weight: 400;
 }
 
+.downloadButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 2rem;
+  border: 1.5px solid var(--accent-border);
+  border-radius: 6px;
+  color: var(--text-on-dark);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: var(--font-sans);
+  background: var(--overlay-light);
+  transition: all 0.35s cubic-bezier(0.25, 0.4, 0.25, 1);
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.downloadButton:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(29, 73, 153, 0.3);
+}
+
+:global([data-theme="light"]) .downloadButton {
+  background: #ffffff;
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+:global([data-theme="light"]) .downloadButton:hover {
+  background: var(--accent-electric);
+  border-color: var(--accent-electric);
+  color: #ffffff;
+}
+
 .seeWorkWrap {
   text-align: center;
   margin: 3rem 0;
