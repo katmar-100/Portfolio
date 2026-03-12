@@ -290,7 +290,7 @@ const Resume = () => {
             <div className={styles.educationEntry}>
               <div className={styles.educationDegree}>Master of Arts</div>
               <div className={styles.educationSchool}>The University of Texas at Austin</div>
-              <div className={styles.educationDetail}>Creative Advertising & Public Relations</div>
+              <div className={styles.educationDetail}>Creative Advertising & Art Direction</div>
               <div className={styles.educationMeta}>Graduated May 2016 · GPA 3.52</div>
             </div>
             <div className={styles.educationEntry}>
