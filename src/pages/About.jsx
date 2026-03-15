@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom';
 import FadeIn from '../components/FadeIn';
 import ContactForm from '../components/ContactForm';
 import Testimonials from '../components/Testimonials';
+import ProjectCard from '../components/ProjectCard';
 import { useTheme } from '../contexts/ThemeContext';
+import { projects } from '../data/projects';
 import styles from './About.module.css';
 
 // Inline SVG icons for What I Bring
@@ -217,6 +219,13 @@ export default function About() {
     },
   ];
 
+  // Featured projects for mobile Selected Work section
+  const featuredOrder = [1, 4, 34, 6, 5, 3, 2, 9];
+  const featuredProjects = featuredOrder
+    .map(id => projects.find(p => p.id === id))
+    .filter(Boolean)
+    .concat(projects.filter(p => p.featured && !featuredOrder.includes(p.id)));
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -276,35 +285,37 @@ export default function About() {
           </p>
         </FadeIn>
 
-        <FadeIn delay={0.1} direction="up" distance={20}>
-          <p>
-            Today, as Creative Director at ChenMed, I lead the in-house creative organization for a national healthcare brand. I build scalable creative systems, set the quality bar, and turn organizational ambition into brand expression across more than 100 locations.
-          </p>
-        </FadeIn>
+        <div className={styles.desktopOnly}>
+          <FadeIn delay={0.1} direction="up" distance={20}>
+            <p>
+              Today, as Creative Director at ChenMed, I lead the in-house creative organization for a national healthcare brand. I build scalable creative systems, set the quality bar, and turn organizational ambition into brand expression across more than 100 locations.
+            </p>
+          </FadeIn>
 
-        <FadeIn delay={0.15} direction="up" distance={20}>
-          <p>
-            Before ChenMed, I served as VP and Chief Marketing Officer at a cybersecurity startup, where I built the brand, marketing, and creative function from zero - and helped drive the company from inception through rapid growth to IPO preparation.
-          </p>
-        </FadeIn>
+          <FadeIn delay={0.15} direction="up" distance={20}>
+            <p>
+              Before ChenMed, I served as VP and Chief Marketing Officer at a cybersecurity startup, where I built the brand, marketing, and creative function from zero - and helped drive the company from inception through rapid growth to IPO preparation.
+            </p>
+          </FadeIn>
 
-        <FadeIn delay={0.2} direction="up" distance={20}>
-          <p>
-            Earlier, I helped shape global visual systems at Electronic Arts and cut my teeth in the agency world as an Art Director at H+K Strategies, where my pitch work contributed to more than $10M in major account wins.
-          </p>
-        </FadeIn>
+          <FadeIn delay={0.2} direction="up" distance={20}>
+            <p>
+              Earlier, I helped shape global visual systems at Electronic Arts and cut my teeth in the agency world as an Art Director at H+K Strategies, where my pitch work contributed to more than $10M in major account wins.
+            </p>
+          </FadeIn>
 
-        <FadeIn delay={0.25} direction="up" distance={20}>
-          <p>
-            Along the way, I spent several years as an independent creative director, partnering with founders and leadership teams to build brands that hold up under pressure.
-          </p>
-        </FadeIn>
+          <FadeIn delay={0.25} direction="up" distance={20}>
+            <p>
+              Along the way, I spent several years as an independent creative director, partnering with founders and leadership teams to build brands that hold up under pressure.
+            </p>
+          </FadeIn>
 
-        <FadeIn delay={0.3} direction="up" distance={20}>
-          <div className={styles.pullQuote}>
-            <span>A core belief runs through all of it: design is infrastructure, not&nbsp;decoration.</span>
-          </div>
-        </FadeIn>
+          <FadeIn delay={0.3} direction="up" distance={20}>
+            <div className={styles.pullQuote}>
+              <span>A core belief runs through all of it: design is infrastructure, not&nbsp;decoration.</span>
+            </div>
+          </FadeIn>
+        </div>
 
         <FadeIn delay={0.35} direction="up" distance={20}>
           <p>
@@ -316,6 +327,30 @@ export default function About() {
           <div className={styles.seeWorkWrap}>
             <Link to="/work" className={styles.seeWorkButton}>
               See My Work
+              <span className={styles.seeWorkArrow}>→</span>
+            </Link>
+          </div>
+        </FadeIn>
+      </section>
+
+      {/* Mobile-only Selected Work Section */}
+      <section className={styles.mobileWorkSection}>
+        <FadeIn>
+          <h2 className={styles.mobileWorkHeading}>Selected Work</h2>
+          <p className={styles.mobileWorkSubtext}>
+            Full Case Studies & Deliverables Available on Request
+          </p>
+          <div className={styles.bringAccentLine}></div>
+        </FadeIn>
+        <div className={styles.mobileWorkGrid}>
+          {featuredProjects.map((project, index) => (
+            <ProjectCard key={project.id} project={project} index={index} />
+          ))}
+        </div>
+        <FadeIn delay={0.1}>
+          <div className={styles.seeWorkWrap}>
+            <Link to="/case-studies" className={styles.seeWorkButton}>
+              See More Work
               <span className={styles.seeWorkArrow}>→</span>
             </Link>
           </div>
